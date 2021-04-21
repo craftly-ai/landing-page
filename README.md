@@ -5,10 +5,20 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Craftly.AI Landing Page
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+## Pages to Code
+
+We want the following pages:
+- Landing Page: index21_12apr_TL.psd
+- Affiliate Page: Affiliate02_31mar_TL.jpg (Waiting on PSD)
+- Learn: Learn01_01apr_TL.jpg (Waiting on PSD)
+- Documentation Guide: Documentation01_05apr_TL.jpg (Waiting on PSD)
+- Blog (Already coded, I will add)
+- Post Page (Already coded, I will add)
+
+Here is a boilerplate for making a gatsby site. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
