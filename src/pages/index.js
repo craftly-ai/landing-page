@@ -2,9 +2,8 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Header from "../components/header"
+import Layout from "../components/layout/Layout"
+import SEO from "../components/seo/seo"
 
 const IndexPage = () => (
   <Layout>
