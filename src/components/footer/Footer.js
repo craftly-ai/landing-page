@@ -10,7 +10,7 @@ const Footer = () => (
           <div className="row">
             <div className="col-sm-3 col-xs-12 left-conn">
               <div className="logo">
-                <Link to="index.html">
+                <Link to="#">
                   <StaticImage
                     src="../../images/logo.png"
                     className="img-responsive"
@@ -125,7 +125,7 @@ const Footer = () => (
               data-dismiss="modal"
               aria-label=" "
             />
-            <iStaticImagemg
+            <StaticImage
               className="modal-banner img-fluid"
               src="../../images/wishlist-banner.png"
               alt=""

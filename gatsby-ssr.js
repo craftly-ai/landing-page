@@ -1,7 +1,47 @@
 /**
+import { withPrefix } from 'gatsby';
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
 
 // You can delete this file if you're not using it
+
+import React from "react"
+
+export const onRenderBody = ({ setPostBodyComponents }) => {
+  setPostBodyComponents([
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      type="text/javascript"
+    ></script>,
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      type="text/javascript"
+    ></script>,
+    <script
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      type="text/javascript"
+    ></script>,
+    <script
+      src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"
+      type="text/javascript"
+    ></script>,
+    <script
+      src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"
+      type="text/javascript"
+    ></script>,
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    ></script>,
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    ></script>,
+    <script
+      src="https://code.tidio.co/4okfxoik8goeafk6fywrgilwux7mavdq.js"
+      type="text/javascript"
+    ></script>,
+  ])
+}

@@ -71,54 +71,45 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <script
+      {/* <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         type="text/javascript"
-        defer
       ></script>
       <script
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         type="text/javascript"
-        defer
       ></script>
       <script
         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
         type="text/javascript"
-        defer
-      ></script>
-      <script
+      ></script> */}
+      {/* <script
         src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"
         type="text/javascript"
-        defer
       ></script>
       <script
         src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"
         type="text/javascript"
-        defer
-      ></script>
-      <script
+      ></script> */}
+      {/* <script
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-        defer
       ></script>
       <script
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-        defer
-      ></script>
-      <script src={withPrefix("customGrid.js")} type="text/javascript" />
-      <script src={withPrefix("main.js")} type="text/javascript" />
-      <script src={withPrefix("animator.js")} type="text/javascript" />
-      <script
+      ></script> */}
+      <script src={withPrefix("customGrid.js")} type="text/javascript" defer />
+      <script src={withPrefix("main.js")} type="text/javascript" defer />
+      <script src={withPrefix("animator.js")} type="text/javascript" defer />
+      {/* <script
         src="https://code.tidio.co/4okfxoik8goeafk6fywrgilwux7mavdq.js"
         type="text/javascript"
-        defer
-      ></script>
-      <script src={withPrefix("custom.js")} type="text/javascript" defer />
+      ></script> */}
+      <script src={withPrefix("custom.js")} type="text/javascript" />
       <script
         type="text/javascript"
         src="https://widget.prefinery.com/widget/v2/g72qxl5b.js"
-        defer
       ></script>
     </Helmet>
   )
