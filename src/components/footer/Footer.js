@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 const Footer = () => (
-  <div>
+  <>
     <footer className="section">
       <div className="container">
         <div className="footer">
@@ -193,7 +193,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-  </div>
+  </>
 )
 
 export default Footer
