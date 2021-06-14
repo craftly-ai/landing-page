@@ -10,6 +10,8 @@ import introdata from "../data/introData.json"
 import tagList from "../data/tagList.json"
 import valueGrowData from "../data/ValueGrowData.json"
 import ValueGrowListSeaction from "./../container/ValueGrowListSeaction"
+import ProductSeaction from "./../container/ProductSeaction"
+import CopyRightSeaction from "../container/CopyRightSeaction"
 
 const IndexPage = () => (
   <>
@@ -33,6 +35,8 @@ const IndexPage = () => (
         img={valueGrowData.img}
       />
       <ValueGrowListSeaction />
+      <ProductSeaction />
+      <CopyRightSeaction />
     </Layout>
   </>
 )

@@ -1,0 +1,78 @@
+{
+  "head": {
+    "heading": "One product, endless content",
+    "subheading": "Say goodbye to writer’s block. Using the latest AI technology, Craftly learns your writing style and works with you on all your copy needs. Tools available: ",
+    "subheading-available-count": "10",
+    "subheading-perfected": " | Tools being perfected: 39",
+    "subheading-perfected-count": "39",
+    "button-request-access": "Request Access"
+  },
+  "product": {
+    "pro1": {
+      "heading": "Tools for every stack",
+      "info": "Crafty.AI has a tool that suits any need. Whether you’re writing professionally or creatively, we’re here to help you create high quality content in less time than it takes to get your next cup of coffee.",
+      "button-title": "See Tools",
+      "button-link": "#"
+    },
+    "pro2": {
+      "heading": "Prebuilt Integrations",
+      "info": "Custom original content when you want it, where you want it. We’re currently working on getting Craftly integrated with the platforms you use every day so that we’re always nearby to give you a helping hand.",
+      "button-title": "Coming Soon",
+      "button-link": "#"
+    }
+  },
+  "list": [
+    {
+      "title": "Company",
+      "info": "Personal Bio, Company Bio, Value Proposition, Mission Statement, Growth Ideas, Name Generator, Feature List"
+    },
+    {
+      "title": "Blog",
+      "info": "Rewriter Blog Topics Blog Outline Blog Intro Blog Blurb Creative Story"
+    },
+    {
+      "title": "Web Copy",
+      "info": "Rewriter Headline Sub-headlines Unique Value Propositions Company Bio Feature to Benefit"
+    },
+    {
+      "title": "Ecommerce",
+      "info": "Product Description, Amazon Product Features (Bullet Points), Amazon Product Description"
+    },
+    {
+      "title": "Digital Advertising",
+      "info": "Facebook Ad Headline, Facebook Ad Primary Text, Google Ads Headline, Google Ads Description"
+    },
+    {
+      "title": "Email",
+      "info": "Sentence to Email, Catchy Email Subjects, Confirmation Emails, Rewriter"
+    },
+    {
+      "title": "Socials",
+      "info": "Photo Caption, Carousel post, Youtube Video TopicIdeas, Youtube Video Script Outline, Youtube Video Titles, Youtube Video Intro, Youtube Video Description"
+    },
+    {
+      "title": "Company",
+      "info": "Personal Bio, Company Bio, Value Proposition, Mission Statement, Growth Ideas, Name Generator, Feature List"
+    },
+    {
+      "title": "Web Copy",
+      "info": "Rewriter Headline Sub-headlines Unique Value Propositions Company Bio Feature to Benefit"
+    },
+    {
+      "title": "Blog",
+      "info": "Rewriter Blog Topics Blog Outline Blog Intro Blog Blurb Creative Story"
+    },
+    {
+      "title": "Digital Advertising",
+      "info": "Facebook Ad Headline, Facebook Ad Primary Text, Google Ads Headline, Google Ads Description"
+    },
+    {
+      "title": "Ecommerce",
+      "info": "Product Description, Amazon Product Features (Bullet Points), Amazon Product Description"
+    },
+    {
+      "title": "Email",
+      "info": "Sentence to Email, Catchy Email Subjects, Confirmation Emails, Rewriter"
+    }
+  ]
+}

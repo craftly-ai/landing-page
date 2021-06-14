@@ -24,11 +24,6 @@ const ValueGrowListSeaction = () => {
             subheading={data["policy-subheading"]}
           />
           <GrowListItem
-            img={policyLogo}
-            heading={data["policy-heading"]}
-            subheading={data["policy-subheading"]}
-          />
-          <GrowListItem
             img={globalLogo}
             heading={data["global-heading"]}
             subheading={data["global-subheading"]}
