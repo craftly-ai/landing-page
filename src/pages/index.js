@@ -3,9 +3,12 @@ import Layout from "../components/layout/Layout"
 import SEO from "../components/seo/seo"
 import IntroSection from "../container/IntroSection"
 import TagCarousel from "../components/carousel/TagCarousel"
+import DesktopSeaction from "./../container/DesktopSeaction"
+import PartnersSection from "./../container/PartnersSection"
+import ValueGrowSection from "./../container/ValueGrowSection"
 import introdata from "../data/introData.json"
 import tagList from "../data/tagList.json"
-import DesktopSeaction from "./../container/DesktopSeaction"
+import valueGrowData from "../data/ValueGrowData.json"
 
 const IndexPage = () => (
   <>
@@ -21,6 +24,13 @@ const IndexPage = () => (
       />
       <TagCarousel list={tagList.list} />
       <DesktopSeaction />
+      <PartnersSection />
+      <ValueGrowSection
+        heading={valueGrowData.heading}
+        subheading={valueGrowData.subheading}
+        button={valueGrowData.button}
+        img={valueGrowData.img}
+      />
     </Layout>
   </>
 )
