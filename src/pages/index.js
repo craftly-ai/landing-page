@@ -9,6 +9,7 @@ import ValueGrowSection from "./../container/ValueGrowSection"
 import introdata from "../data/introData.json"
 import tagList from "../data/tagList.json"
 import valueGrowData from "../data/ValueGrowData.json"
+import ValueGrowListSeaction from "./../container/ValueGrowListSeaction"
 
 const IndexPage = () => (
   <>
@@ -31,6 +32,7 @@ const IndexPage = () => (
         button={valueGrowData.button}
         img={valueGrowData.img}
       />
+      <ValueGrowListSeaction />
     </Layout>
   </>
 )
