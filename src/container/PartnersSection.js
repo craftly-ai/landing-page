@@ -1,6 +1,8 @@
 import React from "react"
-import data from "../data/partnersData.json"
-import { StaticImage } from "gatsby-plugin-image"
+import notion from "../images/logo-notion.svg"
+import zendesk from "../images/logo-zendesk.png"
+import Stripe from "../images/logo-stripe.svg"
+import Typeform from "../images/logo-typeform.png"
 
 const PartnersSection = () => {
   return (
@@ -8,34 +10,26 @@ const PartnersSection = () => {
       <div className="container">
         <p>Partners</p>
         <ul>
-          {/* {data.logo.map(function (item, i) {
-            return console.log(item)
-          })} */}
-          {/* <li>
+          <li>
             <div className="logo-box">
-              <StaticImage src={`../images/${item}`} alt="" />
-            </div>
-          </li> */}
-          {/* <li>
-            <div className="logo-box">
-              <img src="images/logo-notion.svg" alt="Notion" />
+              <img src={notion} alt="Notion" />
             </div>
           </li>
           <li>
             <div className="logo-box">
-              <img src="images/logo-zendesk.png" alt="Zendesk" />
+              <img src={zendesk} alt="Zendesk" />
             </div>
           </li>
           <li>
             <div className="logo-box">
-              <img src="images/logo-stripe.svg" alt="Stripe" />
+              <img src={Stripe} alt="Stripe" />
             </div>
           </li>
           <li>
             <div className="logo-box">
-              <img src="images/logo-typeform.png" alt="Typeform" />
+              <img src={Typeform} alt="Typeform" />
             </div>
-          </li> */}
+          </li>
         </ul>
       </div>
     </div>
