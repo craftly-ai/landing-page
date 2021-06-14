@@ -13,6 +13,8 @@ import ValueGrowListSeaction from "./../container/ValueGrowListSeaction"
 import ProductSeaction from "./../container/ProductSeaction"
 import CopyRightSeaction from "../container/CopyRightSeaction"
 import TrustTechSeaction from "./../container/TrustTechSeaction"
+import VersusSeaction from "./../container/VersusSeaction"
+import PricingSeaction from "../container/PricingSeaction"
 
 const IndexPage = () => (
   <>
@@ -39,6 +41,8 @@ const IndexPage = () => (
       <ProductSeaction />
       <CopyRightSeaction />
       <TrustTechSeaction />
+      <VersusSeaction />
+      <PricingSeaction />
     </Layout>
   </>
 )
