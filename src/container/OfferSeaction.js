@@ -22,7 +22,7 @@ const OfferSeaction = () => {
             </Link>
           </div>
           <div className="col-sm-6 col-12 right-conn text-center">
-            <img src={imgcat} className="img-fluid" />
+            <img src={imgcat} className="img-fluid" alt="" />
           </div>
         </div>
       </div>

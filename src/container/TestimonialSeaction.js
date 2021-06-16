@@ -32,7 +32,7 @@ const TestimonialSeaction = () => {
                     </p>
                     <div className="item-thumbnail">
                       <div className="img-box">
-                        <img src={imgmegan} />
+                        <img src={imgmegan} alt="" />
                       </div>
                       <div className="testi-conn">
                         <h5>Megan Apa</h5>

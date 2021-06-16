@@ -15,8 +15,8 @@ const ValueGrowListSeaction = () => {
         <div className="box-wrapper">
           <GrowListItem
             img={originalLogo}
-            heading={data["benefits-heading"]}
-            subheading={data["benefits-subheading"]}
+            heading={data["original-heading"]}
+            subheading={data["original-subheading"]}
           />
           <GrowListItem
             img={policyLogo}
