@@ -1,8 +1,48 @@
 import React from "react"
-import pricingData from "../data/pricingData.json"
 import PricingCard from "./../components/pricing/PricingCard"
+import { useStaticQuery, graphql } from "gatsby"
 
 const PricingSeaction = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "home" } }) {
+        nodes {
+          home {
+            writeMoreTitle
+            writeMoreDescription
+            monthlyTabLabel
+            annuallyTabLabel
+            priceTable {
+              title
+              price
+              duration
+              shortDescription
+              description
+              buttonLabel
+              buttonUrl
+              activeStatus
+              activeTitle
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  let writeMoreTitle = data.allWpPage.nodes.map(
+    node => node.home.writeMoreTitle
+  )
+  let writeMoreDescription = data.allWpPage.nodes.map(
+    node => node.home.writeMoreDescription
+  )
+  let monthlyTabLabel = data.allWpPage.nodes.map(
+    node => node.home.monthlyTabLabel
+  )
+  let annuallyTabLabel = data.allWpPage.nodes.map(
+    node => node.home.annuallyTabLabel
+  )
+  let priceTable = data.allWpPage.nodes.map(node => node.home.priceTable)
+
   return (
     <div
       className="wrote-more-raw section right-section-container ptb100"
@@ -12,18 +52,14 @@ const PricingSeaction = () => {
         <div className="row">
           <div className="col-lg-12 text-center">
             <div className="w-m-top">
-              <h2>Write more. Make more.</h2>
-              <p>
-                Warning: once you’re subscribed you might just use us for
-                everything <br />
-                (even your Valentine’s Day card).
-              </p>
+              <h2>{writeMoreTitle}</h2>
+              <p dangerouslySetInnerHTML={{ __html: writeMoreDescription }} />
               <div className="toggle-button">
-                <p className="month active">Monthly</p>
+                <p className="month active">{monthlyTabLabel}</p>
                 <label className="switch">
                   <input type="checkbox" /> <span className="slider round" />
                 </label>
-                <p className="annual">Annually</p>
+                <p className="annual">{annuallyTabLabel}</p>
               </div>
               <p className="save-col">Save</p>
             </div>
@@ -32,7 +68,21 @@ const PricingSeaction = () => {
         <div className="pricing-table-raw section">
           {/* pricing table  */}
           <div className="row">
-            {pricingData.card.map(function (item) {
+            {priceTable.map(e =>
+              e.map((item, i) => (
+                <PricingCard
+                  title={item.title}
+                  price={item.price}
+                  time={item.duration}
+                  subtitle={item.shortDescription}
+                  list={item.description}
+                  button={item.buttonLabel}
+                  active={item.activeStatus}
+                  activeheading={item.activeTitle}
+                />
+              ))
+            )}
+            {/* {pricingData.card.map(function (item) {
               return (
                 <PricingCard
                   title={item.title}
@@ -45,7 +95,7 @@ const PricingSeaction = () => {
                   activeheading={item.activeheading}
                 />
               )
-            })}
+            })} */}
           </div>
         </div>
       </div>

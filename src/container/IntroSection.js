@@ -1,39 +1,56 @@
 import React from "react"
 import Typewriter from "./../components/Typewriter/Typewriter"
 import img from "../images/banner-bg-image.png"
+import { useStaticQuery, graphql } from "gatsby"
 
-const IntroSection = props => {
-  const {
-    headingL1,
-    headingL2,
-    dataPeriod,
-    dataRotate,
-    art,
-    subHeading,
-  } = props
+const IntroSection = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "home" } }) {
+        nodes {
+          home {
+            bannerTagLine
+            typerText
+            bannerShortDescription
+            requestAccessLabel
+            freeTrialLabel
+          }
+        }
+      }
+    }
+  `)
+
+  let bannerTagLine = data.allWpPage.nodes.map(node => node.home.bannerTagLine)
+  let bannerShortDescription = data.allWpPage.nodes.map(
+    node => node.home.bannerShortDescription
+  )
+  let requestAccessLabel = data.allWpPage.nodes.map(
+    node => node.home.requestAccessLabel
+  )
+  let freeTrialLabel = data.allWpPage.nodes.map(
+    node => node.home.freeTrialLabel
+  )
+  let typerText = data.allWpPage.nodes.map(node => node.home.typerText)
 
   return (
     <div className="hero section">
       <div className="container">
         <div className="row hero-con">
           <div className="col-sm-6 col-12 justify-content-center align-self-center left-conn">
-            <h1>
-              {headingL1} <br />
-              {headingL2}
-            </h1>
+            <h1 dangerouslySetInnerHTML={{ __html: bannerTagLine }} />
             <Typewriter
-              dataPeriod={dataPeriod}
-              dataRotate={dataRotate}
-              art={art}
+              dataPeriod={2000}
+              art={"Craftly"}
+              dataRotate={typerText}
             />
-            <p>{subHeading}</p>
+            <p>{bannerShortDescription}</p>
             <div className="request-access-raw section">
               <div className="form-group">
-                <label htmlFor>Request Access</label>
+                <label htmlFor>{requestAccessLabel}</label>
                 <div className="prefinery-form-embed" />
               </div>
               <h6>
-                <span /> 5 Days Free Trial
+                <span /> {freeTrialLabel}
               </h6>
             </div>
           </div>

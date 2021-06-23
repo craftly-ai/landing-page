@@ -6,9 +6,6 @@ import TagCarousel from "../components/carousel/TagCarousel"
 import DesktopSeaction from "./../container/DesktopSeaction"
 import PartnersSection from "./../container/PartnersSection"
 import ValueGrowSection from "./../container/ValueGrowSection"
-import introdata from "../data/introData.json"
-import tagList from "../data/tagList.json"
-import valueGrowData from "../data/ValueGrowData.json"
 import ValueGrowListSeaction from "./../container/ValueGrowListSeaction"
 import ProductSeaction from "./../container/ProductSeaction"
 import CopyRightSeaction from "../container/CopyRightSeaction"
@@ -18,39 +15,75 @@ import PricingSeaction from "../container/PricingSeaction"
 import TestimonialSeaction from "./../container/TestimonialSeaction"
 import SubscribeSeaction from "./../container/SubscribeSeaction"
 import OfferSeaction from "./../container/OfferSeaction"
+import { useStaticQuery, graphql } from "gatsby"
 
-const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <Layout>
-      <IntroSection
-        headingL1={introdata.headingL1}
-        headingL2={introdata.headingL2}
-        dataPeriod={introdata.dataPeriod}
-        art={introdata.art}
-        subHeading={introdata.subHeading}
-        dataRotate={introdata.dataRotate}
-      />
-      <TagCarousel list={tagList.list} />
-      <DesktopSeaction />
-      <PartnersSection />
-      <ValueGrowSection
-        heading={valueGrowData.heading}
-        subheading={valueGrowData.subheading}
-        button={valueGrowData.button}
-        img={valueGrowData.img}
-      />
-      <ValueGrowListSeaction />
-      <ProductSeaction />
-      <CopyRightSeaction />
-      <TrustTechSeaction />
-      <VersusSeaction />
-      <PricingSeaction />
-      <TestimonialSeaction />
-      <SubscribeSeaction />
-      <OfferSeaction />
-    </Layout>
-  </>
-)
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "home" } }) {
+        nodes {
+          home {
+            tagsList {
+              tag
+            }
+            blastThroughTitle
+            blastThroughDescription
+            seeExampleButtonLabel
+            seeExampleButtonUrl
+            blastThroughDashbordImage {
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+  `)
 
+  let tagList = data.allWpPage.nodes.map(node =>
+    node.home.tagsList.map(item => item.tag)
+  )
+  let blastThroughTitle = data.allWpPage.nodes.map(
+    node => node.home.blastThroughTitle
+  )
+  let blastThroughDescription = data.allWpPage.nodes.map(
+    node => node.home.blastThroughDescription
+  )
+  let seeExampleButtonLabel = data.allWpPage.nodes.map(
+    node => node.home.seeExampleButtonLabel
+  )
+  let seeExampleButtonUrl = data.allWpPage.nodes.map(
+    node => node.home.seeExampleButtonUrl
+  )
+  let blastThroughDashbordImage = data.allWpPage.nodes.map(
+    node => node.home.blastThroughDashbordImage.sourceUrl
+  )
+
+  return (
+    <>
+      <SEO title="Home" />
+      <Layout>
+        <IntroSection />
+        <TagCarousel list={tagList} />
+        <DesktopSeaction />
+        <PartnersSection />
+        <ValueGrowSection
+          heading={blastThroughTitle}
+          subheading={blastThroughDescription}
+          button={seeExampleButtonLabel}
+          buttonURl={seeExampleButtonUrl}
+          img={blastThroughDashbordImage}
+        />
+        <ValueGrowListSeaction />
+        <ProductSeaction />
+        <CopyRightSeaction />
+        <TrustTechSeaction />
+        <VersusSeaction />
+        <PricingSeaction />
+        <TestimonialSeaction />
+        <SubscribeSeaction />
+        <OfferSeaction />
+      </Layout>
+    </>
+  )
+}
 export default IndexPage

@@ -7,9 +7,11 @@ const TagCarousel = props => {
       <div className="container-fluid">
         <div className="tags-col section">
           <ul className="tags-slider">
-            {list.map(function (item, i) {
-              return <li key={i}>{item}</li>
-            })}
+            {list.map(e =>
+              e.map(function (item, i) {
+                return <li key={i}>{item}</li>
+              })
+            )}
           </ul>
         </div>
       </div>

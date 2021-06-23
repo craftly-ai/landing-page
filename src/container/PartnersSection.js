@@ -1,35 +1,45 @@
 import React from "react"
-import notion from "../images/logo-notion.svg"
-import zendesk from "../images/logo-zendesk.png"
-import Stripe from "../images/logo-stripe.svg"
-import Typeform from "../images/logo-typeform.png"
+import { useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 
 const PartnersSection = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "home" } }) {
+        nodes {
+          home {
+            partnersTitle
+            partnersLogoList {
+              logo {
+                sourceUrl
+                title
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  let partnersTitle = data.allWpPage.nodes.map(node => node.home.partnersTitle)
+  let partnersLogoList = data.allWpPage.nodes.map(node =>
+    node.home.partnersLogoList.map(item => item.logo)
+  )
+
   return (
     <div className="partners-logo-raw section">
       <div className="container">
-        <p>Partners</p>
+        <p>{partnersTitle}</p>
         <ul>
-          <li>
-            <div className="logo-box">
-              <img src={notion} alt="Notion" />
-            </div>
-          </li>
-          <li>
-            <div className="logo-box">
-              <img src={zendesk} alt="Zendesk" />
-            </div>
-          </li>
-          <li>
-            <div className="logo-box">
-              <img src={Stripe} alt="Stripe" />
-            </div>
-          </li>
-          <li>
-            <div className="logo-box">
-              <img src={Typeform} alt="Typeform" />
-            </div>
-          </li>
+          {partnersLogoList.map(e =>
+            e.map((e, i) => (
+              <li key={i}>
+                <div className="logo-box">
+                  <img src={e.sourceUrl} alt={e.title} />
+                </div>
+              </li>
+            ))
+          )}
         </ul>
       </div>
     </div>

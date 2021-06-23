@@ -1,12 +1,53 @@
 import React from "react"
-import productData from "../data/productData.json"
 import Product from "./../components/product/Product"
-import imgPrebuilt from "../images/ic-prebuilt.svg"
-import imgStack from "../images/ic-stack.svg"
 import { Link } from "gatsby"
 import Card from "../components/product/Card"
+import { useStaticQuery, graphql } from "gatsby"
 
 const ProductSeaction = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "home" } }) {
+        nodes {
+          home {
+            oneProductTitle
+            oneProductDescription
+            requestAccessButtonLabel
+            oneProductList {
+              icon {
+                sourceUrl
+              }
+              title
+              description
+              buttonlable
+              buttonurl
+            }
+            oneProductCardList {
+              title
+              description
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  let oneProductTitle = data.allWpPage.nodes.map(
+    node => node.home.oneProductTitle
+  )
+  let oneProductDescription = data.allWpPage.nodes.map(
+    node => node.home.oneProductDescription
+  )
+  let requestAccessButtonLabel = data.allWpPage.nodes.map(
+    node => node.home.requestAccessButtonLabel
+  )
+  let oneProductList = data.allWpPage.nodes.map(
+    node => node.home.oneProductList
+  )
+  let oneProductCardList = data.allWpPage.nodes.map(
+    node => node.home.oneProductCardList
+  )
+
   return (
     <div className="one-product-raw section">
       <div className="container">
@@ -15,36 +56,31 @@ const ProductSeaction = () => {
             <div className="box-wrapper">
               <div className="left-conn">
                 <div className="box">
-                  <h2>{productData.head.heading}</h2>
-                  <p>
-                    {productData.head.subheading}
-                    <b>{productData.head["subheading-available-count"]}</b>{" "}
-                    {productData.head["subheading-perfected"]}{" "}
-                    <b>{productData.head["subheading-perfected-count"]}</b>
-                  </p>
+                  <h2>{oneProductTitle}</h2>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: oneProductDescription }}
+                  />
                   <Link
                     data-toggle="modal"
                     data-target="#join-waitlist"
                     className="btn-main"
                   >
-                    {productData.head["button-request-access"]}
+                    {requestAccessButtonLabel}
                   </Link>
                 </div>
                 <ul className="one-product-li">
-                  <Product
-                    img={imgPrebuilt}
-                    heading={productData.product.pro1.heading}
-                    info={productData.product.pro1.info}
-                    buttonTitle={productData.product.pro1["button-title"]}
-                    buttonLink={productData.product.pro1["button-title"]}
-                  />
-                  <Product
-                    img={imgStack}
-                    heading={productData.product.pro2.heading}
-                    info={productData.product.pro2.info}
-                    buttonTitle={productData.product.pro2["button-title"]}
-                    buttonLink={productData.product.pro2["button-title"]}
-                  />
+                  {oneProductList.map(e =>
+                    e.map((item, i) => (
+                      <Product
+                        key={i}
+                        img={item.icon.sourceUrl}
+                        heading={item.title}
+                        info={item.description}
+                        buttonTitle={item.buttonlable}
+                        buttonLink={item.buttonurl}
+                      />
+                    ))
+                  )}
                 </ul>
               </div>
             </div>
@@ -53,9 +89,15 @@ const ProductSeaction = () => {
             <div className="one-product-col">
               <div className="one-product-col-animate">
                 <ul className="grid">
-                  {productData.list.map(function (item) {
-                    return <Card title={item.title} info={item.info} />
-                  })}
+                  {oneProductCardList.map(list =>
+                    list.map((item, i) => (
+                      <Card
+                        key={i}
+                        title={item.title}
+                        info={item.description}
+                      />
+                    ))
+                  )}
                 </ul>
               </div>
             </div>

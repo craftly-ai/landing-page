@@ -1,7 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
-import header from "../../data/header.json"
 
 const Header = () => (
   <header
@@ -27,51 +26,31 @@ const Header = () => (
               <div className="nav-main">
                 <ul>
                   <li className="test">
-                    <Link to={header["nav-link-toolsAndSamples"]}>
-                      {header["nav-toolsAndSamples"]}
-                    </Link>
+                    <Link to="#">Tools & Samples</Link>
                   </li>
                   <li className="sub-menu">
-                    <Link to={header["nav-link-libry"]}>
-                      {header["nav-libry"]}
-                    </Link>
+                    <Link to="#">Libry</Link>
                     <span />
                     <ul>
                       <li>
-                        <Link to={header["librySub-link-learn"]}>
-                          {header["librySub-learn"]}
-                        </Link>
+                        <Link to="#">Learn</Link>
                       </li>
                       <li>
-                        <Link to={header["librySub-link-earn"]}>
-                          {header["librySub-earn"]}
-                        </Link>
+                        <Link to="#">Earn</Link>
                       </li>
                       <li>
-                        <Link to={header["librySub-link-about"]}>
-                          {header["librySub-about"]}
-                        </Link>
+                        <Link to="#">About</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Link to={header["nav-link-price"]}>
-                      {header["nav-pricing"]}
-                    </Link>
+                    <Link to="#">Pricing</Link>
                   </li>
                   <li className="mobile-li">
-                    <Link
-                      to={header["nav-link-requestAccess"]}
-                      data-toggle="modal"
-                      data-target="#join-waitlist"
-                    >
-                      {header["nav-requestAccess"]}
-                    </Link>
+                    <Link to="#">Request Access</Link>
                   </li>
                   <li className="mobile-li login-li">
-                    <Link to={header["nav-link-login"]}>
-                      {header["nav-login"]}
-                    </Link>
+                    <Link to="#">Login</Link>
                   </li>
                 </ul>
               </div>
@@ -87,16 +66,16 @@ const Header = () => (
           <div className="login-access">
             <ul>
               <li className="mobile-li login-li">
-                <Link to={header["nav-link-login"]}>{header["nav-login"]}</Link>
+                <Link to="#">Login</Link>
               </li>
               <li>
                 <Link
-                  to={header["nav-link-requestAccess"]}
+                  to="#"
                   data-toggle="modal"
                   data-target="#join-waitlist"
                   className="btn-main"
                 >
-                  {header["nav-requestAccess"]}
+                  Request Access
                 </Link>
               </li>
             </ul>

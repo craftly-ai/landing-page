@@ -3,52 +3,103 @@ import SearchBar from "./../components/desktop/SearchBar"
 import DescriptionBox from "./../components/desktop/DescriptionBox"
 import FormGenerateIdeas from "./../components/desktop/FormGenerateIdeas"
 import IdeasBox from "./../components/desktop/ideasbox/IdeasBox"
-import desktopdata from "../data/desktopData.json"
+import { useStaticQuery, graphql } from "gatsby"
 
 const DesktopSeaction = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "home" } }) {
+        nodes {
+          home {
+            dashbordTitle
+            productDescriptionTitle
+            dashbordShortDescription
+            chooseLanguageButtonLabel
+            viewSavedButtonLabel
+            tooltipFirstStepText
+            tooltipSecondStepText
+            generateIdeasButtonLabel
+            generateIdeasList {
+              ideaText
+            }
+            keepCraftingButtonLabel
+          }
+        }
+      }
+    }
+  `)
+
+  let dashbordTitle = data.allWpPage.nodes.map(node => node.home.dashbordTitle)
+  let productDescriptionTitle = data.allWpPage.nodes.map(
+    node => node.home.productDescriptionTitle
+  )
+  let dashbordShortDescription = data.allWpPage.nodes.map(
+    node => node.home.dashbordShortDescription
+  )
+  let chooseLanguageButtonLabel = data.allWpPage.nodes.map(
+    node => node.home.chooseLanguageButtonLabel
+  )
+  let viewSavedButtonLabel = data.allWpPage.nodes.map(
+    node => node.home.viewSavedButtonLabel
+  )
+  let tooltipFirstStepText = data.allWpPage.nodes.map(
+    node => node.home.tooltipFirstStepText
+  )
+  let tooltipSecondStepText = data.allWpPage.nodes.map(
+    node => node.home.tooltipSecondStepText
+  )
+  let generateIdeasButtonLabel = data.allWpPage.nodes.map(
+    node => node.home.generateIdeasButtonLabel
+  )
+  let generateIdeasList = data.allWpPage.nodes.map(
+    node => node.home.generateIdeasList
+  )
+  let keepCraftingButtonLabel = data.allWpPage.nodes.map(
+    node => node.home.keepCraftingButtonLabel
+  )
+
   return (
     <>
       <div className="production-raw section ptb100">
         <div className="container">
           <div className="desktop-block craftly-ai-demo section">
-            <SearchBar url={desktopdata.addressbar.url} />
+            <SearchBar url={dashbordTitle} />
             <div className="desktop-screen">
-              <h6>{desktopdata.siteheading}</h6>
+              <h6>{dashbordTitle}</h6>
               <DescriptionBox
-                title={desktopdata.descriptionbox.title}
-                description={desktopdata.descriptionbox.description}
-                button1={desktopdata.descriptionbox["choose-language"]}
-                button2={desktopdata.descriptionbox["view-saved"]}
+                title={productDescriptionTitle}
+                description={dashbordShortDescription}
+                button1={chooseLanguageButtonLabel}
+                button2={viewSavedButtonLabel}
               />
               <div className="box-wrapper">
                 <div className="left-box">
                   <FormGenerateIdeas
-                    lableinput={desktopdata.generateideas["lable-input"]}
-                    datarotateinput={
-                      desktopdata.generateideas["datarotate-input"]
-                    }
-                    input={desktopdata.generateideas.input}
-                    tooltipstep1={desktopdata.generateideas["tooltip-step1"]}
-                    lableinfo={desktopdata.generateideas["lable-info"]}
-                    datarotateinfo={
-                      desktopdata.generateideas["datarotate-info"]
-                    }
-                    infocount={desktopdata.generateideas["info-count"]}
-                    info={desktopdata.generateideas.info}
-                    button={desktopdata.generateideas.button}
-                    tooltipstep2={desktopdata.generateideas["tooltip-step2"]}
-                    dataperiod={desktopdata.generateideas.dataperiod}
+                    lableinput={"Product/brand name"}
+                    datarotateinput={"Liv"}
+                    input={"Name of your product"}
+                    tooltipstep1={tooltipFirstStepText}
+                    lableinfo={"Description of your product*"}
+                    datarotateinfo={"Multivitamin for hair, nail and skin"}
+                    info={"A couple words will do!"}
+                    button={generateIdeasButtonLabel}
+                    tooltipstep2={tooltipSecondStepText}
+                    dataperiod={2000}
                   />
                 </div>
                 <div className="right-box">
                   <IdeasBox
-                    linkall={desktopdata.ideabox["nav-linkall"]}
-                    linkfavorite={desktopdata.ideabox["nav-linkfavorite"]}
-                    linkcopyall={desktopdata.ideabox["nav-linkcopyall"]}
-                    headingline1={desktopdata.ideabox.headingline1}
-                    headingline2={desktopdata.ideabox.headingline2}
-                    idealist={desktopdata.ideabox.idealist}
-                    buttonkeepcrafting={desktopdata.ideabox.buttonkeepcrafting}
+                    linkall={"All"}
+                    linkfavorite={"Favorites"}
+                    linkcopyall={"Copy All"}
+                    headingline1={
+                      "Feed Cai prompts on the left to start Crafting."
+                    }
+                    headingline2={
+                      "(You get what you put into it, so be descriptive)"
+                    }
+                    idealist={generateIdeasList}
+                    buttonkeepcrafting={keepCraftingButtonLabel}
                   />
                 </div>
               </div>

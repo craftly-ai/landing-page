@@ -38,5 +38,11 @@ module.exports = {
         output: `/craftly.xml`,
       },
     },
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        url: `https://wepixel.in/craftly-wp/graphql`,
+      },
+    },
   ],
 }

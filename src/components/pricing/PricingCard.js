@@ -29,11 +29,7 @@ const PricingCard = props => {
             </p>
             <p className="light_weight">{subtitle}</p>
           </div>
-          <ul className="middle">
-            {list.map(function (item) {
-              return <li key={item}>{item}</li>
-            })}
-          </ul>
+          <div className="middle" dangerouslySetInnerHTML={{ __html: list }} />
           <Link
             className="btn-pricing"
             data-toggle="modal"

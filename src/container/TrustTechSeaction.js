@@ -1,10 +1,44 @@
 import React from "react"
-import trustTechData from "../data/trustTechData.json"
 import CardCollapse from "./../components/trustTech/CardCollapse"
 import backimg from "../images/world-map.png"
 import Parameters from "./../components/trustTech/Parameters"
+import { useStaticQuery, graphql } from "gatsby"
 
 const TrustTechSeaction = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "home" } }) {
+        nodes {
+          home {
+            trustTechnologyTitle
+            trustTechnologyDescripton
+            trustTechnologyFaq {
+              question
+              answer
+            }
+            parametersList {
+              text
+              description
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  let trustTechnologyTitle = data.allWpPage.nodes.map(
+    node => node.home.trustTechnologyTitle
+  )
+  let trustTechnologyDescripton = data.allWpPage.nodes.map(
+    node => node.home.trustTechnologyDescripton
+  )
+  let trustTechnologyFaq = data.allWpPage.nodes.map(
+    node => node.home.trustTechnologyFaq
+  )
+  let parametersList = data.allWpPage.nodes.map(
+    node => node.home.parametersList
+  )
+
   return (
     <div className="trust-technology-raw section right-section-container">
       <div className="trust-technology-col section">
@@ -13,22 +47,25 @@ const TrustTechSeaction = () => {
             {/* left column */}
             <div className="col-sm-6 col-xs-12 left-conn">
               <div className="dnt-t-left-part">
-                <h2>
-                  {trustTechData.headingL1} <br />
-                  {trustTechData.headingL2}
-                </h2>
-                <p>{trustTechData.subtitle}</p>
+                <h2
+                  dangerouslySetInnerHTML={{ __html: trustTechnologyTitle }}
+                />
+                <p>{trustTechnologyDescripton}</p>
                 <div className="accrdion-raw section" id="accordion">
-                  {trustTechData.cardcollapse.map(function (item) {
-                    return (
+                  {trustTechnologyFaq.map(e =>
+                    e.map((item, i) => (
                       <CardCollapse
-                        title={item.title}
-                        info={item.info}
-                        id={item.id}
-                        dataTarget={item.dataTarget}
+                        key={i}
+                        title={item.question}
+                        info={item.answer}
+                        id={i}
+                        dataTarget={
+                          item.question.substr(0, item.question.indexOf(" ")) +
+                          i
+                        }
                       />
-                    )
-                  })}
+                    ))
+                  )}
                 </div>
               </div>
             </div>
@@ -39,9 +76,11 @@ const TrustTechSeaction = () => {
         {/* another row */}
         <div className="container">
           <div className="row">
-            {trustTechData.parameters.map(function (item) {
-              return <Parameters title={item.title} info={item.info} />
-            })}
+            {parametersList.map(e =>
+              e.map((item, i) => (
+                <Parameters key={i} title={item.text} info={item.description} />
+              ))
+            )}
           </div>
         </div>
       </div>

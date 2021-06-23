@@ -360,9 +360,11 @@ const IdeasBox = props => {
       </div>
       <div className="generate-ideas none">
         <ul>
-          {idealist.map(function (item, i) {
-            return <Idea key={i} info={item.info} chars={item.count} />
-          })}
+          {idealist.map(e =>
+            e.map(function (item, i) {
+              return <Idea key={i} info={item.ideaText} />
+            })
+          )}
         </ul>
         <div className="btn-row text-center">
           <Link className="gradient-btn url-none">{buttonkeepcrafting}</Link>
