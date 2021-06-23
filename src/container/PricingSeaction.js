@@ -71,6 +71,7 @@ const PricingSeaction = () => {
             {priceTable.map(e =>
               e.map((item, i) => (
                 <PricingCard
+                  key={i}
                   title={item.title}
                   price={item.price}
                   time={item.duration}
