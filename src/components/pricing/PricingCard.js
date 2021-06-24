@@ -29,7 +29,7 @@ const PricingCard = props => {
             </p>
             <p className="light_weight">{subtitle}</p>
           </div>
-          <div dangerouslySetInnerHTML={{ __html: list }} />
+          <div className="middle" dangerouslySetInnerHTML={{ __html: list }} />
           <Link
             className="btn-pricing"
             data-toggle="modal"

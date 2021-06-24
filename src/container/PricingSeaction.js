@@ -83,20 +83,6 @@ const PricingSeaction = () => {
                 />
               ))
             )}
-            {/* {pricingData.card.map(function (item) {
-              return (
-                <PricingCard
-                  title={item.title}
-                  price={item.price}
-                  time={item.time}
-                  subtitle={item.subtitle}
-                  list={item.list}
-                  button={item.button}
-                  active={item.active}
-                  activeheading={item.activeheading}
-                />
-              )
-            })} */}
           </div>
         </div>
       </div>
