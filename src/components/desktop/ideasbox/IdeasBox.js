@@ -362,7 +362,13 @@ const IdeasBox = props => {
         <ul>
           {idealist.map(e =>
             e.map(function (item, i) {
-              return <Idea key={i} info={item.ideaText} />
+              return (
+                <Idea
+                  key={i}
+                  info={item.ideaText}
+                  chars={item.ideaText.match(/(\w+)/g).length}
+                />
+              )
             })
           )}
         </ul>
