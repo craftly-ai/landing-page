@@ -38,28 +38,35 @@ const TestimonialSeaction = () => {
             </div>
             <div className="col-sm-7 col-12 right-conn justify-content-center align-self-center">
               <div className="slider-container">
-                <div className="slider-for">
-                  {reviewList.map(e =>
-                    e.map((item, i) => {
-                      return (
-                        <div className="item" key={i}>
-                          <h3>
-                            <i>{item.reviewTitle}</i>
-                          </h3>
-                          <p>{item.description}</p>
-                          <div className="item-thumbnail">
-                            <div className="img-box">
-                              <img src={item.avtar.sourceUrl} alt="" />
+                <div className="slider-for slick-initialized slick-slider">
+                  <div className="slick-list draggable">
+                    <div className="slick-track">
+                      {reviewList.map(e =>
+                        e.map((item, i) => {
+                          return (
+                            <div
+                              key={i}
+                              className="item slick-slide slick-current slick-active"
+                            >
+                              <h3>
+                                <i>{item.reviewTitle}</i>
+                              </h3>
+                              <p>{item.description}</p>
+                              <div className="item-thumbnail">
+                                <div className="img-box">
+                                  <img src={item.avtar.sourceUrl} alt="" />
+                                </div>
+                                <div className="testi-conn">
+                                  <h5>{item.reviewerName}</h5>
+                                  <p>{item.reviewerDesignation}</p>
+                                </div>
+                              </div>
                             </div>
-                            <div className="testi-conn">
-                              <h5>{item.reviewerName}</h5>
-                              <p>{item.reviewerDesignation}</p>
-                            </div>
-                          </div>
-                        </div>
-                      )
-                    })
-                  )}
+                          )
+                        })
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

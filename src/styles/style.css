@@ -509,7 +509,7 @@ section {
   position: absolute;
   right: 0;
   top: 10px;
-  background: transparent url(../images/ic-down-arrow.svg) center center
+  background: transparent url(../images/ic-down-arrow.png) center center
     no-repeat;
   width: 10px;
   height: 6px;
@@ -771,7 +771,7 @@ section {
   position: absolute;
   left: -30px;
   top: 8px;
-  background: transparent url(../images/ic-back-arrow.svg) center center
+  background: transparent url(../images/ic-back-arrow.png) center center
     no-repeat;
   background-size: contain;
   width: 18px;
@@ -915,7 +915,7 @@ section {
   margin-top: 35px;
 }
 .request-access-raw h6 span {
-  background: transparent url(../images/ic-tick-gray.svg) center center
+  background: transparent url(../images/ic-tick-gray.png) center center
     no-repeat;
   background-size: contain;
   width: 12px;
@@ -1073,7 +1073,7 @@ section {
   line-height: 160%;
   font-weight: 500;
   padding-right: 25px;
-  background: transparent url(../images/ic-arrow-blue.svg) right 5px center
+  background: transparent url(../images/ic-arrow-blue.png) right 5px center
     no-repeat;
   background-size: 12px;
   -webkit-transition: all 0.25s ease 0s;
@@ -1296,10 +1296,10 @@ section {
   display: none;
 }
 .accrdion-raw .card-header .btn-link .btn-aacordion.fa-plus {
-  background-image: url(../images/ic-plus.svg);
+  background-image: url(../images/ic-plus.png);
 }
 .accrdion-raw .card-header .btn-link .btn-aacordion.fa-minus {
-  background-image: url(../images/ic-minus.svg);
+  background-image: url(../images/ic-minus.png);
 }
 .accrdion-raw .card {
   border: 0px;
@@ -1459,7 +1459,7 @@ button:focus {
   float: left;
   width: 100%;
   margin: 8px 0;
-  background: transparent url(../images/ic-list.svg) left top 1px no-repeat;
+  background: transparent url(../images/ic-list.png) left top 1px no-repeat;
 }
 .pricing-table-raw .pricing-table-col .pricing-table .btn-pricing {
   width: 100%;
@@ -2576,7 +2576,7 @@ input:focus + .slider {
   position: absolute;
   width: 22px;
   height: 18px;
-  background-image: url(../images/ic-tooltip-arrow.svg);
+  background-image: url(../images/ic-tooltip-arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
   left: -30px;
@@ -2607,7 +2607,7 @@ input:focus + .slider {
 }
 
 .more-btn {
-  background: url(../images/more-arrow-w.svg) no-repeat right 5px center;
+  background: url(../images/more-arrow-w.png) no-repeat right 5px center;
   float: left;
   width: auto;
   padding: 3px 25px 6px 0;
@@ -2621,7 +2621,7 @@ input:focus + .slider {
   color: white;
 }
 .more-btn.blue {
-  background: url(../images/more-arrow.svg) no-repeat right 2px top 6px;
+  background: url(../images/more-arrow.png) no-repeat right 2px top 6px;
   color: #25a9f1;
 }
 .more-btn.blue:hover {
@@ -2634,7 +2634,7 @@ input:focus + .slider {
   z-index: 1;
 }
 .img-wrap.dot-sep:before {
-  background: url(../images/dot-sep.svg) no-repeat center;
+  background: url(../images/dot-sep.png) no-repeat center;
   background-size: 100%;
   position: absolute;
   left: -55px;
@@ -2731,7 +2731,7 @@ input:focus + .slider {
 .inner-banner .text-wrap .banner-cta .btn-main.view i {
   width: 26px;
   height: 14px;
-  background-image: url(../images/view-icon.svg);
+  background-image: url(../images/view-icon.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -2811,7 +2811,7 @@ input:focus + .slider {
   border-radius: 5px;
 }
 .process-wrap .idea-wrap .idea {
-  background: url(../images/ic-idea.svg) no-repeat left center;
+  background: url(../images/ic-idea.png) no-repeat left center;
   float: none;
   display: inline-block;
   width: auto;
@@ -3016,7 +3016,7 @@ input:focus + .slider {
   position: absolute;
   width: 13px;
   height: 17px;
-  background-image: url(../images/ic-play.svg);
+  background-image: url(../images/ic-play.png);
   background-repeat: no-repeat;
   background-size: contain;
   left: 50%;
@@ -3288,7 +3288,7 @@ input:focus + .slider {
   right: 0px;
   width: 45px;
   height: 50px;
-  background: transparent url(../images/ic-close.svg) center center no-repeat;
+  background: transparent url(../images/ic-close.png) center center no-repeat;
   opacity: 1;
 }
 .modal-box-raw h3 {
@@ -3400,7 +3400,7 @@ input:focus + .slider {
   opacity: 0.8;
   font-size: 14px;
   padding-left: 15px;
-  background-image: url(../images/ic-w-arrow.svg);
+  background-image: url(../images/ic-w-arrow.png);
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -3416,7 +3416,7 @@ input:focus + .slider {
   color: #f81f9f;
   font-size: 16px;
   padding-right: 24px;
-  background-image: url(../images/link-arrow.svg);
+  background-image: url(../images/link-arrow.png);
   background-repeat: no-repeat;
   background-position: right center;
   font-weight: 700;
@@ -3437,7 +3437,7 @@ input:focus + .slider {
   border: 1px solid #e8e8e8;
   color: rgba(69, 82, 99, 0.5);
   font-size: 18px;
-  background-image: url(../images/ic-search.svg);
+  background-image: url(../images/ic-search.png);
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -3547,7 +3547,7 @@ input:focus + .slider {
   content: "";
   width: 100px;
   height: 100px;
-  background-image: url(../images/dot-sep-r.svg);
+  background-image: url(../images/dot-sep-r.png);
   background-repeat: no-repeat;
   background-size: contain;
   top: -25px;
@@ -3567,7 +3567,7 @@ input:focus + .slider {
 }
 .tips-wrap h2 {
   color: #06071a;
-  background-image: url(../images/ic-tips-list.svg);
+  background-image: url(../images/ic-tips-list.png);
   background-repeat: no-repeat;
   background-position: top 4px left;
   padding-left: 55px;
@@ -3587,7 +3587,7 @@ input:focus + .slider {
 .tips-wrap ul li::before {
   content: "";
   position: absolute;
-  background: url(../images/ic-list-w.svg) no-repeat;
+  background: url(../images/ic-list-w.png) no-repeat;
   top: 5px;
   left: 0px;
   width: 20px;
@@ -3976,7 +3976,7 @@ input:focus + .slider {
   float: left;
   width: 100%;
   margin: 0px 0 15px;
-  background: transparent url(../images/ic-list.svg) left top 4px no-repeat;
+  background: transparent url(../images/ic-list.png) left top 4px no-repeat;
 }
 .tools-raw .tools-col .right-conn .output-raw ul li:last-child {
   margin-bottom: 0;
@@ -4297,7 +4297,7 @@ input:focus + .slider {
   float: left;
 }
 .videos-list-row .videos-wrap .video-box .play-btn {
-  background: url(../images/ic-play.svg) no-repeat center;
+  background: url(../images/ic-play.png) no-repeat center;
   background-size: contain;
   position: absolute;
   width: 28px;
@@ -4454,7 +4454,7 @@ footer .footer .right-conn .ft-menu ul .blog-detail-warpper li,
   top: -30px;
   width: 80px;
   height: 80px;
-  background: url(../images/dot-sep.svg) no-repeat left;
+  background: url(../images/dot-sep.png) no-repeat left;
   z-index: -1;
   background-size: cover;
 }
@@ -5085,7 +5085,7 @@ footer .footer .right-conn .ft-menu ul .blog-detail-warpper li,
 .blog-detail-raw .left-conn .blog-detail-col ul li::before {
   content: "";
   position: absolute;
-  background: url(../images/ic-list.svg) no-repeat;
+  background: url(../images/ic-list.png) no-repeat;
   top: 4px;
   left: 0px;
   width: 20px;
@@ -5232,7 +5232,7 @@ footer .footer .right-conn .ft-menu ul .blog-detail-warpper li,
 .default-page-raw .policy-points .small-points > ul li::before {
   content: "";
   position: absolute;
-  background: url(../images/ic-list.svg) no-repeat;
+  background: url(../images/ic-list.png) no-repeat;
   top: 18px;
   left: 0px;
   width: 20px;
@@ -5437,7 +5437,7 @@ footer .footer .right-conn .ft-menu ul .blog-detail-warpper li,
   position: relative;
 }
 .affiliate-cta:before {
-  background-image: url(../images/dot-sep-cta.svg);
+  background-image: url(../images/dot-sep-cta.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
@@ -5461,7 +5461,7 @@ footer .footer .right-conn .ft-menu ul .blog-detail-warpper li,
   position: relative;
 }
 .affiliate-video .video-box-wrapper:before {
-  background-image: url(../images/dot-sep.svg);
+  background-image: url(../images/dot-sep.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
@@ -5791,7 +5791,7 @@ footer .footer .right-conn .ft-menu ul .blog-detail-warpper li,
   position: relative;
 }
 .affiliates-saying .free-now-form .box-row:before {
-  background-image: url(../images/dot-sep.svg);
+  background-image: url(../images/dot-sep.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
@@ -6320,7 +6320,7 @@ footer .footer .right-conn .ft-menu ul .blog-detail-warpper li,
   color: #ffffff;
   font-size: 16px;
   padding-right: 24px;
-  background-image: url(../images/link-arrow-w.svg);
+  background-image: url(../images/link-arrow-w.png);
   background-repeat: no-repeat;
   background-position: right center;
   font-weight: 500;
@@ -12356,7 +12356,7 @@ footer.white-footer .copyright-social-raw .copywrights p {
     background-image: none;
   }
   .process-wrap .idea-wrap .idea b {
-    background: url(../images/ic-idea.svg) no-repeat left center;
+    background: url(../images/ic-idea.png) no-repeat left center;
     padding: 10px 0 10px 50px;
     display: table;
     width: auto;

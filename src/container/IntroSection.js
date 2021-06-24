@@ -47,7 +47,18 @@ const IntroSection = () => {
             <div className="request-access-raw section">
               <div className="form-group">
                 <label htmlFor>{requestAccessLabel}</label>
-                <div className="prefinery-form-embed" />
+                <div className="prefinery-form-embed">
+                  <iframe
+                    title="email input"
+                    src="https://i.prefinery.com/projects/g72qxl5b/users/new?display=inline&amp;version=2"
+                    class="prefinery-iframe"
+                    allowtransparency="true"
+                    width="100%"
+                    scrolling="no"
+                    frameborder="0"
+                    style={{ height: "0px" }}
+                  ></iframe>
+                </div>
               </div>
               <h6>
                 <span /> {freeTrialLabel}
