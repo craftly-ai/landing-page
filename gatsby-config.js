@@ -1,8 +1,10 @@
 module.exports = {
+  pathPrefix: `/craftly-landing`,
   siteMetadata: {
     title: `Craftly.AI`,
     description: `AI Copywriter`,
     author: `Cai @ Craftly`,
+    siteUrl: "https://imanbashir.com/craftly-landing/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,13 +33,13 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    // {
-    //   resolve: "gatsby-plugin-sitemap",
-    //   options: {
-    //     output: `/craftly.xml`,
-    //   },
-    // },
+    `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: `/craftly.xml`,
+      },
+    },
     {
       resolve: "gatsby-source-wordpress",
       options: {
