@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import favoriteImg from "../../../images/ic-favorite.png"
+import copyButtonImg from "../../../images/ic-copy-btn.png"
 
 const Idea = props => {
   const { info, chars } = props
@@ -9,15 +10,15 @@ const Idea = props => {
     <li>
       <div className="btn-box">
         <Link>
-          <StaticImage
-            src="../../../images/ic-favorite.svg"
+          <img
+            src={favoriteImg}
             className="icon"
             alt=""
           />
         </Link>
         <Link>
-          <StaticImage
-            src="../../../images/ic-copy-btn.svg"
+          <img
+            src={copyButtonImg}
             className="icon"
             alt=""
           />

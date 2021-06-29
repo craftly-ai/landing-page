@@ -1,6 +1,6 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import logo from '../../images/logo.png'
 
 const Footer = () => (
   <footer className="section">
@@ -10,8 +10,8 @@ const Footer = () => (
           <div className="col-sm-3 col-xs-12 left-conn">
             <div className="logo">
               <Link to="#">
-                <StaticImage
-                  src="../../images/logo.png"
+                <img
+                  src={logo}
                   className="img-responsive"
                   alt="Craftly"
                 />

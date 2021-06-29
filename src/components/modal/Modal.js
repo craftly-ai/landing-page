@@ -1,5 +1,6 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import heartImg from "../../images/ic-heart.png"
+import wishlistBannerImg from "../../images/wishlist-banner.png"
 
 const Modal = () => {
   return (
@@ -17,10 +18,10 @@ const Modal = () => {
                 data-dismiss="modal"
                 aria-label=" "
               />
-              <StaticImage
+              <img
                 className="modal-banner img-fluid"
-                src="../../images/wishlist-banner.png"
-                alt
+                src={wishlistBannerImg}
+                alt=""
               />
               <div className="content-wrapper-raw section">
                 <h3>Meet Cai at Craftly.ai</h3>
@@ -86,11 +87,7 @@ const Modal = () => {
               </div>
               <p className="thanks-col">
                 Thanks for your Support{" "}
-                <StaticImage
-                  src="../../images/ic-heart.svg"
-                  className="img-fluid ic-heart"
-                  alt
-                />
+                <img src={heartImg} className="img-fluid ic-heart" alt="" />
               </p>
             </div>
           </div>

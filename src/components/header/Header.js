@@ -1,7 +1,6 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
-
+import logo from "../../images/logo.png"
 const Header = () => (
   <header
     id="header"
@@ -14,8 +13,8 @@ const Header = () => (
         <div className="header-main">
           <div className="logo">
             <Link to="#">
-              <StaticImage
-                src="../../images/logo.png"
+              <img
+                src={logo}
                 className="img-responsive"
                 alt="Craftly"
               />
