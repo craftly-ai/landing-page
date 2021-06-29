@@ -7,6 +7,7 @@ import DesktopSeaction from "./../container/DesktopSeaction"
 import PartnersSection from "./../container/PartnersSection"
 import ValueGrowSection from "./../container/ValueGrowSection"
 import ValueGrowListSeaction from "./../container/ValueGrowListSeaction"
+import ClientSeaction from "./../container/ClientSeaction"
 import ProductSeaction from "./../container/ProductSeaction"
 import CopyRightSeaction from "../container/CopyRightSeaction"
 import TrustTechSeaction from "./../container/TrustTechSeaction"
@@ -63,9 +64,9 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Layout>
         <IntroSection />
+        <PartnersSection />
         <TagCarousel list={tagList} />
         <DesktopSeaction />
-        <PartnersSection />
         <ValueGrowSection
           heading={blastThroughTitle}
           subheading={blastThroughDescription}
@@ -74,6 +75,7 @@ const IndexPage = () => {
           img={blastThroughDashbordImage}
         />
         <ValueGrowListSeaction />
+        <ClientSeaction />
         <ProductSeaction />
         <CopyRightSeaction />
         <TrustTechSeaction />
