@@ -69,6 +69,17 @@ const fun = function () {
       centerMode: true,
     })
   }
+
+  if (
+    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPod/i) ||
+    navigator.userAgent.match(/iPad/i)
+  ) {
+    $(".intervent_list ul li").click(function () {})
+    $(".partenaires_con ul li").click(function () {})
+  }
+
+  //our clients reviews card grid
   $(".review-slider").slick({
     speed: 5000,
     autoplay: true,
@@ -133,15 +144,6 @@ const fun = function () {
       },
     ],
   })
-
-  if (
-    navigator.userAgent.match(/iPhone/i) ||
-    navigator.userAgent.match(/iPod/i) ||
-    navigator.userAgent.match(/iPad/i)
-  ) {
-    $(".intervent_list ul li").click(function () {})
-    $(".partenaires_con ul li").click(function () {})
-  }
 }
 fun()
 ;(function ($) {

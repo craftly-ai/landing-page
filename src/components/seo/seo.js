@@ -72,7 +72,10 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <script src={withPrefix("customGrid.js")} type="text/javascript" defer />
-      <script src={withPrefix("main.js")} type="text/javascript" defer />
+      <script
+        src={withPrefix("main.js?random=<?= uniqid() ?>")}
+        type="text/javascript"
+      />
       <script src={withPrefix("animator.js")} type="text/javascript" defer />
       <script src={withPrefix("custom.js")} type="text/javascript" />
       <script
