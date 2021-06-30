@@ -41,7 +41,7 @@ const ClientSeaction = () => {
       <div className="container">
         <div className="client-head section text-center">
           <h2>{clientsTitle}</h2>
-          <p>{clientsDescription}</p>
+          <p dangerouslySetInnerHTML={{ __html: clientsDescription }} />
           <ul className="review-star">
             <li>
               <i className="fa fa-star" />

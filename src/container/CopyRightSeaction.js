@@ -41,8 +41,8 @@ const CopyRightSeaction = () => {
       <div className="container">
         <div className="title-raw section">
           <h2>{copywritingTitle}</h2>
-          <p>{copywritingDescription}</p>
-          <h4>{copywritingStepTitle}</h4>
+          <p dangerouslySetInnerHTML={{ __html: copywritingDescription }} />
+          <h4 dangerouslySetInnerHTML={{ __html: copywritingStepTitle }} />
         </div>
         <div className="copyright-section-col section">
           <div className="row">
