@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import logo from "../../images/crftly.ai-logo.png"
+import logo from "../../images/logo.png"
 
 const Footer = () => (
   <footer className="section">
