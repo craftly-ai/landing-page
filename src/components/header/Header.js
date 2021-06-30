@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import logo from "../../images/logo.png"
+import logo from "../../images/crftly.ai-logo.png"
 const Header = () => (
   <header
     id="header"
@@ -13,11 +13,7 @@ const Header = () => (
         <div className="header-main">
           <div className="logo">
             <Link to="#">
-              <img
-                src={logo}
-                className="img-responsive"
-                alt="Craftly"
-              />
+              <img src={logo} className="img-responsive" alt="Craftly" />
             </Link>
           </div>
           <div className="header-left">
@@ -25,10 +21,10 @@ const Header = () => (
               <div className="nav-main">
                 <ul>
                   <li className="test">
-                    <Link to="#">Tools & Samples</Link>
+                    <Link to="#">Pricing</Link>
                   </li>
                   <li className="sub-menu">
-                    <Link to="#">Library</Link>
+                    <Link to="#">Resources</Link>
                     <span />
                     <ul>
                       <li>
@@ -41,9 +37,6 @@ const Header = () => (
                         <Link to="#">About</Link>
                       </li>
                     </ul>
-                  </li>
-                  <li>
-                    <Link to="#">Pricing</Link>
                   </li>
                   <li className="mobile-li">
                     <Link to="#">Request Access</Link>

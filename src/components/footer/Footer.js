@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import logo from '../../images/logo.png'
+import logo from "../../images/crftly.ai-logo.png"
 
 const Footer = () => (
   <footer className="section">
@@ -10,11 +10,7 @@ const Footer = () => (
           <div className="col-sm-3 col-xs-12 left-conn">
             <div className="logo">
               <Link to="#">
-                <img
-                  src={logo}
-                  className="img-responsive"
-                  alt="Craftly"
-                />
+                <img src={logo} className="img-responsive" alt="Craftly" />
               </Link>
             </div>
           </div>
