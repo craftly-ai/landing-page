@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import logo from "../../images/logo.png"
 
 const Footer = () => (
@@ -9,9 +8,9 @@ const Footer = () => (
         <div className="row">
           <div className="col-sm-3 col-xs-12 left-conn">
             <div className="logo">
-              <Link to="#">
+              <a href="#header">
                 <img src={logo} className="img-responsive" alt="Craftly" />
-              </Link>
+              </a>
             </div>
           </div>
           <div className="col-sm-9 col-12 right-conn">
@@ -19,13 +18,13 @@ const Footer = () => (
               <h5>Company</h5>
               <ul>
                 <li>
-                  <Link to="#">About</Link>
+                  <a href="https://craftly.ai/about.html">About</a>
                 </li>
                 <li>
-                  <Link to="#">Pricing</Link>
+                  <a href="#pricing">Pricing</a>
                 </li>
                 <li>
-                  <Link to="#">Demo</Link>
+                  <a href="#header">Demo</a>
                 </li>
               </ul>
             </div>
@@ -33,15 +32,23 @@ const Footer = () => (
               <h5>Resources</h5>
               <ul>
                 <li>
-                  <Link to="#">Help Center</Link>
+                  <a href="https://craftly.ai/learn.html">Help Center</a>
                 </li>
                 <li>
-                  <Link to="#">Contact Us</Link>
+                  <a href="mailto:hello@craftly.ai?subject=Support">
+                    Contact Us
+                  </a>
                 </li>
                 <li>
-                  <Link to="#" data-mode="popup" data-size={100}>
+                  <a
+                    href="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
+                    data-mode="popup"
+                    data-size={100}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Partner Program
-                  </Link>{" "}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -49,10 +56,22 @@ const Footer = () => (
               <h5>Join Communities</h5>
               <ul>
                 <li>
-                  <Link to="#">Official Facebook Group</Link>
+                  <a
+                    href="https://www.facebook.com/groups/562335751328055/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Official Facebook Group
+                  </a>
                 </li>
                 <li>
-                  <Link to="#">Slack Channel</Link>
+                  <a
+                    href="http://craftlyai.slack.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Slack Channel
+                  </a>
                 </li>
               </ul>
             </div>
@@ -60,10 +79,22 @@ const Footer = () => (
               <h5>Information </h5>
               <ul>
                 <li>
-                  <Link to="#">Terms and Conditions</Link>
+                  <a
+                    href="https://craftly.ai/terms-of-use.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Terms and Conditions
+                  </a>
                 </li>
                 <li>
-                  <Link to="#">Privacy Policy</Link>
+                  <a
+                    href="https://craftly.ai/privacy-policy.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Privacy Policy
+                  </a>
                 </li>
               </ul>
             </div>
@@ -75,24 +106,40 @@ const Footer = () => (
           <div className="col-sm-6 col-12">
             <ul className="social-raw">
               <li>
-                <Link to="#">
+                <a
+                  href="https://www.facebook.com/groups/562335751328055"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa fa-facebook" aria-hidden="true" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="#">
+                <a
+                  href="https://twitter.com/craftlyai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa fa-twitter" aria-hidden="true" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="#">
+                <a
+                  href="https://www.linkedin.com/company/22345879/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa fa-linkedin" aria-hidden="true" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="#">
+                <a
+                  href="https://www.instagram.com/craftly.ai"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa fa-instagram" aria-hidden="true" />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

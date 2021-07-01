@@ -1,6 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import logo from "../../images/logo.png"
+import { Link } from "gatsby"
 const Header = () => (
   <header
     id="header"
@@ -12,29 +12,29 @@ const Header = () => (
       <div className="header">
         <div className="header-main">
           <div className="logo">
-            <Link to="#">
+            <a href="#header">
               <img src={logo} className="img-responsive" alt="Craftly" />
-            </Link>
+            </a>
           </div>
           <div className="header-left">
             <div className="nav">
               <div className="nav-main">
                 <ul>
                   <li className="test">
-                    <Link to="#pricing">Pricing</Link>
+                    <a href="#pricing">Pricing</a>
                   </li>
                   <li className="sub-menu">
                     <Link to="#">Resources</Link>
                     <span />
                     <ul>
                       <li>
-                        <Link to="#">Learn</Link>
+                        <a href="https://craftly.ai/learn.html">Learn</a>
                       </li>
                       <li>
-                        <Link to="#">Earn</Link>
+                        <a href="https://craftly.ai/affiliate.html">Earn</a>
                       </li>
                       <li>
-                        <Link to="#">About</Link>
+                        <a href="https://craftly.ai/about.html">About</a>
                       </li>
                     </ul>
                   </li>
@@ -42,7 +42,7 @@ const Header = () => (
                     <Link to="#">Request Access</Link>
                   </li>
                   <li className="mobile-li login-li">
-                    <Link to="#">Login</Link>
+                    <a href="https://craftly.web.app/auth">Login</a>
                   </li>
                 </ul>
               </div>
@@ -58,7 +58,7 @@ const Header = () => (
           <div className="login-access">
             <ul>
               <li className="mobile-li login-li">
-                <Link to="#">Login</Link>
+                <a href="https://craftly.web.app/auth">Login</a>
               </li>
               <li>
                 <Link
