@@ -1,4 +1,4 @@
-const fun = function () {
+;(function ($) {
   /* When user clicks the Icon */
   $(".nav-toggle").click(function () {
     $(this).toggleClass("active")
@@ -33,6 +33,71 @@ const fun = function () {
         .addClass("fa-plus")
     })
 
+  //our clients reviews card grid
+  $(".review-slider").slick({
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: "linear",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    initialSlide: 1,
+    arrows: false,
+    buttons: false,
+    centerPadding: "320px",
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          centerPadding: "200px",
+        },
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          centerPadding: "80px",
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "100px",
+        },
+      },
+      {
+        breakpoint: 1121,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "100px",
+        },
+      },
+
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "40px",
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "40px",
+        },
+      },
+    ],
+  })
   if (document.documentElement.clientWidth < 768) {
     ;(function ($) {
       $(document).ready(function () {
@@ -78,10 +143,7 @@ const fun = function () {
     $(".intervent_list ul li").click(function () {})
     $(".partenaires_con ul li").click(function () {})
   }
-}
-fun()
-;(function ($) {
-  /** change value here to adjust parallax level */
+
   var parallax = -0.5
 
   var $bg_images = $(".stick-gradient")
@@ -97,189 +159,199 @@ fun()
       $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
     })
   })
-})(jQuery)
 
-var TxtRotate1 = function (el, toRotate, period) {
-  this.toRotate = toRotate
-  this.el = el
-  this.loopNum = 0
-  this.period = parseInt(period, 10) || 2000
-  this.txt = ""
-  this.tick()
-  this.isDeleting = false
-}
-
-TxtRotate1.prototype.tick = function () {
-  var i = this.loopNum % this.toRotate.length
-  var fullTxt = this.toRotate[i]
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1)
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1)
-  }
-
-  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"
-
-  var that = this
-  var delta = 50 - Math.random() * 100
-
-  if (this.isDeleting) {
-    delta /= 2
-  }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period
+  var TxtRotate1 = function (el, toRotate, period) {
+    this.toRotate = toRotate
+    this.el = el
+    this.loopNum = 0
+    this.period = parseInt(period, 10) || 2000
+    this.txt = ""
+    this.tick()
     this.isDeleting = false
-  } else if (this.isDeleting && this.txt === "") {
-    this.isDeleting = false
-    this.loopNum++
-    delta = 500
   }
 
-  setTimeout(function () {
-    that.tick()
-  }, delta)
-}
+  TxtRotate1.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length
+    var fullTxt = this.toRotate[i]
 
-var TxtRotate2 = function (el, toRotate, period) {
-  this.toRotate = toRotate
-  this.el = el
-  this.loopNum = 0
-  this.period = parseInt(period, 10) || 2000
-  this.txt = ""
-  this.tick()
-  this.isDeleting = false
-}
-
-TxtRotate2.prototype.tick = function () {
-  var i = this.loopNum % this.toRotate.length
-  var fullTxt = this.toRotate[i]
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1)
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1)
-  }
-
-  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"
-
-  var that = this
-  var delta = 50 - Math.random() * 100
-
-  if (this.isDeleting) {
-    delta /= 2
-  }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period
-    this.isDeleting = false
-  } else if (this.isDeleting && this.txt === "") {
-    this.isDeleting = false
-    this.loopNum++
-    delta = 500
-  }
-
-  setTimeout(function () {
-    that.tick()
-  }, delta)
-}
-
-$(".production-raw .left-box .input").click(function () {
-  $(".production-raw .left-box")
-    .addClass("btn-click")
-    .delay(1000)
-    .queue(function () {
-      $(".production-raw .left-box .btn-row").removeClass("none")
-    })
-  var elements = document.getElementsByClassName("rotate-text1")
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute("data-rotate")
-    var period = elements[i].getAttribute("data-period")
-    if (toRotate) {
-      new TxtRotate1(elements[i], JSON.parse(toRotate), period)
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1)
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1)
     }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"
+
+    var that = this
+    var delta = 50 - Math.random() * 100
+
+    if (this.isDeleting) {
+      delta /= 2
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period
+      this.isDeleting = false
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false
+      this.loopNum++
+      delta = 500
+    }
+
+    setTimeout(function () {
+      that.tick()
+    }, delta)
   }
-})
 
-$(".production-raw .left-box .btn-row .gradient-btn").click(function () {
-  $(".production-raw .left-box .btn-row").addClass("tooltip-none")
+  var TxtRotate2 = function (el, toRotate, period) {
+    this.toRotate = toRotate
+    this.el = el
+    this.loopNum = 0
+    this.period = parseInt(period, 10) || 2000
+    this.txt = ""
+    this.tick()
+    this.isDeleting = false
+  }
 
-  $(".favorite-box").addClass("none")
-  $(".favorite-box").removeClass("block")
+  TxtRotate2.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length
+    var fullTxt = this.toRotate[i]
 
-  $(".generate-ideas").addClass("block")
-  $(".generate-ideas").removeClass("none")
-})
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1)
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1)
+    }
 
-AOS.init({
-  duration: 700,
-  offset: 200,
-  delay: 150,
-})
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>"
 
-$(".slider-for").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-})
+    var that = this
+    var delta = 50 - Math.random() * 100
 
-var tl = new TimelineMax(),
-  $videoContainer = $(".cb-video-container"),
-  $video = $videoContainer.find(".video"),
-  $playPauseClickArea = $videoContainer.find(".play-pause--click-area"),
-  $playPauseContainer = $videoContainer.find(".play-pause--container"),
-  $playIcon = $videoContainer.find(".play-icon"),
-  $pauseIcon = $videoContainer.find(".pause-icon"),
-  iconIsToggled = false,
-  iconEase = Back.easeInOut.config(1.7),
-  iconDuration = 0.3
+    if (this.isDeleting) {
+      delta /= 2
+    }
 
-setupVideo()
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period
+      this.isDeleting = false
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false
+      this.loopNum++
+      delta = 500
+    }
 
-// functions
-function setupVideo() {
-  TweenMax.set($pauseIcon, { autoAlpha: 0, scale: 0 })
-}
+    setTimeout(function () {
+      that.tick()
+    }, delta)
+  }
 
-function showPaused() {
-  iconIsToggled = true
+  $(".production-raw .left-box .input").click(function () {
+    $(".production-raw .left-box")
+      .addClass("btn-click")
+      .delay(1000)
+      .queue(function () {
+        $(".production-raw .left-box .btn-row").removeClass("none")
+      })
+    var elements = document.getElementsByClassName("rotate-text1")
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute("data-rotate")
+      var period = elements[i].getAttribute("data-period")
+      if (toRotate) {
+        new TxtRotate1(elements[i], JSON.parse(toRotate), period)
+      }
+    }
+  })
 
-  tl.play()
-  tl.to($playIcon, iconDuration, { autoAlpha: 0, scale: 0, ease: iconEase }, 0)
-  tl.to($pauseIcon, iconDuration, { autoAlpha: 1, scale: 1, ease: iconEase }, 0)
+  $(".production-raw .left-box .btn-row .gradient-btn").click(function () {
+    $(".production-raw .left-box .btn-row").addClass("tooltip-none")
 
-  console.log("playing - show pause")
-  $video.get(0).play()
-}
+    $(".favorite-box").addClass("none")
+    $(".favorite-box").removeClass("block")
 
-function showPlay() {
-  iconIsToggled = false
+    $(".generate-ideas").addClass("block")
+    $(".generate-ideas").removeClass("none")
+  })
 
-  tl.reverse()
+  AOS.init({
+    duration: 700,
+    offset: 200,
+    delay: 150,
+  })
 
-  console.log("paused - show play")
-  $video.get(0).pause()
-}
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+  })
 
-// event handlers
-$playPauseClickArea.on("click", function () {
-  !iconIsToggled ? showPaused() : showPlay()
-})
+  var tl = new TimelineMax(),
+    $videoContainer = $(".cb-video-container"),
+    $video = $videoContainer.find(".video"),
+    $playPauseClickArea = $videoContainer.find(".play-pause--click-area"),
+    $playPauseContainer = $videoContainer.find(".play-pause--container"),
+    $playIcon = $videoContainer.find(".play-icon"),
+    $pauseIcon = $videoContainer.find(".pause-icon"),
+    iconIsToggled = false,
+    iconEase = Back.easeInOut.config(1.7),
+    iconDuration = 0.3
 
-$playPauseClickArea.on("mouseleave", function () {
-  if (iconIsToggled === true)
-    TweenMax.to($playPauseContainer, iconDuration, { autoAlpha: 0 }, 0)
-  console.log("mouseleave")
-})
+  setupVideo()
 
-$playPauseClickArea.on("mouseenter", function () {
-  TweenMax.to($playPauseContainer, iconDuration, { autoAlpha: 1 }, 0)
-  console.log("mouseenter")
-})
+  // functions
+  function setupVideo() {
+    TweenMax.set($pauseIcon, { autoAlpha: 0, scale: 0 })
+  }
 
-$video.on("ended", function () {
-  // TODO: showReplay()
-  console.log("video ended")
-})
+  function showPaused() {
+    iconIsToggled = true
+
+    tl.play()
+    tl.to(
+      $playIcon,
+      iconDuration,
+      { autoAlpha: 0, scale: 0, ease: iconEase },
+      0
+    )
+    tl.to(
+      $pauseIcon,
+      iconDuration,
+      { autoAlpha: 1, scale: 1, ease: iconEase },
+      0
+    )
+
+    console.log("playing - show pause")
+    $video.get(0).play()
+  }
+
+  function showPlay() {
+    iconIsToggled = false
+
+    tl.reverse()
+
+    console.log("paused - show play")
+    $video.get(0).pause()
+  }
+
+  // event handlers
+  $playPauseClickArea.on("click", function () {
+    !iconIsToggled ? showPaused() : showPlay()
+  })
+
+  $playPauseClickArea.on("mouseleave", function () {
+    if (iconIsToggled === true)
+      TweenMax.to($playPauseContainer, iconDuration, { autoAlpha: 0 }, 0)
+    console.log("mouseleave")
+  })
+
+  $playPauseClickArea.on("mouseenter", function () {
+    TweenMax.to($playPauseContainer, iconDuration, { autoAlpha: 1 }, 0)
+    console.log("mouseenter")
+  })
+
+  $video.on("ended", function () {
+    // TODO: showReplay()
+    console.log("video ended")
+  })
+})(jQuery)
