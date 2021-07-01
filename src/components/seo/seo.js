@@ -71,8 +71,8 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
+      <meta http-equiv="cache-control" content="max-age=0" />
       <script src={withPrefix("customGrid.js")} type="text/javascript" defer />
-      <script src={withPrefix("main.js")} type="text/javascript" />
       <script src={withPrefix("animator.js")} type="text/javascript" defer />
       <script src={withPrefix("custom.js")} type="text/javascript" />
       <script
