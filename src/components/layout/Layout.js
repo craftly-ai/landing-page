@@ -7,17 +7,13 @@
 
 import * as React from "react"
 import Header from "../header/Header"
-import Footer from "./../footer/Footer"
 import Modal from "./../modal/Modal"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <section class="section relative bg-gradient">
-        <main>{children}</main>
-        <Footer />
-      </section>
+      {children}
       <Modal />
     </>
   )

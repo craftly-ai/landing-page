@@ -74,6 +74,7 @@ function SEO({ description, lang, meta, title }) {
       <meta http-equiv="cache-control" content="max-age=0" />
       <script src={withPrefix("customGrid.js")} type="text/javascript" defer />
       <script src={withPrefix("animator.js")} type="text/javascript" defer />
+      <script src={withPrefix("rangeslide.js")} type="text/javascript" />
       <script src={withPrefix("custom.js")} type="text/javascript" />
       <script
         type="text/javascript"

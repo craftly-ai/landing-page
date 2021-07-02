@@ -1,5 +1,6 @@
 import * as React from "react"
 import logo from "../../images/logo.png"
+import { Link } from "gatsby"
 
 const Footer = () => (
   <footer className="section">
@@ -79,22 +80,10 @@ const Footer = () => (
               <h5>Information </h5>
               <ul>
                 <li>
-                  <a
-                    href="https://craftly.ai/terms-of-use.html"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Terms and Conditions
-                  </a>
+                  <Link to="/terms-of-use/">Terms and Conditions</Link>
                 </li>
                 <li>
-                  <a
-                    href="https://craftly.ai/privacy-policy.html"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Privacy Policy
-                  </a>
+                  <Link to="/privacy-policy/">Privacy Policy</Link>
                 </li>
               </ul>
             </div>

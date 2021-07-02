@@ -12,7 +12,7 @@ const Header = () => (
       <div className="header">
         <div className="header-main">
           <div className="logo">
-            <a href="#header">
+            <a href="/">
               <img src={logo} className="img-responsive" alt="Craftly" />
             </a>
           </div>
@@ -31,7 +31,7 @@ const Header = () => (
                         <a href="https://craftly.ai/learn.html">Learn</a>
                       </li>
                       <li>
-                        <a href="https://craftly.ai/affiliate.html">Earn</a>
+                        <Link to="/affiliate/">Earn</Link>
                       </li>
                       <li>
                         <a href="https://craftly.ai/about.html">About</a>
