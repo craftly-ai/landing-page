@@ -1,7 +1,7 @@
 ;(function ($) {
   //our clients reviews card grid
   $(".review-slider").slick({
-    speed: 5000,
+    speed: 10000,
     autoplay: true,
     autoplaySpeed: 0,
     centerMode: true,
