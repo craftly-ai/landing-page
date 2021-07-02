@@ -46,5 +46,20 @@ module.exports = {
         url: `https://wepixel.in/craftly-wp/graphql`,
       },
     },
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        defaultCrumb: {
+          // location: required and must include the pathname property
+          location: {
+            pathname: "/",
+          },
+          // crumbLabel: required label for the default crumb
+          crumbLabel: "Home",
+          // all other properties optional
+          crumbSeparator: " / ",
+        },
+      },
+    },
   ],
 }
