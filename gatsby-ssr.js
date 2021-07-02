@@ -32,6 +32,11 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
       type="text/javascript"
     ></script>,
     <script
+      src="http://widget-v4.tidiochat.com/1_69_0/static/js/render.d02d6132b6e06cd0a41d.js"
+      async
+    ></script>,
+
+    <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
     ></script>,

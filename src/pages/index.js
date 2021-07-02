@@ -17,6 +17,7 @@ import TestimonialSection from "../container/home/TestimonialSection"
 import SubscribeSection from "../container/home/SubscribeSection"
 import OfferSection from "../container/home/OfferSection"
 import { useStaticQuery, graphql } from "gatsby"
+import Footer from "./../components/footer/Footer"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -61,29 +62,32 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="" />
       <Layout>
-        <IntroSection />
-        <PartnersSection />
-        <TagCarousel list={tagList} />
-        <DashboardSection />
-        <ValueGrowSection
-          heading={blastThroughTitle}
-          subheading={blastThroughDescription}
-          button={seeExampleButtonLabel}
-          buttonURl={seeExampleButtonUrl}
-          img={blastThroughDashboardImage}
-        />
-        <ValueGrowListSection />
-        <ClientSection />
-        <ProductSection />
-        <CopyRightSection />
-        <TrustTechSection />
-        <VersusSection />
-        <PricingSection />
-        <TestimonialSection />
-        <SubscribeSection />
-        <OfferSection />
+        <section class="section relative bg-gradient">
+          <IntroSection />
+          <PartnersSection />
+          <TagCarousel list={tagList} />
+          <DashboardSection />
+          <ValueGrowSection
+            heading={blastThroughTitle}
+            subheading={blastThroughDescription}
+            button={seeExampleButtonLabel}
+            buttonURl={seeExampleButtonUrl}
+            img={blastThroughDashboardImage}
+          />
+          <ValueGrowListSection />
+          <ClientSection />
+          <ProductSection />
+          <CopyRightSection />
+          <TrustTechSection />
+          <VersusSection />
+          <PricingSection />
+          <TestimonialSection />
+          <SubscribeSection />
+          <OfferSection />
+          <Footer />
+        </section>
       </Layout>
     </>
   )
