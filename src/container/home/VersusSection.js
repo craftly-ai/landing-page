@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
-const VersusSeaction = () => {
+const VersusSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -82,4 +82,4 @@ const VersusSeaction = () => {
   )
 }
 
-export default VersusSeaction
+export default VersusSection

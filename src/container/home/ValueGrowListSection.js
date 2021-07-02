@@ -1,8 +1,8 @@
 import React from "react"
-import GrowListItem from "./../components/valueGrow/GrowListItem"
+import GrowListItem from "../../components/valueGrow/GrowListItem"
 import { useStaticQuery, graphql } from "gatsby"
 
-const ValueGrowListSeaction = () => {
+const ValueGrowListSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -43,4 +43,4 @@ const ValueGrowListSeaction = () => {
   )
 }
 
-export default ValueGrowListSeaction
+export default ValueGrowListSection

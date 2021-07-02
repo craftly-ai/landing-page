@@ -1,21 +1,21 @@
 import * as React from "react"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/seo/seo"
-import IntroSection from "../container/IntroSection"
+import IntroSection from "../container/home/IntroSection"
 import TagCarousel from "../components/carousel/TagCarousel"
-import DesktopSeaction from "./../container/DesktopSeaction"
-import PartnersSection from "./../container/PartnersSection"
-import ValueGrowSection from "./../container/ValueGrowSection"
-import ValueGrowListSeaction from "./../container/ValueGrowListSeaction"
-import ClientSeaction from "./../container/ClientSeaction"
-import ProductSeaction from "./../container/ProductSeaction"
-import CopyRightSeaction from "../container/CopyRightSeaction"
-import TrustTechSeaction from "./../container/TrustTechSeaction"
-import VersusSeaction from "./../container/VersusSeaction"
-import PricingSeaction from "../container/PricingSeaction"
-import TestimonialSeaction from "./../container/TestimonialSeaction"
-import SubscribeSeaction from "./../container/SubscribeSeaction"
-import OfferSeaction from "./../container/OfferSeaction"
+import DashboardSection from "../container/home/DashboardSection"
+import PartnersSection from "../container/home/PartnersSection"
+import ValueGrowSection from "../container/home/ValueGrowSection"
+import ValueGrowListSection from "../container/home/ValueGrowListSection"
+import ClientSection from "../container/home/ClientSection"
+import ProductSection from "../container/home/ProductSection"
+import CopyRightSection from "../container/home/CopyRightSection"
+import TrustTechSection from "./../container/home/TrustTechSection"
+import VersusSection from "../container/home/VersusSection"
+import PricingSection from "../container/home/PricingSection"
+import TestimonialSection from "../container/home/TestimonialSection"
+import SubscribeSection from "../container/home/SubscribeSection"
+import OfferSection from "../container/home/OfferSection"
 import { useStaticQuery, graphql } from "gatsby"
 
 const IndexPage = () => {
@@ -31,7 +31,7 @@ const IndexPage = () => {
             blastThroughDescription
             seeExampleButtonLabel
             seeExampleButtonUrl
-            blastThroughDashbordImage {
+            blastThroughDashboardImage {
               sourceUrl
             }
           }
@@ -55,8 +55,8 @@ const IndexPage = () => {
   let seeExampleButtonUrl = data.allWpPage.nodes.map(
     node => node.home.seeExampleButtonUrl
   )
-  let blastThroughDashbordImage = data.allWpPage.nodes.map(
-    node => node.home.blastThroughDashbordImage.sourceUrl
+  let blastThroughDashboardImage = data.allWpPage.nodes.map(
+    node => node.home.blastThroughDashboardImage.sourceUrl
   )
 
   return (
@@ -66,24 +66,24 @@ const IndexPage = () => {
         <IntroSection />
         <PartnersSection />
         <TagCarousel list={tagList} />
-        <DesktopSeaction />
+        <DashboardSection />
         <ValueGrowSection
           heading={blastThroughTitle}
           subheading={blastThroughDescription}
           button={seeExampleButtonLabel}
           buttonURl={seeExampleButtonUrl}
-          img={blastThroughDashbordImage}
+          img={blastThroughDashboardImage}
         />
-        <ValueGrowListSeaction />
-        <ClientSeaction />
-        <ProductSeaction />
-        <CopyRightSeaction />
-        <TrustTechSeaction />
-        <VersusSeaction />
-        <PricingSeaction />
-        <TestimonialSeaction />
-        <SubscribeSeaction />
-        <OfferSeaction />
+        <ValueGrowListSection />
+        <ClientSection />
+        <ProductSection />
+        <CopyRightSection />
+        <TrustTechSection />
+        <VersusSection />
+        <PricingSection />
+        <TestimonialSection />
+        <SubscribeSection />
+        <OfferSection />
       </Layout>
     </>
   )

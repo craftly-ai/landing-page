@@ -1,8 +1,8 @@
 import React from "react"
-import PricingCard from "./../components/pricing/PricingCard"
+import PricingCard from "../../components/pricing/PricingCard"
 import { useStaticQuery, graphql } from "gatsby"
 
-const PricingSeaction = () => {
+const PricingSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -90,4 +90,4 @@ const PricingSeaction = () => {
   )
 }
 
-export default PricingSeaction
+export default PricingSection

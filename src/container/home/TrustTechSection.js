@@ -1,10 +1,10 @@
 import React from "react"
-import CardCollapse from "./../components/trustTech/CardCollapse"
-import backimg from "../images/world-map.png"
-import Parameters from "./../components/trustTech/Parameters"
+import CardCollapse from "../../components/trustTech/CardCollapse"
+import backimg from "../../images/world-map.png"
+import Parameters from "../../components/trustTech/Parameters"
 import { useStaticQuery, graphql } from "gatsby"
 
-const TrustTechSeaction = () => {
+const TrustTechSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -89,4 +89,4 @@ const TrustTechSeaction = () => {
   )
 }
 
-export default TrustTechSeaction
+export default TrustTechSection

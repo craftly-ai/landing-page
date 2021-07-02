@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-import trustpiloatLogo from "../images/trustpiloat-logo.png"
+import trustpiloatLogo from "../../images/trustpiloat-logo.png"
 
-const ClientSeaction = () => {
+const ClientSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { id: { eq: "cG9zdDo4" } }) {
@@ -86,7 +86,7 @@ const ClientSeaction = () => {
                   </i>
                   <p>{item.description}</p>
                   <div className="review-by section">
-                    <span className="avtar">
+                    <span className="avatar">
                       <img
                         src={item.avatar.sourceUrl}
                         className="img-rounded"
@@ -105,4 +105,4 @@ const ClientSeaction = () => {
   )
 }
 
-export default ClientSeaction
+export default ClientSection

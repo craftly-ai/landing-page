@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const CopyRightSeaction = () => {
+const CopyRightSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -68,4 +68,4 @@ const CopyRightSeaction = () => {
   )
 }
 
-export default CopyRightSeaction
+export default CopyRightSection

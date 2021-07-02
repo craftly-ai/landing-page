@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
-const OfferSeaction = () => {
+const OfferSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -50,4 +50,4 @@ const OfferSeaction = () => {
   )
 }
 
-export default OfferSeaction
+export default OfferSection

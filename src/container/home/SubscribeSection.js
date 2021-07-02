@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SubscribeSeaction = () => {
+const SubscribeSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -50,4 +50,4 @@ const SubscribeSeaction = () => {
   )
 }
 
-export default SubscribeSeaction
+export default SubscribeSection

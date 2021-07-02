@@ -1,10 +1,10 @@
 import React from "react"
-import Product from "./../components/product/Product"
+import Product from "../../components/product/Product"
+import Card from "../../components/product/Card"
 import { Link } from "gatsby"
-import Card from "../components/product/Card"
 import { useStaticQuery, graphql } from "gatsby"
 
-const ProductSeaction = () => {
+const ProductSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -108,4 +108,4 @@ const ProductSeaction = () => {
   )
 }
 
-export default ProductSeaction
+export default ProductSection

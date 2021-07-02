@@ -1,19 +1,19 @@
 import React from "react"
-import SearchBar from "./../components/desktop/SearchBar"
-import DescriptionBox from "./../components/desktop/DescriptionBox"
-import FormGenerateIdeas from "./../components/desktop/FormGenerateIdeas"
-import IdeasBox from "./../components/desktop/ideasbox/IdeasBox"
+import SearchBar from "../../components/dashboard/SearchBar"
+import DescriptionBox from "../../components/dashboard/DescriptionBox"
+import FormGenerateIdeas from "../../components/dashboard/FormGenerateIdeas"
+import IdeasBox from "../../components/dashboard/ideasbox/IdeasBox"
 import { useStaticQuery, graphql } from "gatsby"
 
-const DesktopSeaction = () => {
+const DashboardSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
         nodes {
           home {
-            dashbordTitle
+            dashboardTitle
             productDescriptionTitle
-            dashbordShortDescription
+            dashboardShortDescription
             chooseLanguageButtonLabel
             viewSavedButtonLabel
             tooltipFirstStepText
@@ -29,12 +29,14 @@ const DesktopSeaction = () => {
     }
   `)
 
-  let dashbordTitle = data.allWpPage.nodes.map(node => node.home.dashbordTitle)
+  let dashboardTitle = data.allWpPage.nodes.map(
+    node => node.home.dashboardTitle
+  )
   let productDescriptionTitle = data.allWpPage.nodes.map(
     node => node.home.productDescriptionTitle
   )
-  let dashbordShortDescription = data.allWpPage.nodes.map(
-    node => node.home.dashbordShortDescription
+  let dashboardShortDescription = data.allWpPage.nodes.map(
+    node => node.home.dashboardShortDescription
   )
   let chooseLanguageButtonLabel = data.allWpPage.nodes.map(
     node => node.home.chooseLanguageButtonLabel
@@ -63,12 +65,12 @@ const DesktopSeaction = () => {
       <div className="production-raw section ptb100">
         <div className="container">
           <div className="desktop-block craftly-ai-demo section">
-            <SearchBar url={dashbordTitle} />
+            <SearchBar url={dashboardTitle} />
             <div className="desktop-screen">
-              <h6>{dashbordTitle}</h6>
+              <h6>{dashboardTitle}</h6>
               <DescriptionBox
                 title={productDescriptionTitle}
-                description={dashbordShortDescription}
+                description={dashboardShortDescription}
                 button1={chooseLanguageButtonLabel}
                 button2={viewSavedButtonLabel}
               />
@@ -111,4 +113,4 @@ const DesktopSeaction = () => {
   )
 }
 
-export default DesktopSeaction
+export default DashboardSection

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const TestimonialSeaction = () => {
+const TestimonialSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "home" } }) {
@@ -11,7 +11,7 @@ const TestimonialSeaction = () => {
             reviewList {
               reviewTitle
               description
-              avtar {
+              avatar {
                 sourceUrl
               }
               reviewerName
@@ -54,7 +54,7 @@ const TestimonialSeaction = () => {
                               <p>{item.description}</p>
                               <div className="item-thumbnail">
                                 <div className="img-box">
-                                  <img src={item.avtar.sourceUrl} alt="" />
+                                  <img src={item.avatar.sourceUrl} alt="" />
                                 </div>
                                 <div className="testi-conn">
                                   <h5>{item.reviewerName}</h5>
@@ -77,4 +77,4 @@ const TestimonialSeaction = () => {
   )
 }
 
-export default TestimonialSeaction
+export default TestimonialSection
