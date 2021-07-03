@@ -28,7 +28,7 @@ const Header = () => (
                     <span />
                     <ul>
                       <li>
-                        <a href="https://craftly.ai/learn.html">Learn</a>
+                        <Link to="/learn/">Learn</Link>
                       </li>
                       <li>
                         <Link to="/affiliate/">Earn</Link>
