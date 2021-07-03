@@ -1,17 +1,16 @@
 import React from "react"
 
-const RangeSlide = () => {
+const RangeSlide = props => {
+  const { title, description } = props
+
   return (
     <div className="affiliate-video section">
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-12">
             <div className="earning-potential">
-              <h2 className="f50">Earning potential</h2>
-              <p>
-                Conservative numbers of how much you can make at the lowest
-                tier.
-              </p>
+              <h2 className="f50">{title}</h2>
+              <p>{description}</p>
               <div className="range-slide">
                 <div id="rangeslide" />
               </div>

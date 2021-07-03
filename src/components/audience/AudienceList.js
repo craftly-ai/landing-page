@@ -1,25 +1,28 @@
 import React from "react"
-import Container from "./../../components/sellsProduct/Container"
+import EarnAudience from "./EarnAudience"
 
-const ProductSellsSection = props => {
-  const { list } = props
+const AudienceList = props => {
+  const { title, subTitle, list } = props
+
   return (
-    <div className="product-sells-wrapper section">
+    <div className="audience-wrapper ptb100 section">
       <div className="container">
         <div className="row">
-          <div className="col-md-12 col-12 title text-center">
-            {/* <h2 class="f50">Earning Poten</h2> */}
+          <div className="col-md-12 col-12 title">
+            <h2 className="f50">{title}</h2>
+            <p>{subTitle}</p>
           </div>
+        </div>
+        <div className="row">
           <div className="col-md-12 col-12 list-row">
             <ul>
               {list.map(e =>
                 e.map((item, i) => {
                   return (
                     <li key={i}>
-                      <Container
+                      <EarnAudience
                         title={item.title}
                         description={item.description}
-                        sourceUrl={item.image.sourceUrl}
                       />
                     </li>
                   )
@@ -33,4 +36,4 @@ const ProductSellsSection = props => {
   )
 }
 
-export default ProductSellsSection
+export default AudienceList
