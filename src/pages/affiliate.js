@@ -112,6 +112,7 @@ const Affiliate = () => {
             buttomButtonLabel_2={viewDemoButtonLabel}
             buttomButtonUrl_2={viewDemoButtonUrl}
             buttomClassButton_2={"btn-main view"}
+            seactionClass={"inner-banner affiliate-banner section"}
             buttomIconButton_2={""}
           />
           <TagCarousel list={affiliateTagsList} />

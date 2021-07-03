@@ -2,6 +2,7 @@ import React from "react"
 
 const InnerBanner = props => {
   const {
+    seactionClass,
     bannerLogo,
     bannerButtonLabel,
     bannerButtonUrl,
@@ -16,7 +17,7 @@ const InnerBanner = props => {
   } = props
 
   return (
-    <div className="inner-banner affiliate-banner section">
+    <div className={seactionClass}>
       <div className="banner-con">
         <div className="container">
           <div className="row">
