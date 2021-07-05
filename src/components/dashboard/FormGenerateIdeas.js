@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 
 const FormGenerateIdeas = props => {
   const {
-    lableinput,
+    labelinput,
     datarotateinput,
     input,
     tooltipstep1,
-    lableinfo,
+    labelinfo,
     datarotateinfo,
     info,
     button,
@@ -19,7 +19,7 @@ const FormGenerateIdeas = props => {
 
   return (
     <>
-      <label>{lableinput}</label>
+      <label>{labelinput}</label>
       <div className="input">
         <p
           className="rotate-text1"
@@ -30,7 +30,7 @@ const FormGenerateIdeas = props => {
         </p>
         <div className="tooltip-wrap">{tooltipstep1}</div>
       </div>
-      <label>{lableinfo}</label>
+      <label>{labelinfo}</label>
       <div className="input description">
         <p
           className="rotate-text1"

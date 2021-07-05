@@ -77,11 +77,11 @@ const DashboardSection = () => {
               <div className="box-wrapper">
                 <div className="left-box">
                   <FormGenerateIdeas
-                    lableinput={"Product/brand name"}
+                    labelinput={"Product/brand name"}
                     datarotateinput={"Liv"}
                     input={"Name of your product"}
                     tooltipstep1={tooltipFirstStepText}
-                    lableinfo={"Description of your product*"}
+                    labelinfo={"Description of your product*"}
                     datarotateinfo={"Multivitamin for hair, nail and skin"}
                     info={"A couple words will do!"}
                     button={generateIdeasButtonLabel}

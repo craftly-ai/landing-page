@@ -19,7 +19,7 @@ const ProductSection = () => {
               }
               title
               description
-              buttonlable
+              buttonLabel
               buttonurl
             }
             oneProductCardList {
@@ -76,7 +76,7 @@ const ProductSection = () => {
                         img={item.icon.sourceUrl}
                         heading={item.title}
                         info={item.description}
-                        buttonTitle={item.buttonlable}
+                        buttonTitle={item.buttonLabel}
                         buttonLink={item.buttonurl}
                       />
                     ))
