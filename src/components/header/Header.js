@@ -34,7 +34,7 @@ const Header = () => (
                         <Link to="/affiliate/">Earn</Link>
                       </li>
                       <li>
-                        <a href="https://craftly.ai/about.html">About</a>
+                        <a href="/about/">About</a>
                       </li>
                     </ul>
                   </li>

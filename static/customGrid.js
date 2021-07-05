@@ -454,3 +454,107 @@
     console.log("video ended")
   })
 })(jQuery)
+
+//About Page
+
+if (document.documentElement.clientWidth > 1499) {
+  ;(function ($) {
+    /** change value here to adjust parallax level */
+    var parallax = -1
+
+    var $bg_images = $(".about-page-wrap")
+    var offset_tops = []
+    $bg_images.each(function (i, el) {
+      offset_tops.push($(el).offset().top)
+    })
+
+    $(window).scroll(function () {
+      var dy = $(this).scrollTop()
+      $bg_images.each(function (i, el) {
+        var ot = offset_tops[i]
+        $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
+      })
+    })
+  })(jQuery)
+}
+
+if (document.documentElement.clientWidth < 1499) {
+  ;(function ($) {
+    /** change value here to adjust parallax level */
+    var parallax = -0.8
+
+    var $bg_images = $(".about-page-wrap")
+    var offset_tops = []
+    $bg_images.each(function (i, el) {
+      offset_tops.push($(el).offset().top)
+    })
+
+    $(window).scroll(function () {
+      var dy = $(this).scrollTop()
+      $bg_images.each(function (i, el) {
+        var ot = offset_tops[i]
+        $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
+      })
+    })
+  })(jQuery)
+}
+
+if (document.documentElement.clientWidth < 1279) {
+  ;(function ($) {
+    var parallax = -0.7
+
+    var $bg_images = $(".about-page-wrap")
+    var offset_tops = []
+    $bg_images.each(function (i, el) {
+      offset_tops.push($(el).offset().top)
+    })
+
+    $(window).scroll(function () {
+      var dy = $(this).scrollTop()
+      $bg_images.each(function (i, el) {
+        var ot = offset_tops[i]
+        $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
+      })
+    })
+  })(jQuery)
+}
+
+if (document.documentElement.clientWidth < 991) {
+  ;(function ($) {
+    var parallax = -0.5
+
+    var $bg_images = $(".about-page-wrap")
+    var offset_tops = []
+    $bg_images.each(function (i, el) {
+      offset_tops.push($(el).offset().top)
+    })
+
+    $(window).scroll(function () {
+      var dy = $(this).scrollTop()
+      $bg_images.each(function (i, el) {
+        var ot = offset_tops[i]
+        $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
+      })
+    })
+  })(jQuery)
+}
+
+if (document.documentElement.clientWidth < 767) {
+  ;(function ($) {
+    var parallax = -0.3
+
+    var $bg_images = $(".about-page-wrap")
+    var offset_tops = []
+    $bg_images.each(function (i, el) {
+      offset_tops.push($(el).offset().top)
+    })
+
+    $(window).scroll(function () {
+      var dy = $(this).scrollTop()
+      $bg_images.each(function (i, el) {
+        var ot = offset_tops[i]
+        $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
+      })
+    })
+  })(jQuery)
+}
