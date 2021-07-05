@@ -1,28 +1,23 @@
 import React from "react"
 
-const EventBox = () => {
+const EventBox = props => {
+  const { icon, title, description, buttonLabel, buttonUrl } = props
+
   return (
     <div className="box-wrap">
       <i>
-        <img
-          src="images/ic-accelerated-onboarding.svg"
-          className="img-fluid"
-          alt="Accelerated Onboarding"
-        />
+        <img src={icon} className="img-fluid" alt="" />
       </i>
-      <h5>Accelerated Onboarding</h5>
-      <p>
-        Want to learn Craftly fast? We’ll work with you in 3 sessions to teach
-        you all you need to know.
-      </p>
+      <h5 dangerouslySetInnerHTML={{ __html: title }} />
+      <p dangerouslySetInnerHTML={{ __html: description }} />
       <a
-        href="https://form.typeform.com/to/o1kdGvzs?typeform-medium=embed-snippet"
+        href={buttonUrl}
         data-mode="popup"
         className="btn-main"
         data-size={100}
         target="_blank"
       >
-        Register
+        {buttonLabel}
       </a>
     </div>
   )

@@ -1,28 +1,25 @@
 import React from "react"
 
-const GuideCard = () => {
+const GuideCard = props => {
+  const { url, sourceUrl, category, title, description } = props
+
   return (
     <div className="guies-box">
       <div className="img-wrap">
-        <a href="documentation/tools/product-description.html">
+        <a href={url}>
           <img
-            src="images/product-description.jpg"
+            src={sourceUrl}
             alt="Product Description"
             className="img-fluid"
           />
         </a>
       </div>
       <div className="text-wrap">
-        <span>GUIDE</span>
-        <a
-          href="documentation/tools/product-description.html"
-          className="guide-title"
-        >
-          Product Description
+        <span>{category}</span>
+        <a href={url} className="guide-title">
+          {title}
         </a>
-        <p>
-          Blast through writer's block by letting us write an excerpt for you.
-        </p>
+        <p dangerouslySetInnerHTML={{ __html: description }} />
       </div>
     </div>
   )

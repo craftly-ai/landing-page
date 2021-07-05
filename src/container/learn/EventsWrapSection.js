@@ -1,43 +1,88 @@
 import React from "react"
 import EventBox from "./../../components/updateWrap/EventBox"
+import { useStaticQuery, graphql } from "gatsby"
 
 const EventsWrapSection = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "learn" } }) {
+        nodes {
+          learn {
+            eventsTitle
+            eventsWebinarsDescription
+            viewAllEventLabel
+            viewAllEventUrl
+            eventsWebinarsList {
+              icon {
+                sourceUrl
+              }
+              title
+              description
+              buttonLabel
+              buttonUrl
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  let eventsTitle = data.allWpPage.nodes.map(node => node.learn.eventsTitle)
+  let eventsWebinarsDescription = data.allWpPage.nodes.map(
+    node => node.learn.eventsWebinarsDescription
+  )
+  let viewAllEventLabel = data.allWpPage.nodes.map(
+    node => node.learn.viewAllEventLabel
+  )
+  let viewAllEventUrl = data.allWpPage.nodes.map(
+    node => node.learn.viewAllEventUrl
+  )
+  let eventsWebinarsList = data.allWpPage.nodes.map(
+    node => node.learn.eventsWebinarsList
+  )
+
   return (
     <div className="events-wrap section ptb100">
       <div className="row align-items-center title-wrap">
         <div className="col-sm-8">
-          <h2>Events &amp; Webinars</h2>
-          <p>Need help getting started? Attend a live training. </p>
+          <h2 dangerouslySetInnerHTML={{ __html: eventsTitle }} />
+          <p dangerouslySetInnerHTML={{ __html: eventsWebinarsDescription }} />
         </div>
         <div className="col-sm-4">
           <a
-            href="javascript:void(0)"
+            href={viewAllEventUrl}
             data-toggle="modal"
             data-target="#join-waitlist"
             className="more-btn"
           >
-            View more Events
+            {viewAllEventLabel}
           </a>
         </div>
       </div>
       <ul className="text-center col3">
-        <li>
-          <EventBox />
-        </li>
-        <li>
-          <EventBox />
-        </li>
-        <li>
-          <EventBox />
-        </li>
+        {eventsWebinarsList.map(e =>
+          e.map((item, i) => {
+            return (
+              <li key={i}>
+                <EventBox
+                  icon={item.icon.sourceUrl}
+                  title={item.title}
+                  description={item.description}
+                  buttonLabel={item.buttonLabel}
+                  buttonUrl={item.buttonUrl}
+                />
+              </li>
+            )
+          })
+        )}
       </ul>
       <a
-        href="javascript:void(0)"
+        href={viewAllEventUrl}
         data-toggle="modal"
         data-target="#join-waitlist"
         className="btn-main mobile"
       >
-        View more Events
+        {viewAllEventLabel}
       </a>
     </div>
   )

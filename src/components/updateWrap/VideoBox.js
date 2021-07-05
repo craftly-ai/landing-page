@@ -1,20 +1,20 @@
 import React from "react"
 
-const VideoBox = () => {
+const VideoBox = props => {
+  const { title, image, url } = props
+
   return (
     <div className="video-box">
       <div className="img-wrap">
         <img
-          src="images/linkedin-small-video-img.jpg"
+          src={image}
           alt="Optimize your Linkedin Profile"
           className="img-fluid"
         />
-        <a href="optimize-your-linkedin-profile.html" className="play-btn" />
+        <a href={url} className="play-btn" />
       </div>
       <h5>
-        <a href="optimize-your-linkedin-profile.html">
-          Optimize your Linkedin Profile In Under 10 Minutes
-        </a>
+        <a href={url}>{title}</a>
       </h5>
     </div>
   )

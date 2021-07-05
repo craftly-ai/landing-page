@@ -1,25 +1,24 @@
 import React from "react"
 
-const GuideBox = () => {
+const GuideBox = props => {
+  const { url, sourceUrl, category, title, description } = props
+
   return (
     <div className="guies-box top">
       <div className="img-wrap">
-        <a href="tools.html">
+        <a href={url}>
           <img
-            src="images/tool-input-output.jpg"
+            src={sourceUrl}
             alt="Tool Input/Output Examples"
             className="img-fluid"
           />
         </a>
         <div className="text-wrap">
-          <span>GUIDE</span>
-          <a href="tools.html" className="guide-title">
-            Tool Input/Output Examples
+          <span>{category}</span>
+          <a href={url} className="guide-title">
+            {title}
           </a>
-          <p>
-            See examples for all our different types of tools to help you
-            discover what to write for the best result
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: description }} />
         </div>
       </div>
     </div>
