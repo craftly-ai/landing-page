@@ -1,7 +1,7 @@
 import React from "react"
 
 const SubscriptionForm = props => {
-  const { placeholder, lable } = props
+  const { placeholder, label } = props
 
   return (
     <div className="col-sm-5 col-12 right-conn">
@@ -12,7 +12,7 @@ const SubscriptionForm = props => {
             placeholder={placeholder}
             className="form-control"
           />
-          <button className="btn-main">{lable}</button>
+          <button className="btn-main">{label}</button>
         </div>
       </form>
     </div>
