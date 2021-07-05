@@ -35,6 +35,13 @@ const IndexPage = () => {
             blastThroughDashboardImage {
               sourceUrl
             }
+            ctaTitle
+            ctaDescription
+            ctaImage {
+              sourceUrl
+            }
+            startEarningButtonLabel
+            startEarningButtonUrl
           }
         }
       }
@@ -59,6 +66,17 @@ const IndexPage = () => {
   let blastThroughDashboardImage = data.allWpPage.nodes.map(
     node => node.home.blastThroughDashboardImage.sourceUrl
   )
+  let ctaTitle = data.allWpPage.nodes.map(node => node.home.ctaTitle)
+  let ctaDescription = data.allWpPage.nodes.map(
+    node => node.home.ctaDescription
+  )
+  let startEarningButtonLabel = data.allWpPage.nodes.map(
+    node => node.home.startEarningButtonLabel
+  )
+  let startEarningButtonUrl = data.allWpPage.nodes.map(
+    node => node.home.startEarningButtonUrl
+  )
+  let ctaImage = data.allWpPage.nodes.map(node => node.home.ctaImage.sourceUrl)
 
   return (
     <>
@@ -85,7 +103,13 @@ const IndexPage = () => {
           <PricingSection />
           <TestimonialSection />
           <SubscribeSection />
-          <OfferSection />
+          <OfferSection
+            title={ctaTitle}
+            description={ctaDescription}
+            buttonLabel={startEarningButtonLabel}
+            buttonUrl={startEarningButtonUrl}
+            img={ctaImage}
+          />
           <Footer />
         </section>
       </Layout>
