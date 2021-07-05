@@ -11,12 +11,56 @@ import WorkWithUsSection from "./../container/about/WorkWithUsSection"
 import SubscribeWrapSection from "./../container/learn/SubscribeWrapSection"
 import OfferSection from "./../container/home/OfferSection"
 import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
+import { useStaticQuery, graphql } from "gatsby"
 
 const About = location => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "about" } }) {
+        nodes {
+          about {
+            subscribeTitle
+            subscribeDescription
+            footerCtaTitle
+            footerCtaDescription
+            footerCtaButtonLabel
+            footerCtaButtonUrl
+            footerCtaImage {
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+  `)
+
   const { crumbs } = useBreadcrumb({
     location,
     crumbLabel: "About",
   })
+
+  let subscribeTitle = data.allWpPage.nodes.map(
+    node => node.about.subscribeTitle
+  )
+  let subscribeDescription = data.allWpPage.nodes.map(
+    node => node.about.subscribeDescription
+  )
+  let footerCtaTitle = data.allWpPage.nodes.map(
+    node => node.about.footerCtaTitle
+  )
+
+  let footerCtaDescription = data.allWpPage.nodes.map(
+    node => node.about.footerCtaDescription
+  )
+  let footerCtaButtonLabel = data.allWpPage.nodes.map(
+    node => node.about.footerCtaButtonLabel
+  )
+  let footerCtaButtonUrl = data.allWpPage.nodes.map(
+    node => node.about.footerCtaButtonUrl
+  )
+  let footerCtaImage = data.allWpPage.nodes.map(
+    node => node.about.footerCtaImage.sourceUrl
+  )
 
   return (
     <>
@@ -29,20 +73,20 @@ const About = location => {
           <CommandmentsSection />
           <PowerSection />
           <WorkWithUsSection />
+          <SubscribeWrapSection
+            title={subscribeTitle}
+            description={subscribeDescription}
+            inputPlaceholder={"Enter Your Email"}
+            submitLabel={"I Want it!"}
+          />
+          <OfferSection
+            title={footerCtaTitle}
+            description={footerCtaDescription}
+            buttonLabel={footerCtaButtonLabel}
+            buttonUrl={footerCtaButtonUrl}
+            img={footerCtaImage}
+          />
         </section>
-        <SubscribeWrapSection
-          //   title={}
-          //   description={}
-          inputPlaceholder={"Enter Your Email"}
-          submitLabel={"I Want it!"}
-        />
-        <OfferSection
-        //   title={}
-        //   description={}
-        //   buttonLabel={}
-        //   buttonUrl={}
-        //   img={}
-        />
       </Layout>
       <Footer />
     </>

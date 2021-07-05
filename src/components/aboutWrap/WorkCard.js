@@ -1,12 +1,14 @@
 import React from "react"
 
-const WorkCard = () => {
+const WorkCard = props => {
+  const { className, title, description, label, link } = props
+
   return (
-    <div className="box code">
-      <h3>Code</h3>
-      <p>Dark cave? Code. Bug Lots of coffee.</p>
-      <a href="#" className="link">
-        Details
+    <div className={className}>
+      <h3 dangerouslySetInnerHTML={{ __html: title }} />
+      <p dangerouslySetInnerHTML={{ __html: description }} />
+      <a href={link} className="link">
+        {label}
       </a>
     </div>
   )

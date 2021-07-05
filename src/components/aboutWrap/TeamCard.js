@@ -1,14 +1,16 @@
 import React from "react"
 
-const TeamCard = () => {
+const TeamCard = props => {
+  const { link, bgColor, img, name, designation } = props
+
   return (
-    <a href="https://www.linkedin.com/in/imanbashir/">
-      <div className="img-box" style={{ backgroundColor: "#EEFDFE" }}>
-        <img src="images/bio-iman-icon.png" alt="image" />
+    <a href={link} target="_blank" rel="noreferrer">
+      <div className="img-box" style={{ backgroundColor: bgColor }}>
+        <img src={img} alt="" />
       </div>
       <div className="text-box">
-        <h3>Iman</h3>
-        <h6>Founder &amp; Tech</h6>
+        <h3 dangerouslySetInnerHTML={{ __html: name }} />
+        <h6 dangerouslySetInnerHTML={{ __html: designation }} />
       </div>
     </a>
   )

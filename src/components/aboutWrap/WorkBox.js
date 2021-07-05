@@ -1,17 +1,15 @@
 import React from "react"
 
-const WorkBox = () => {
+const WorkBox = props => {
+  const { icon, title, description } = props
+
   return (
     <>
       <div className="icon">
-        <img src="images/never-stop-learning.png" alt="icon" />
+        <img src={icon} alt="icon" />
       </div>
-      <h5>Never stop learning</h5>
-      <p>
-        We welcome experimentation, failing, and trying again. Workshops,
-        bootcamps, experiences -we’re here for it all ensuring our team is
-        always building new skills.
-      </p>
+      <h5 dangerouslySetInnerHTML={{ __html: title }} />
+      <p dangerouslySetInnerHTML={{ __html: description }} />
     </>
   )
 }
