@@ -6,7 +6,7 @@ import trustpiloatLogo from "../../images/trustpiloat-logo.png"
 const ClientSection = () => {
   const data = useStaticQuery(graphql`
     {
-      allWpPage(filter: { id: { eq: "cG9zdDo4" } }) {
+      allWpPage(filter: { slug: { eq: "home" } }) {
         nodes {
           home {
             clientsTitle
@@ -18,6 +18,7 @@ const ClientSection = () => {
                 sourceUrl
               }
               name
+              designation
             }
           }
         }
@@ -93,7 +94,10 @@ const ClientSection = () => {
                         alt=""
                       />
                     </span>
-                    <h6>{item.name}</h6>
+                    <h6>
+                      {item.name}
+                      <p>{item.designation}</p>
+                    </h6>
                   </div>
                 </div>
               ))}

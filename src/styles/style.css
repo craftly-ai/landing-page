@@ -6458,6 +6458,11 @@ footer .footer .right-conn .ft-menu ul .blog-detail-warpper li,
   font-size: 16px;
   text-transform: capitalize;
   color: #fff;
+  padding-top: 3px;
+}
+.clients-results .review-list .review-box .review-by h6 > p {
+  padding-top: 6px;
+  font-size: 14px;
 }
 .btn-main {
   display: inline-block;
