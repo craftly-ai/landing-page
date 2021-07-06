@@ -10,23 +10,15 @@ const Idea = props => {
     <li>
       <div className="btn-box">
         <Link>
-          <img
-            src={favoriteImg}
-            className="icon"
-            alt=""
-          />
+          <img src={favoriteImg} className="icon" alt="" />
         </Link>
         <Link>
-          <img
-            src={copyButtonImg}
-            className="icon"
-            alt=""
-          />
+          <img src={copyButtonImg} className="icon" alt="" />
         </Link>
       </div>
       <div className="text-box">
         <h6>{info}</h6>
-        <span>{chars}</span>
+        <span>{chars} Chars </span>
       </div>
     </li>
   )

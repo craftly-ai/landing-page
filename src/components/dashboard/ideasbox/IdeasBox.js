@@ -366,7 +366,7 @@ const IdeasBox = props => {
                 <Idea
                   key={i}
                   info={item.ideaText}
-                  chars={item.ideaText.match(/(\w+)/g).length}
+                  chars={item.ideaText.length}
                 />
               )
             })
