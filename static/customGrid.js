@@ -131,34 +131,32 @@
     }, delta)
   }
 
-  window.onload = function () {
-    var elements = document.getElementsByClassName("txt-rotate")
-    for (var i = 0; i < elements.length; i++) {
-      var toRotate = elements[i].getAttribute("data-rotate")
-      var period = elements[i].getAttribute("data-period")
-      if (toRotate) {
-        new TxtRotate(elements[i], JSON.parse(toRotate), period)
-      }
+  var elements = document.getElementsByClassName("txt-rotate")
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute("data-rotate")
+    var period = elements[i].getAttribute("data-period")
+    console.log(period)
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period)
     }
   }
-  ;(function ($) {
-    /** change value here to adjust parallax level */
-    var parallax = -0.3
 
-    var $bg_images = $(".bg-gradient")
-    var offset_tops = []
+  var parallax = -0.3
+
+  var $bg_images = $(".bg-gradient")
+  var offset_tops = []
+  $bg_images.each(function (i, el) {
+    offset_tops.push($(el).offset().top)
+  })
+
+  $(window).scroll(function () {
+    var dy = $(this).scrollTop()
     $bg_images.each(function (i, el) {
-      offset_tops.push($(el).offset().top)
+      var ot = offset_tops[i]
+      $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
     })
+  })
 
-    $(window).scroll(function () {
-      var dy = $(this).scrollTop()
-      $bg_images.each(function (i, el) {
-        var ot = offset_tops[i]
-        $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
-      })
-    })
-  })(jQuery)
   //main data
 
   $(".nav-toggle").click(function () {
@@ -195,35 +193,33 @@
     })
 
   if (document.documentElement.clientWidth < 768) {
-    ;(function ($) {
-      $(document).ready(function () {
-        $(".nav-main ul li").children("ul").toggle()
-        $(".nav-main ul li.sub-menu span").on("click", function () {
-          $(this).removeAttr("href")
-          var element = $(this).parent("li")
-          if (element.hasClass("open")) {
-            element.removeClass("open")
-            element.find("li").removeClass("open")
-            element.find("ul").slideUp(slow)
-          } else {
-            element.addClass("open")
-            element.children("ul").slideDown(slow)
-            element.siblings("li").children("ul").slideUp(slow)
-            element.siblings("li").removeClass("open")
-            element.siblings("li").find("li").removeClass("open")
-            element.siblings("li").find("ul").slideUp(slow)
-          }
-        })
-
-        $(".nav-main ul li.sub-menu ul li a, .nav-main ul li a").click(
-          function () {
-            $(".nav-toggle").removeClass("active")
-            $(".nav-main").removeClass("open")
-            $("body").removeClass("nav_open")
-          }
-        )
+    $(document).ready(function () {
+      $(".nav-main ul li").children("ul").toggle()
+      $(".nav-main ul li.sub-menu span").on("click", function () {
+        $(this).removeAttr("href")
+        var element = $(this).parent("li")
+        if (element.hasClass("open")) {
+          element.removeClass("open")
+          element.find("li").removeClass("open")
+          element.find("ul").slideUp(slow)
+        } else {
+          element.addClass("open")
+          element.children("ul").slideDown(slow)
+          element.siblings("li").children("ul").slideUp(slow)
+          element.siblings("li").removeClass("open")
+          element.siblings("li").find("li").removeClass("open")
+          element.siblings("li").find("ul").slideUp(slow)
+        }
       })
-    })(jQuery)
+
+      $(".nav-main ul li.sub-menu ul li a, .nav-main ul li a").click(
+        function () {
+          $(".nav-toggle").removeClass("active")
+          $(".nav-main").removeClass("open")
+          $("body").removeClass("nav_open")
+        }
+      )
+    })
     $(".pricing-table-raw .row").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -240,24 +236,21 @@
     $(".partenaires_con ul li").click(function () {})
   }
 
-  ;(function ($) {
-    /** change value here to adjust parallax level */
-    var parallax = -0.5
+  var parallax = -0.5
 
-    var $bg_images = $(".stick-gradient")
-    var offset_tops = []
+  var $bg_images = $(".stick-gradient")
+  var offset_tops = []
+  $bg_images.each(function (i, el) {
+    offset_tops.push($(el).offset().top)
+  })
+
+  $(window).scroll(function () {
+    var dy = $(this).scrollTop()
     $bg_images.each(function (i, el) {
-      offset_tops.push($(el).offset().top)
+      var ot = offset_tops[i]
+      $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
     })
-
-    $(window).scroll(function () {
-      var dy = $(this).scrollTop()
-      $bg_images.each(function (i, el) {
-        var ot = offset_tops[i]
-        $(el).css("background-position", "50% " + (dy - ot) * parallax + "px")
-      })
-    })
-  })(jQuery)
+  })
 
   var TxtRotate1 = function (el, toRotate, period) {
     this.toRotate = toRotate
