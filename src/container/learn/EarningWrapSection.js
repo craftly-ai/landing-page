@@ -65,6 +65,7 @@ const EarningWrapSection = () => {
                   data-mode="popup"
                   data-size={100}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   {startEarningButtonLabel}
                 </a>

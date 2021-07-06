@@ -9,7 +9,12 @@ const CommunitiesBox = props => {
       </i>
       <h4 dangerouslySetInnerHTML={{ __html: title }} />
       <p dangerouslySetInnerHTML={{ __html: description }} />
-      <a href={linkUrl} className="more-btn blue" target="_blank">
+      <a
+        href={linkUrl}
+        className="more-btn blue"
+        target="_blank"
+        rel="noreferrer"
+      >
         {linkLabel}
       </a>
     </div>

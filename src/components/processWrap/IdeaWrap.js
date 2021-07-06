@@ -13,6 +13,7 @@ const IdeaWrap = props => {
         data-size={100}
         data-submit-close-delay={1}
         target="_blank"
+        rel="noreferrer"
       >
         {label}
       </a>

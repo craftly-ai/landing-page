@@ -16,6 +16,7 @@ const EventBox = props => {
         className="btn-main"
         data-size={100}
         target="_blank"
+        rel="noreferrer"
       >
         {buttonLabel}
       </a>

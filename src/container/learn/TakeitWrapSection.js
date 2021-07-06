@@ -53,6 +53,7 @@ const TakeitWrapSection = () => {
               className="btn-main"
               data-size={100}
               target="_blank"
+              rel="noreferrer"
             >
               {scheduleButtonLabel}
             </a>
