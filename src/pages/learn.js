@@ -58,9 +58,13 @@ const Learn = location => {
   )
   let emailId = data.allWpPage.nodes.map(node => node.learn.emailId)
 
+  const metaTitle = "Academy"
+  const metaDescription =
+    "Craftly.AI | AI Powered Copywriter for Marketing Copy and Content"
+
   return (
     <>
-      <SEO title="" />
+      <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="relative">
           <CustomBreadcrumb crumbs={crumbs} />

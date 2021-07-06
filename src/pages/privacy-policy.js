@@ -30,9 +30,12 @@ const PrivacyPolicy = location => {
   let intro = data.allWpPage.nodes.map(node => node.privacyPolicy.intro)
   let points = data.allWpPage.nodes.map(node => node.privacyPolicy.points)
 
+  const metaTitle = "Privacy Policy"
+  const metaDescription = ""
+
   return (
     <>
-      <SEO title="Craftly.AI | Privacy Policy" />
+      <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="default-page-raw section stick-gradient">
           <CustomBreadcrumb crumbs={crumbs} />

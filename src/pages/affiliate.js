@@ -96,9 +96,13 @@ const Affiliate = () => {
     node => node.affiliate.audienceList
   )
 
+  const metaTitle = "Affiliate"
+  const metaDescription =
+    "Earn money monthly. High earning potential. Earn up to 30% passive income / commission by referring friends, family, randoms. Seriously, there is no limit."
+
   return (
     <>
-      <SEO title-="Craftly.AI | Affiliate" />
+      <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="section">
           <InnerBanner

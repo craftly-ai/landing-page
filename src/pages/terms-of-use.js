@@ -29,9 +29,12 @@ const TermsOfUse = location => {
   let intro = data.allWpPage.nodes.map(node => node.termsOfUse.intro)
   let points = data.allWpPage.nodes.map(node => node.termsOfUse.points)
 
+  const metaTitle = "Terms of Use"
+  const metaDescription = ""
+
   return (
     <>
-      <SEO title="Craftly.AI | Terms of Use" />
+      <SEO title={metaTitle} description={metaDescription} />{" "}
       <Layout>
         <section className="default-page-raw section stick-gradient">
           <CustomBreadcrumb crumbs={crumbs} />
