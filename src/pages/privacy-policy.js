@@ -38,7 +38,10 @@ const PrivacyPolicy = location => {
       <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="default-page-raw section stick-gradient">
-          <CustomBreadcrumb crumbs={crumbs} />
+          <CustomBreadcrumb
+            crumbs={crumbs}
+            className={"breadcrumbs mrt112 section"}
+          />
           <div className="privacy-policy-raw section">
             <div className="container">
               <div className="privacy-head">

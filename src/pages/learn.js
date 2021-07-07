@@ -67,7 +67,10 @@ const Learn = location => {
       <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="relative">
-          <CustomBreadcrumb crumbs={crumbs} />
+          <CustomBreadcrumb
+            crumbs={crumbs}
+            className={"breadcrumbs mrt112 section"}
+          />
           <InnerBanner
             bannerLogo={bannerLogo}
             bannerButtonLabel={bannerLearnButtonLabel}

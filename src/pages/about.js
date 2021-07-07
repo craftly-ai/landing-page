@@ -71,7 +71,10 @@ const About = location => {
       <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="about-page-wrap section">
-          <CustomBreadcrumb crumbs={crumbs} />
+          <CustomBreadcrumb
+            crumbs={crumbs}
+            className={"breadcrumbs mrt112 section"}
+          />
           <AboutSection />
           <CraftersSection />
           <CommandmentsSection />

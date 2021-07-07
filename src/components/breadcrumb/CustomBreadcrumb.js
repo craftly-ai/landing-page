@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const CustomBreadcrumb = ({ crumbs }) => {
+const CustomBreadcrumb = props => {
+  const { className, crumbs } = props
   return (
     <div>
-      <div className="breadcrumbs mrt112 section">
+      <div className={className}>
         <div className="container">
           <ul>
             {/* <li>
