@@ -20,8 +20,8 @@ const Header = () => (
             <div className="nav">
               <div className="nav-main">
                 <ul>
-                  <li className="test">
-                    <a href="/#pricing">Pricing</a>
+                  <li>
+                    <Link to="/tools/">Tools & Samples</Link>
                   </li>
                   <li className="sub-menu">
                     <Link to="#">Resources</Link>
@@ -37,6 +37,9 @@ const Header = () => (
                         <a href="/about/">About</a>
                       </li>
                     </ul>
+                  </li>
+                  <li className="test">
+                    <a href="/#pricing">Pricing</a>
                   </li>
                   <li className="mobile-li">
                     <Link to="#">Request Access</Link>

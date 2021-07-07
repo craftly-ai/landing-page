@@ -448,7 +448,7 @@
   })
 })(jQuery)
 
-//About Page
+// About Page
 
 if (document.documentElement.clientWidth > 1499) {
   ;(function ($) {
@@ -550,4 +550,101 @@ if (document.documentElement.clientWidth < 767) {
       })
     })
   })(jQuery)
+}
+
+// tools Page
+
+$(document).ready(function () {
+  $(window).load(function () {
+    $(".tools-tab-Scrollbar").mCustomScrollbar({
+      theme: "inset-dark",
+      scrollButtons: {
+        enable: true,
+      },
+    })
+  })
+})
+
+if (document.documentElement.clientWidth < 991) {
+  $(".tools-col #popular ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #popular .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #company ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #company .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #blog ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #blog .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #web-copy ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #web-copy .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #ecommerce ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #ecommerce .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #ads ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #ads .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #email ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #email .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #seo ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #seo .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #socials ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".tools-raw #socials .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
+  $(".tools-col #writing-tool ul li a").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop:
+          $(".tools-raw #writing-tool .all-tools-raw").offset().top - 40,
+      },
+      0
+    )
+  })
 }
