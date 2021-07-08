@@ -47,14 +47,10 @@ function SEO({ description, lang, title }) {
       <meta name="twitter:description" content={metaDescription} />
       <meta http-equiv="cache-control" content="max-age=0" />
 
-      <script src={withPrefix("customGrid.js")} type="text/javascript" defer />
-      <script src={withPrefix("animator.js")} type="text/javascript" defer />
+      <script src={withPrefix("customGrid.js")} type="text/javascript" />
+      <script src={withPrefix("animator.js")} type="text/javascript" />
       <script src={withPrefix("rangeslide.js")} type="text/javascript" />
       <script src={withPrefix("custom.js")} type="text/javascript" />
-      <script
-        type="text/javascript"
-        src="https://widget.prefinery.com/widget/v2/g72qxl5b.js"
-      ></script>
     </Helmet>
   )
 }

@@ -51,5 +51,9 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
       src="https://code.tidio.co/4okfxoik8goeafk6fywrgilwux7mavdq.js"
       type="text/javascript"
     ></script>,
+    <script
+      src="https://widget.prefinery.com/widget/v2/g72qxl5b.js"
+      type="text/javascript"
+    ></script>,
   ])
 }
