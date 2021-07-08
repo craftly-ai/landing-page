@@ -122,6 +122,10 @@ body {
   padding: 0px !important;
 }
 
+.bg-white{
+  background-color: #fff!important;
+}
+
 .bg-gradient {
   background-image: url(../images/parallex-sec.jpg);
   background-repeat: no-repeat;
