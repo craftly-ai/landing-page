@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const FeaturedBlogSection = () => {
   const data = useStaticQuery(graphql`
     {
-      allWpPost {
+      allWpPost(filter: { blogPost: { featurePost: { eq: true } } }) {
         nodes {
           author {
             node {
@@ -23,6 +23,7 @@ const FeaturedBlogSection = () => {
           }
           date(formatString: "MMMM DD, YYYY")
           blogPost {
+            nuberOfMinutesToRead
             featurePost
           }
           featuredImage {
@@ -36,24 +37,15 @@ const FeaturedBlogSection = () => {
     }
   `)
 
-  let info = data.allWpPost.nodes.map(node => node.blogPost.featurePost)
-  let slug = data.allWpPost.nodes.map(node => node.slug)
-
-  let datainfo = data.allWpPost.nodes.map(node => {
-    if (node.blogPost.featurePost !== null) {
-      data.allWpPost.nodes.map(node => node.slug)
-    }
-  })
-
-  console.log(datainfo)
+  console.log(data)
 
   return (
     <div className="section featured-blog-raw right-section-container">
       <div className="container">
         <div className="row">
-          <FeaturedBlogContainer />
-          <FeaturedBlogContainer />
-          <FeaturedBlogContainer />
+          {data.allWpPost.nodes.map(post => (
+            <FeaturedBlogContainer data={post} />
+          ))}
         </div>
       </div>
     </div>

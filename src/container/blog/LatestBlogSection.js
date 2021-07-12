@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const LatestBlogSection = () => {
   const data = useStaticQuery(graphql`
     {
-      allWpPost(limit: 1) {
+      allWpPost(sort: { fields: date, order: DESC }, limit: 1) {
         nodes {
           author {
             node {
@@ -35,23 +35,18 @@ const LatestBlogSection = () => {
       }
     }
   `)
-
-  let authorName = data.allWpPost.nodes.map(node => node.author.node.name)
-  let authorAvatarUrl = data.allWpPost.nodes.map(
-    node => node.author.node.avatar.url
+  console.log(data.allWpPost.nodes[0].author.node.name)
+  let authorName = data.allWpPost.nodes[0].author.node.name
+  let authorAvatarUrl = data.allWpPost.nodes[0].author.node.avatar.url
+  let slug = data.allWpPost.nodes[0].slug
+  let categories = data.allWpPost.nodes[0].categories.nodes.map(
+    data => data.name
   )
-  let slug = data.allWpPost.nodes.map(node => node.slug)
-  let categories = data.allWpPost.nodes.map(node =>
-    node.categories.nodes.map(data => data.name)
-  )
-  let date = data.allWpPost.nodes.map(node => node.date)
-  let nuberOfMinutesToRead = data.allWpPost.nodes.map(
-    node => node.blogPost.nuberOfMinutesToRead
-  )
-  let featuredImage = data.allWpPost.nodes.map(
-    node => node.featuredImage.node.sourceUrl
-  )
-  let title = data.allWpPost.nodes.map(node => node.title)
+  let date = data.allWpPost.nodes[0].date
+  let nuberOfMinutesToRead =
+    data.allWpPost.nodes[0].blogPost.nuberOfMinutesToRead
+  let featuredImage = data.allWpPost.nodes[0].featuredImage.node.sourceUrl
+  let title = data.allWpPost.nodes[0].title
 
   return (
     <div className="section latest-blog-raw right-section-container">
@@ -62,7 +57,7 @@ const LatestBlogSection = () => {
               {nuberOfMinutesToRead} min read <strong>{categories}</strong>
             </span>
             <h1>
-              <Link to={`/blog/${slug}`}>{title}</Link>
+              <Link to={`${slug}`}>{title}</Link>
             </h1>
             <div className="auther-col section">
               <img src={authorAvatarUrl} alt="" className="img-fluid avtar" />

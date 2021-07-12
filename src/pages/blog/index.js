@@ -1,39 +1,44 @@
 import React from "react"
-import SEO from "../../components/seo/seo"
-import Layout from "../../components/layout/Layout"
-import Footer from "../../components/footer/Footer"
-import CustomBreadcrumb from "../../components/breadcrumb/CustomBreadcrumb"
-import SubscribeSection from "../../container/blog/SubscribeSection"
-import CatSection from "../../container/blog/CatSection"
-import LatestBlogSection from "./../../container/blog/LatestBlogSection"
-import FeaturedBlogSection from "./../../container/blog/FeaturedBlogSection"
-import BlogListSection from "./../../container/blog/BlogListSection"
-import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
+import Blog from "./Blog"
+import BlogTemplate from "./BlogTemplate"
+import { graphql } from "gatsby"
 
-const BlogIndex = location => {
-  const { crumbs } = useBreadcrumb({
-    location,
-    crumbLabel: "Blog",
-  })
-  return (
-    <>
-      <SEO />
-      <Layout>
-        <section className="blog-page-warpper section stick-gradient">
-          <CustomBreadcrumb
-            crumbs={crumbs}
-            className={"breadcrumbs mrt112 section"}
-          />
-          <LatestBlogSection />
-          <FeaturedBlogSection />
-          <BlogListSection />
-        </section>
-        <SubscribeSection />
-        <CatSection />
-        <Footer />
-      </Layout>
-    </>
-  )
+const BlogIndex = props => {
+  console.log(props)
+  if (!props.pageContext.slug) {
+    return <Blog />
+  } else {
+    return <BlogTemplate data={props.data} location={props} />
+  }
 }
 
 export default BlogIndex
+
+export const data = graphql`
+  query($slug: String!) {
+    allWpPost(filter: { slug: { eq: $slug } }) {
+      nodes {
+        author {
+          node {
+            name
+            description
+            avatar {
+              url
+            }
+          }
+        }
+        categories {
+          nodes {
+            name
+          }
+        }
+        date(formatString: "MMMM DD, YYYY")
+        blogPost {
+          nuberOfMinutesToRead
+        }
+        title
+        content
+      }
+    }
+  }
+`

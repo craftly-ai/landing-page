@@ -1,27 +1,28 @@
 import React from "react"
-import poster from "../../images/blog-post-ai-writes.png"
-import avtar from "../../images/headshot-megan-apa.png"
+import { Link } from "gatsby"
 
-const FeaturedBlogContainer = () => {
+const FeaturedBlogContainer = ({ data }) => {
   return (
     <div className="col-sm-4 col-xs-12 featured-blog-col">
-      <a href="#" className="blog-img">
-        <img src={poster} alt="" />
-      </a>
+      <Link to={`${data.slug}`} className="blog-img">
+        <img src={data.featuredImage.node.sourceUrl} alt="" />
+      </Link>
       <div className="context-col">
         <p className="context">
-          5 min read <span>Culture</span>
+          {data.blogPost.nuberOfMinutesToRead} min read{" "}
+          <span>{data.categories.nodes.map(e => e.name)}</span>
         </p>
-        <a href="#">
-          When AI Writes: What is GPT-3? And What it means for Artificial
-          Intelligence?
-        </a>
+        <Link to={`${data.slug}`}>{data.title}</Link>
       </div>
       <div className="auther-col section">
-        <img src={avtar} alt="" className="img-fluid avtar" />
+        <img
+          src={data.author.node.avatar.url}
+          alt=""
+          className="img-fluid avtar"
+        />
         <p>
-          Megan Apa <br />
-          <span>Jan 25, 2021</span>
+          {data.author.node.name} <br />
+          <span>{data.date}</span>
         </p>
       </div>
     </div>

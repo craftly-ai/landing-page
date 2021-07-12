@@ -1,7 +1,42 @@
 import React from "react"
 import FeaturedBlogContainer from "./../../components/blog/FeaturedBlogContainer"
+import { useStaticQuery, graphql } from "gatsby"
 
 const FeaturedBlogRaw = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPost(filter: { blogPost: { featurePost: { eq: true } } }) {
+        nodes {
+          author {
+            node {
+              name
+              avatar {
+                url
+              }
+            }
+          }
+          slug
+          categories {
+            nodes {
+              name
+            }
+          }
+          date(formatString: "MMMM DD, YYYY")
+          blogPost {
+            nuberOfMinutesToRead
+            featurePost
+          }
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <div className="section featured-blog-raw  right-section-container">
       <div className="container">
@@ -12,39 +47,9 @@ const FeaturedBlogRaw = () => {
             </div>
           </div>
           <div className="row">
-            <FeaturedBlogContainer />
-            <FeaturedBlogContainer />
-            <FeaturedBlogContainer />
-            {/* <div className="col-sm-4 col-xs-12 featured-blog-col">
-                <a
-                  href="what-are-meta-descriptions-and-how-to-write-them.html"
-                  className="blog-img"
-                >
-                  <img
-                    src="../../images/blog-post-meta-description.png"
-                    alt
-                  />
-                </a>
-                <div className="context-col">
-                  <p className="context">
-                    5 min read <span>Updates</span>
-                  </p>
-                  <a href="what-are-meta-descriptions-and-how-to-write-them.html">
-                    What Are Meta Descriptions and How To Write Them
-                  </a>
-                </div>
-                <div className="auther-col section">
-                  <img
-                    src="../../images/headshot-megan-apa.png"
-                    alt="Avtar"
-                    className="img-fluid avtar"
-                  />
-                  <p>
-                    Megan Apa <br />
-                    <span>Jan 25, 2021</span>{" "}
-                  </p>
-                </div>
-              </div> */}
+            {data.allWpPost.nodes.map(post => (
+              <FeaturedBlogContainer data={post} />
+            ))}
           </div>
         </div>
       </div>

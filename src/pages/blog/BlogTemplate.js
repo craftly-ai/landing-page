@@ -8,37 +8,10 @@ import CustomBreadcrumb from "../../components/breadcrumb/CustomBreadcrumb"
 import RightSidebar from "../../container/blog/RightSidebar"
 import FeaturedBlogRaw from "../../container/blog/FeaturedBlogRaw"
 import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
-import { useStaticQuery, graphql } from "gatsby"
 
-const BlogTemplate = location => {
-  const data = useStaticQuery(graphql`
-    {
-      allWpPost(limit: 1) {
-        nodes {
-          author {
-            node {
-              name
-              description
-              avatar {
-                url
-              }
-            }
-          }
-          categories {
-            nodes {
-              name
-            }
-          }
-          date(formatString: "MMMM DD, YYYY")
-          blogPost {
-            nuberOfMinutesToRead
-          }
-          title
-          content
-        }
-      }
-    }
-  `)
+const BlogTemplate = ({ location, data }) => {
+  console.log(data)
+  console.log(location)
 
   let authorName = data.allWpPost.nodes.map(node => node.author.node.name)
   let authorDescription = data.allWpPost.nodes.map(
