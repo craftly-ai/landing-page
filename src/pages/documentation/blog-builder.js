@@ -1,19 +1,11 @@
 import * as React from "react"
-import SEO from "./../../components/seo/seo"
-import StickyMenu from "./../../components/documentation/StickyMenu"
-import DocFooter from "./../../components/documentation/DocFooter"
-import CatBox from "./../../components/documentation/CatBox"
+import DocLayout from "./../../components/documentation/DocLayout"
 
 const BlogBuilder = () => {
   return (
-    <>
-      <SEO />
-      <section className="section documentation-wrapper bg-white">
-        <StickyMenu />
-        <CatBox />
-        <DocFooter />
-      </section>
-    </>
+    <DocLayout>
+      <div className="container small-container"></div>
+    </DocLayout>
   )
 }
 

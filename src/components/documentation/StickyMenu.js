@@ -10,17 +10,17 @@ const StickyMenu = () => {
         <h6>Platform</h6>
         <div className="box">
           <h6>
-            <a href="#">Step By Step</a>
+            <a href="/documentation/step-by-step">Step By Step</a>
           </h6>
           <ul>
             <li>
-              <a href="#">Choose Workspace</a>
+              <a href="/documentation/">Choose Workspace</a>
             </li>
             <li>
-              <a href="#">Recent Results</a>
+              <a href="/documentation/">Recent Results</a>
             </li>
             <li>
-              <a href="#">Saved Results</a>
+              <a href="/documentation/">Saved Results</a>
             </li>
             <li>
               <a href="/documentation/choose-a-tone">Choose a tone</a>
@@ -31,34 +31,38 @@ const StickyMenu = () => {
         <div className="box">
           <ul>
             <li>
-              <a href="#">Sentence Rewriter</a>
+              <a href="/documentation/sentence-rewriter">Sentence Rewriter</a>
             </li>
             <li>
-              <a href="#">Blog Builder</a>
+              <a href="/documentation/blog-builder">Blog Builder</a>
             </li>
             <li>
-              <a href="#">Product Description</a>
+              <a href="/documentation/product-description">
+                Product Description
+              </a>
             </li>
             <li>
-              <a href="#">Bullets to Paragraph</a>
+              <a href="/documentation/bullets-to-paragraph">
+                Bullets to Paragraph
+              </a>
             </li>
             <li>
-              <a href="#">Headline</a>
+              <a href="/documentation/headline">Headline</a>
             </li>
             <li>
-              <a href="#">Blog Topics</a>
+              <a href="/documentation/blog-topics">Blog Topics</a>
             </li>
             <li>
-              <a href="#">Email Thank You</a>
+              <a href="/documentation/email-thank-you">Email Thank You</a>
             </li>
             <li>
-              <a href="#">Email Confirmation</a>
+              <a href="/documentation/email-confirmation">Email Confirmation</a>
             </li>
             <li>
-              <a href="#">Blog Ideas</a>
+              <a href="/documentation/blog-topics">Blog Ideas</a>
             </li>
             <li>
-              <a href="#">Value Proposition</a>
+              <a href="/documentation/value-proposition">Value Proposition</a>
             </li>
           </ul>
         </div>

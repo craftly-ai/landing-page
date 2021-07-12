@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const DocFooter = () => {
   return (
@@ -11,16 +12,16 @@ const DocFooter = () => {
                 <h5>Company</h5>
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a href="#">About</a>
+                    <Link to="/about/">About</Link>
                   </li>
                   <li>
-                    <a href="#">Pricing</a>
+                    <Link to="/#pricing">Pricing</Link>
                   </li>
                   <li>
-                    <a href="#">Demo</a>
+                    <Link to="/documentation">Demo</Link>
                   </li>
                 </ul>
               </div>
@@ -28,10 +29,24 @@ const DocFooter = () => {
                 <h5>Resources</h5>
                 <ul>
                   <li>
-                    <a href="#">Help Center</a>
+                    <Link to="/learn/">Help Center</Link>
                   </li>
                   <li>
-                    <a href="#">Partner Program</a>
+                    <a
+                      href="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
+                      data-mode="popup"
+                      data-size={100}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Partner Program
+                    </a>
+                  </li>
+                  <li>
+                    <Link to="/documentation">Agency partners</Link>
+                  </li>
+                  <li>
+                    <Link to="/documentation">Referral partners</Link>
                   </li>
                 </ul>
               </div>
@@ -39,12 +54,22 @@ const DocFooter = () => {
                 <h5>Join Communities</h5>
                 <ul>
                   <li>
-                    <a href="https://www.facebook.com/groups/562335751328055/">
+                    <a
+                      href="https://www.facebook.com/groups/562335751328055/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Official Facebook Group
                     </a>
                   </li>
                   <li>
-                    <a href="http://craftlyai.slack.com/">Slack Channel</a>
+                    <a
+                      href="http://craftlyai.slack.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Slack Channel
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -52,10 +77,10 @@ const DocFooter = () => {
                 <h5>Information </h5>
                 <ul>
                   <li>
-                    <a href="#">Terms and Conditions</a>
+                    <Link to="/terms-of-use/">Terms and Conditions</Link>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <Link to="/privacy-policy/">Privacy Policy</Link>
                   </li>
                 </ul>
               </div>
@@ -70,12 +95,17 @@ const DocFooter = () => {
                   <a
                     href="https://www.facebook.com/groups/562335751328055"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/craftlyai" target="_blank">
+                  <a
+                    href="https://twitter.com/craftlyai"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                   </a>
                 </li>
@@ -83,6 +113,7 @@ const DocFooter = () => {
                   <a
                     href="https://www.linkedin.com/company/22345879/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                   </a>
@@ -91,6 +122,7 @@ const DocFooter = () => {
                   <a
                     href="https://www.instagram.com/craftly.ai"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                   </a>

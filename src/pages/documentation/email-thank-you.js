@@ -1,7 +1,7 @@
 import * as React from "react"
 import DocLayout from "./../../components/documentation/DocLayout"
 
-const BlogTopics = () => {
+const EmailThankYou = () => {
   return (
     <DocLayout>
       <div className="container small-container"></div>
@@ -9,4 +9,4 @@ const BlogTopics = () => {
   )
 }
 
-export default BlogTopics
+export default EmailThankYou
