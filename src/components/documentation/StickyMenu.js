@@ -59,7 +59,7 @@ const StickyMenu = () => {
               <a href="/documentation/email-confirmation">Email Confirmation</a>
             </li>
             <li>
-              <a href="/documentation/blog-topics">Blog Ideas</a>
+              <a href="/documentation/blog-ideas">Blog Ideas</a>
             </li>
             <li>
               <a href="/documentation/value-proposition">Value Proposition</a>

@@ -1,26 +1,47 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 const CatBox = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "documentation" } }) {
+        nodes {
+          documentation {
+            cta {
+              ctaTopTitle
+              ctaTitle
+              ctaDescription
+              ctaButtonLabel
+              ctaButtonUrl
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  let ctaTopTitle = data.allWpPage.nodes[0].documentation.cta.ctaTopTitle
+  let ctaTitle = data.allWpPage.nodes[0].documentation.cta.ctaTitle
+  let ctaDescription = data.allWpPage.nodes[0].documentation.cta.ctaDescription
+  let ctaButtonLabel = data.allWpPage.nodes[0].documentation.cta.ctaButtonLabel
+  let ctaButtonUrl = data.allWpPage.nodes[0].documentation.cta.ctaButtonUrl
+
   return (
     <div className="documentation-cta">
       <div className="container small-container">
         <div className="box-wrap text-center">
-          <h6>CRAFTLY PARTNER</h6>
-          <h2>Earn Money While You Sleep</h2>
-          <p>
-            Love getting Craftly with us? Earn up to 30% monthly residual income
-            of any sign ups you get Craftly. Refer friends, family, people on
-            the streets. Seriously, there is no limit.
-          </p>
+          <h6 dangerouslySetInnerHTML={{ __html: ctaTopTitle }} />
+          <h2 dangerouslySetInnerHTML={{ __html: ctaTitle }} />
+          <p dangerouslySetInnerHTML={{ __html: ctaDescription }} />
           <a
             className="border-btn"
-            href="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
+            href={ctaButtonUrl}
             data-mode="popup"
             data-size={100}
             target="_blank"
             rel="noreferrer"
           >
-            Start Earning
+            {ctaButtonLabel}
           </a>
         </div>
       </div>

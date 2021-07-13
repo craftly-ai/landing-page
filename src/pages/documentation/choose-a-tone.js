@@ -1,75 +1,63 @@
 import React from "react"
 import DocLayout from "./../../components/documentation/DocLayout"
+import { useStaticQuery, graphql } from "gatsby"
 
 const ChooseATone = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWpPage(filter: { slug: { eq: "documentation" } }) {
+        nodes {
+          documentation {
+            chooseATone {
+              title
+              description
+              craftingPersonalizedTitle
+              craftingPersonalizedDescription
+              contentCreationsTitle
+              contentCreationsDescription
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  let title = data.allWpPage.nodes[0].documentation.chooseATone.title
+  let description =
+    data.allWpPage.nodes[0].documentation.chooseATone.description
+  let craftingPersonalizedTitle =
+    data.allWpPage.nodes[0].documentation.chooseATone.craftingPersonalizedTitle
+  let craftingPersonalizedDescription =
+    data.allWpPage.nodes[0].documentation.chooseATone
+      .craftingPersonalizedDescription
+  let contentCreationsTitle =
+    data.allWpPage.nodes[0].documentation.chooseATone.contentCreationsTitle
+  let contentCreationsDescription =
+    data.allWpPage.nodes[0].documentation.chooseATone
+      .contentCreationsDescription
+
   return (
     <DocLayout>
-      <div className="container small-container">
-        <h1>Choose a Tone</h1>
-        <p>
-          Sick of erasing all your exclamation marks or worried that you sound
-          too curt? The tone tool can change the wording and attitude of your
-          output! By choosing a specific tone, you’re giving the AI the
-          opportunity to sound more like you, or at least sound like the person
-          you want to be!{" "}
-        </p>
-        <p>
-          This is great for content creation, description and assignments, as it
-          keeps everything personalized and human. As we know, GPT-3 is the most
-          natural language producing AI available today - and tone just takes it
-          one step further to add a layer of personalization and individuality.
-          Similar to using layer tools, we can also layer tones. Instead of
-          choosing several tones for your copy right off the bat, we recommend
-          choosing one tone, and then running it through a second time with a
-          new tone for more accurate results.
-        </p>
-        <div className="crafting-personalized ptb80">
-          <h3>Crafting Personalized Content with Tones</h3>
-          <ul>
-            <li>Professional</li>
-            <li>Casual</li>
-            <li>Excited</li>
-            <li>Funny</li>
-            <li>Witty</li>
-            <li>Dramatic</li>
-            <li>Grumpy</li>
-            <li>Bold</li>
-            <li>Sarcastic</li>
-          </ul>
-        </div>
-        <div className="content-creations">
-          <h3>Cai’s Tone Creations</h3>
-          <ul>
-            <li>
-              <strong>Input:</strong> I'm just not that into you...
-            </li>
-          </ul>
-          <h6>Output with Different Tones </h6>
-          <ul>
-            <li>
-              <strong>Friendly:</strong> Hey there, stranger! I'm sure you're
-              really nice and everything, but I think we should just stay
-              friends.
-            </li>
-            <li>
-              <strong>Bold:</strong> You and me, we just don't belong.
-            </li>
-            <li>
-              <strong>Witty:</strong> I'm shocked you got this far. You really
-              thought I'd want to go out with you? Maybe you'll have more luck
-              in Las Vegas.
-            </li>
-            <li>
-              <strong>Empathetic:</strong> I realize that you made a big effort
-              to ask me on a date, which I appreciate. I’m just not interested
-              in pursuing this any more.
-            </li>
-            <li>
-              <strong>Disclaimer:</strong> Cai can word your breakup letter, but
-              lacks the emotional intelligence to offer you support, tissues,
-              chocolate, or advice.
-            </li>
-          </ul>
+      <div className="documentation-row documentation-detail-page">
+        <div className="container small-container">
+          <h1 dangerouslySetInnerHTML={{ __html: title }} />
+          <p dangerouslySetInnerHTML={{ __html: description }} />
+          <div className="crafting-personalized ptb80">
+            <h3
+              dangerouslySetInnerHTML={{ __html: craftingPersonalizedTitle }}
+            />
+            <div
+              dangerouslySetInnerHTML={{
+                __html: craftingPersonalizedDescription,
+              }}
+            />
+          </div>
+          <div className="content-creations">
+            <h3 dangerouslySetInnerHTML={{ __html: contentCreationsTitle }} />
+            <div
+              dangerouslySetInnerHTML={{ __html: contentCreationsDescription }}
+            />
+          </div>
         </div>
       </div>
     </DocLayout>

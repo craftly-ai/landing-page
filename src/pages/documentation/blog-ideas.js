@@ -1,17 +1,17 @@
 import * as React from "react"
-import DocLayout from "./../../components/documentation/DocLayout"
-import StepList from "./../../components/documentation/StepList"
-import TipsBox from "./../../components/documentation/TipsBox"
-import ContentBox from "./../../components/documentation/ContentBox"
+import DocLayout from "../../components/documentation/DocLayout"
+import StepList from "../../components/documentation/StepList"
+import TipsBox from "../../components/documentation/TipsBox"
+import ContentBox from "../../components/documentation/ContentBox"
 import { useStaticQuery, graphql } from "gatsby"
 
-const BlogTopics = () => {
+const BlogIdeas = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "documentation" } }) {
         nodes {
           documentation {
-            blogTopics {
+            blogIdeas {
               title
               description
               stepsTitle
@@ -32,20 +32,20 @@ const BlogTopics = () => {
     }
   `)
 
-  let title = data.allWpPage.nodes[0].documentation.blogTopics.title
-  let description = data.allWpPage.nodes[0].documentation.blogTopics.description
-  let stepsTitle = data.allWpPage.nodes[0].documentation.blogTopics.stepsTitle
-  let stepsList = data.allWpPage.nodes[0].documentation.blogTopics.stepsList
-  let tipsTitle = data.allWpPage.nodes[0].documentation.blogTopics.tipsTitle
+  let title = data.allWpPage.nodes[0].documentation.blogIdeas.title
+  let description = data.allWpPage.nodes[0].documentation.blogIdeas.description
+  let stepsTitle = data.allWpPage.nodes[0].documentation.blogIdeas.stepsTitle
+  let stepsList = data.allWpPage.nodes[0].documentation.blogIdeas.stepsList
+  let tipsTitle = data.allWpPage.nodes[0].documentation.blogIdeas.tipsTitle
   let tipsDescription =
-    data.allWpPage.nodes[0].documentation.blogTopics.tipsDescription
+    data.allWpPage.nodes[0].documentation.blogIdeas.tipsDescription
   let contentCreationsTitle =
-    data.allWpPage.nodes[0].documentation.blogTopics.contentCreationsTitle
+    data.allWpPage.nodes[0].documentation.blogIdeas.contentCreationsTitle
 
   let contentCreationsImage =
-    data.allWpPage.nodes[0].documentation.blogTopics.contentCreationsImage !=
+    data.allWpPage.nodes[0].documentation.blogIdeas.contentCreationsImage !=
     null
-      ? data.allWpPage.nodes[0].documentation.blogTopics.contentCreationsImage
+      ? data.allWpPage.nodes[0].documentation.blogIdeas.contentCreationsImage
           .sourceUrl
       : null
 
@@ -81,4 +81,4 @@ const BlogTopics = () => {
   )
 }
 
-export default BlogTopics
+export default BlogIdeas

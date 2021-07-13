@@ -13,9 +13,7 @@ const DocLayout = ({ children }) => {
         <div className="right-box-wrap">
           <MenuNavigation />
           <SearchBox />
-          <div className="documentation-row documentation-detail-page">
-            {children}
-          </div>
+          {children}
           <CatBox />
           <DocFooter />
         </div>
