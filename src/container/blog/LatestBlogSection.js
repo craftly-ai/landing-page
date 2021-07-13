@@ -35,7 +35,6 @@ const LatestBlogSection = () => {
       }
     }
   `)
-  console.log(data.allWpPost.nodes[0].author.node.name)
   let authorName = data.allWpPost.nodes[0].author.node.name
   let authorAvatarUrl = data.allWpPost.nodes[0].author.node.avatar.url
   let slug = data.allWpPost.nodes[0].slug
@@ -45,7 +44,10 @@ const LatestBlogSection = () => {
   let date = data.allWpPost.nodes[0].date
   let nuberOfMinutesToRead =
     data.allWpPost.nodes[0].blogPost.nuberOfMinutesToRead
-  let featuredImage = data.allWpPost.nodes[0].featuredImage.node.sourceUrl
+  let featuredImage =
+    data.allWpPost.nodes[0].featuredImage != null
+      ? data.allWpPost.nodes[0].featuredImage.node.sourceUrl
+      : ""
   let title = data.allWpPost.nodes[0].title
 
   return (
