@@ -10,9 +10,6 @@ import FeaturedBlogRaw from "../../container/blog/FeaturedBlogRaw"
 import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
 
 const BlogTemplate = ({ location, data }) => {
-  console.log(data)
-  console.log(location)
-
   let authorName = data.allWpPost.nodes.map(node => node.author.node.name)
   let authorDescription = data.allWpPost.nodes.map(
     node => node.author.node.description

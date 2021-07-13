@@ -37,8 +37,6 @@ const FeaturedBlogSection = () => {
     }
   `)
 
-  console.log(data)
-
   return (
     <div className="section featured-blog-raw right-section-container">
       <div className="container">

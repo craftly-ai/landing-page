@@ -4,7 +4,6 @@ import BlogTemplate from "./BlogTemplate"
 import { graphql } from "gatsby"
 
 const BlogIndex = props => {
-  console.log(props)
   if (!props.pageContext.slug) {
     return <Blog />
   } else {

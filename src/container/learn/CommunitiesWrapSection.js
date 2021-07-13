@@ -40,7 +40,6 @@ const CommunitiesWrapSection = () => {
       <ul className="col3">
         {communitiesList.map(e =>
           e.map((item, i) => {
-            console.log(item)
             return (
               <li key={i}>
                 <CommunitiesBox
