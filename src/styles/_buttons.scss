@@ -1,0 +1,24 @@
+.btn-main{
+	display:inline-block;
+	width:auto;
+	height:58px;
+	line-height:56px;
+	padding:0 40px;
+	margin-top:30px;
+	min-width: 230px;
+    text-align: center;
+	border:0px;
+    font-size:16px;
+	font-weight:500;
+	color:white;
+	text-shadow:none;
+	position:relative;
+	@include bg_gradient;
+	@include box-shadow(none);
+	@include border-radius(5px);
+	@include transition(all 0.25s ease-out);
+	&:hover{
+		@include bg_gradient_hover;
+		color: white;
+	}
+}
