@@ -12,7 +12,7 @@ const Header = () => (
       <div className="header">
         <div className="header-main">
           <div className="logo">
-            <a href="/craftly-landing/">
+            <a href="/">
               <img src={logo} className="img-responsive" alt="Craftly" />
             </a>
           </div>
@@ -34,12 +34,12 @@ const Header = () => (
                         <Link to="/affiliate/">Earn</Link>
                       </li>
                       <li>
-                        <a href="/craftly-landing/about/">About</a>
+                        <a href="/about/">About</a>
                       </li>
                     </ul>
                   </li>
                   <li className="test">
-                    <a href="/craftly-landing/#pricing">Pricing</a>
+                    <a href="/#pricing">Pricing</a>
                   </li>
                   <li className="mobile-li">
                     <Link to="#">Request Access</Link>
