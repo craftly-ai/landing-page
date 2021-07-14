@@ -9,7 +9,7 @@ const Footer = () => (
         <div className="row">
           <div className="col-sm-3 col-xs-12 left-conn">
             <div className="logo">
-              <a href="/craftly-landing/">
+              <a href="/">
                 <img src={logo} className="img-responsive" alt="Craftly" />
               </a>
             </div>
@@ -19,10 +19,10 @@ const Footer = () => (
               <h5>Company</h5>
               <ul>
                 <li>
-                  <a href="/craftly-landing/about/">About</a>
+                  <a href="/about/">About</a>
                 </li>
                 <li>
-                  <a href="/craftly-landing/#pricing">Pricing</a>
+                  <a href="/#pricing">Pricing</a>
                 </li>
                 <li>
                   <a href="#header">Demo</a>

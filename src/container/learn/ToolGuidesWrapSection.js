@@ -65,7 +65,7 @@ const ToolGuidesWrapSection = () => {
           return (
             <GuideBox
               key={i}
-              url={"/craftly-landing" + item.url}
+              url={item.url}
               sourceUrl={item.image.sourceUrl}
               category={item.category}
               title={item.title}
@@ -80,7 +80,7 @@ const ToolGuidesWrapSection = () => {
                 <li>
                   <GuideCard
                     key={i}
-                    url={"/craftly-landing" + item.url}
+                    url={item.url}
                     sourceUrl={item.image.sourceUrl}
                     category={item.category}
                     title={item.title}
