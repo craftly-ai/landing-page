@@ -88,9 +88,9 @@ const IndexPage = () => {
       <Layout>
         <section class="section relative bg-gradient">
           <IntroSection />
-          <PartnersSection />
           <TagCarousel list={tagList} />
           <DashboardSection />
+          <PartnersSection />
           <ValueGrowSection
             heading={blastThroughTitle}
             subheading={blastThroughDescription}
