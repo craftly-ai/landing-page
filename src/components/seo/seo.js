@@ -47,10 +47,30 @@ function SEO({ description, lang, title }) {
       <meta name="twitter:description" content={metaDescription} />
       <meta http-equiv="cache-control" content="max-age=0" />
 
-      <script src={withPrefix("customGrid.js")} type="text/javascript" />
-      <script src={withPrefix("animator.js")} type="text/javascript" />
-      <script src={withPrefix("rangeslide.js")} type="text/javascript" />
-      <script src={withPrefix("custom.js")} type="text/javascript" />
+      <script
+        async
+        src={withPrefix("customGrid.js")}
+        type="application/javascript"
+        defer
+      />
+      <script
+        async
+        src={withPrefix("animator.js")}
+        type="application/javascript"
+        defer
+      />
+      <script
+        async
+        src={withPrefix("rangeslide.js")}
+        type="application/javascript"
+        defer
+      />
+      <script
+        async
+        src={withPrefix("custom.js")}
+        type="application/javascript"
+        defer
+      />
     </Helmet>
   )
 }

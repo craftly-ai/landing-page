@@ -9,8 +9,8 @@ import { withPrefix } from 'gatsby';
 
 import React from "react"
 
-export const onRenderBody = ({ setPostBodyComponents }) => {
-  setPostBodyComponents([
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       type="text/javascript"
