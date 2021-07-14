@@ -4,12 +4,11 @@ import Layout from "../../components/layout/Layout"
 import Footer from "../../components/footer/Footer"
 import SubscribeSection from "../../container/blog/SubscribeSection"
 import CatSection from "../../container/blog/CatSection"
-import CustomBreadcrumb from "../../components/breadcrumb/CustomBreadcrumb"
 import RightSidebar from "../../container/blog/RightSidebar"
 import FeaturedBlogRaw from "../../container/blog/FeaturedBlogRaw"
-import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
+import { Link } from "gatsby"
 
-const BlogTemplate = ({ location, data }) => {
+const BlogTemplate = ({ data }) => {
   let authorName = data.allWpPost.nodes.map(node => node.author.node.name)
   let authorDescription = data.allWpPost.nodes.map(
     node => node.author.node.description
@@ -27,20 +26,24 @@ const BlogTemplate = ({ location, data }) => {
   let title = data.allWpPost.nodes.map(node => node.title)
   let content = data.allWpPost.nodes.map(node => node.content)
 
-  const { crumbs } = useBreadcrumb({
-    location,
-    crumbLabel: title,
-  })
-
   return (
     <>
       <SEO />
       <Layout>
         <section className="blog-detail-warpper section stick-gradient">
-          <CustomBreadcrumb
-            crumbs={crumbs}
-            className={"breadcrumbs mrt112 section"}
-          />
+          <div className="breadcrumbs mrt112 section">
+            <div className="container">
+              <ul>
+                <li>
+                  <Link to="/">Home</Link> <span>/</span>
+                </li>
+                <li>
+                  <Link to="../blog">Blog</Link> <span>/</span>
+                </li>
+                <li>{title}</li>
+              </ul>
+            </div>
+          </div>
           <div className="section blog-detail-raw">
             <div className="container">
               <div className="title-raw">

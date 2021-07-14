@@ -24,7 +24,7 @@ const Header = () => (
                     <Link to="/tools/">Tools & Samples</Link>
                   </li>
                   <li className="sub-menu">
-                    <Link to="#">Resources</Link>
+                    <Link to="#">Library</Link>
                     <span />
                     <ul>
                       <li>

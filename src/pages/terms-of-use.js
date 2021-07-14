@@ -1,12 +1,10 @@
 import * as React from "react"
 import SEO from "../components/seo/seo"
 import Layout from "../components/layout/Layout"
-import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
-import CustomBreadcrumb from "../components/breadcrumb/CustomBreadcrumb"
 import Footer from "./../components/footer/Footer"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-const TermsOfUse = location => {
+const TermsOfUse = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "terms-of-use" } }) {
@@ -21,10 +19,6 @@ const TermsOfUse = location => {
     }
   `)
 
-  const { crumbs } = useBreadcrumb({
-    location,
-    crumbLabel: "Terms Of Use",
-  })
   let title = data.allWpPage.nodes.map(node => node.termsOfUse.title)
   let intro = data.allWpPage.nodes.map(node => node.termsOfUse.intro)
   let points = data.allWpPage.nodes.map(node => node.termsOfUse.points)
@@ -37,10 +31,16 @@ const TermsOfUse = location => {
       <SEO title={metaTitle} description={metaDescription} />{" "}
       <Layout>
         <section className="default-page-raw section stick-gradient">
-          <CustomBreadcrumb
-            crumbs={crumbs}
-            className={"breadcrumbs mrt112 section"}
-          />
+          <div className="breadcrumbs mrt112 section">
+            <div className="container">
+              <ul>
+                <li>
+                  <Link to="/">Home</Link> <span>/</span>
+                </li>
+                <li>Terms of Use</li>
+              </ul>
+            </div>
+          </div>
           <div className="privacy-policy-raw section">
             <div className="container">
               <div className="privacy-head">

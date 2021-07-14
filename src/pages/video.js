@@ -2,22 +2,29 @@ import React from "react"
 import SEO from "./../components/seo/seo"
 import Layout from "./../components/layout/Layout"
 import Footer from "./../components/footer/Footer"
-import CustomBreadcrumb from "./../components/breadcrumb/CustomBreadcrumb"
 import VideoWrapperSection from "./../container/video/VideoWrapperSection"
 import VideoListSection from "./../container/video/VideoListSection"
-import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
+import { Link } from "gatsby"
 
-const Video = location => {
-  const { crumbs } = useBreadcrumb({
-    location,
-    crumbLabel: "Optimize your Linkedin Profile",
-  })
+const Video = () => {
   return (
     <>
       <SEO />
       <Layout>
         <section className="section ptb100">
-          <CustomBreadcrumb crumbs={crumbs} className={"breadcrumbs section"} />
+          <div className="breadcrumbs section">
+            <div className="container">
+              <ul>
+                <li>
+                  <Link to="/">Home</Link> <span>/</span>
+                </li>
+                <li>
+                  <Link to="/learn">The Academy</Link> <span>/</span>
+                </li>
+                <li>Optimize your Linkedin Profile</li>
+              </ul>
+            </div>
+          </div>
           <VideoWrapperSection />
           <VideoListSection />
         </section>

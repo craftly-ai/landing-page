@@ -2,11 +2,9 @@ import * as React from "react"
 import SEO from "./../components/seo/seo"
 import Layout from "../components/layout/Layout"
 import Footer from "./../components/footer/Footer"
-import CustomBreadcrumb from "./../components/breadcrumb/CustomBreadcrumb"
-import { useStaticQuery, graphql } from "gatsby"
-import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-const Tools = location => {
+const Tools = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "tools" } }) {
@@ -41,11 +39,6 @@ const Tools = location => {
   )
   let toolsList = data.allWpPage.nodes.map(node => node.tools.toolsList)
 
-  const { crumbs } = useBreadcrumb({
-    location,
-    crumbLabel: "List of All Tools",
-  })
-
   const metaTitle = "Tools"
   const metaDescription =
     "See our wide variety of tools & templates: Essays, Blogs, Articles, Ads, Web Copy, Landing Pages, E-commerce, Writing Tools, SEO Assistance, Company, Emails, and more!"
@@ -54,8 +47,16 @@ const Tools = location => {
       <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <div className="section container-sec first-section ptb100">
-          <CustomBreadcrumb crumbs={crumbs} className={"breadcrumbs section"} />
-
+          <div className="breadcrumbs section">
+            <div className="container">
+              <ul>
+                <li>
+                  <Link to="/">Home</Link> <span>/</span>
+                </li>
+                <li>List of All Tools</li>
+              </ul>
+            </div>
+          </div>
           <div className="container">
             <div className="section tools-raw">
               <h1 dangerouslySetInnerHTML={{ __html: listOfAllToolsTitle }} />

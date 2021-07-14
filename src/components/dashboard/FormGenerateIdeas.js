@@ -8,6 +8,7 @@ const FormGenerateIdeas = props => {
     input,
     tooltipstep1,
     labelinfo,
+    countof,
     datarotateinfo,
     info,
     button,
@@ -30,7 +31,9 @@ const FormGenerateIdeas = props => {
         </p>
         <div className="tooltip-wrap">{tooltipstep1}</div>
       </div>
-      <label>{labelinfo}</label>
+      <label>
+        {labelinfo} <span>{countof}</span>{" "}
+      </label>
       <div className="input description">
         <p
           className="rotate-text1"

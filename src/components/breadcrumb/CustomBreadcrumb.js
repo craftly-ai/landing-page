@@ -8,20 +8,10 @@ const CustomBreadcrumb = props => {
       <div className={className}>
         <div className="container">
           <ul>
-            {/* <li>
-              <Link to={"/"}>{"Home"}</Link>
-              <span>/</span>
-            </li> */}
             {crumbs.map(crumb => (
               <li>
-                <Link
-                  to={crumb.pathname}
-                  style={{ ...crumb.crumbStyle }}
-                  activeStyle={{ ...crumb.crumbActiveStyle }}
-                >
-                  {crumb.crumbLabel}
-                </Link>
-                <span>{crumb.crumbSeparator || " "}</span>
+                <Link to={crumb.link}>{crumb.name}</Link>
+                <span>{"/"}</span>
               </li>
             ))}
           </ul>

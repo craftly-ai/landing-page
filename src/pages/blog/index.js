@@ -14,7 +14,7 @@ const BlogIndex = props => {
 export default BlogIndex
 
 export const data = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     allWpPost(filter: { slug: { eq: $slug } }) {
       nodes {
         author {

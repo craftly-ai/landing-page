@@ -3,14 +3,12 @@ import SEO from "./../components/seo/seo"
 import Layout from "./../components/layout/Layout"
 import Footer from "./../components/footer/Footer"
 import InnerBanner from "./../components/innerBanner/InnerBanner"
-import CustomBreadcrumb from "../components/breadcrumb/CustomBreadcrumb"
 import UpdateWarpSection from "./../container/learn/UpdateWarpSection"
 import ProcessWarpSection from "./../container/learn/ProcessWarpSection"
 import EarningWrapSection from "./../container/learn/EarningWrapSection"
-import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-const Learn = location => {
+const Learn = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "learn" } }) {
@@ -30,11 +28,6 @@ const Learn = location => {
       }
     }
   `)
-
-  const { crumbs } = useBreadcrumb({
-    location,
-    crumbLabel: "The Academy",
-  })
 
   let bannerLogo = data.allWpPage.nodes.map(node => node.learn.bannerLogo)
   let bannerLearnButtonLabel = data.allWpPage.nodes.map(
@@ -67,10 +60,16 @@ const Learn = location => {
       <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="relative">
-          <CustomBreadcrumb
-            crumbs={crumbs}
-            className={"breadcrumbs mrt112 section"}
-          />
+          <div className="breadcrumbs mrt112 section">
+            <div className="container">
+              <ul>
+                <li>
+                  <Link to="/">Home</Link> <span>/</span>
+                </li>
+                <li>The Academy</li>
+              </ul>
+            </div>
+          </div>
           <InnerBanner
             bannerLogo={bannerLogo}
             bannerButtonLabel={bannerLearnButtonLabel}

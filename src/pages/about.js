@@ -2,7 +2,6 @@ import * as React from "react"
 import SEO from "./../components/seo/seo"
 import Layout from "./../components/layout/Layout"
 import Footer from "./../components/footer/Footer"
-import CustomBreadcrumb from "./../components/breadcrumb/CustomBreadcrumb"
 import AboutSection from "./../container/about/AboutSection"
 import CraftersSection from "./../container/about/CraftersSection"
 import CommandmentsSection from "./../container/about/CommandmentsSection"
@@ -10,10 +9,9 @@ import PowerSection from "./../container/about/PowerSection"
 import WorkWithUsSection from "./../container/about/WorkWithUsSection"
 import SubscribeWrapSection from "./../container/learn/SubscribeWrapSection"
 import OfferSection from "./../container/home/OfferSection"
-import { useBreadcrumb } from "gatsby-plugin-breadcrumb"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-const About = location => {
+const About = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "about" } }) {
@@ -33,11 +31,6 @@ const About = location => {
       }
     }
   `)
-
-  const { crumbs } = useBreadcrumb({
-    location,
-    crumbLabel: "About",
-  })
 
   let subscribeTitle = data.allWpPage.nodes.map(
     node => node.about.subscribeTitle
@@ -71,10 +64,16 @@ const About = location => {
       <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="about-page-wrap section">
-          <CustomBreadcrumb
-            crumbs={crumbs}
-            className={"breadcrumbs mrt112 section"}
-          />
+          <div className="breadcrumbs mrt112 section">
+            <div className="container">
+              <ul>
+                <li>
+                  <Link to="/">Home</Link> <span>/</span>
+                </li>
+                <li>About</li>
+              </ul>
+            </div>
+          </div>
           <AboutSection />
           <CraftersSection />
           <CommandmentsSection />
