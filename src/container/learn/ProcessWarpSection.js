@@ -50,7 +50,7 @@ const ProcessWarpSection = () => {
                       icon={item.icon.sourceUrl}
                       title={item.title}
                       description={item.description}
-                      buttonLabel={item.buttonLabel}
+                      buttonLabel={"/craftly-landing" + item.buttonLabel}
                       buttonUrl={item.buttonUrl}
                     />
                   </li>

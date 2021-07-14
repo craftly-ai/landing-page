@@ -12,13 +12,13 @@ const DocFooter = () => {
                 <h5>Company</h5>
                 <ul>
                   <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/craftly-landing/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/about/">About</Link>
+                    <Link to="/craftly-landing/about/">About</Link>
                   </li>
                   <li>
-                    <Link to="/#pricing">Pricing</Link>
+                    <Link to="/craftly-landing/#pricing">Pricing</Link>
                   </li>
                   <li>
                     <Link to="/documentation">Demo</Link>

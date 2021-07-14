@@ -55,7 +55,7 @@ const WorkWithUsSection = () => {
                         title={item.title}
                         description={item.description}
                         label={item.anchorLabel}
-                        link={item.anchorLink}
+                        link={"/craftly-landing" + item.anchorLink}
                       />
                     </li>
                   )
