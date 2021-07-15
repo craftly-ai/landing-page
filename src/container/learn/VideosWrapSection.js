@@ -54,7 +54,7 @@ const VideosWrapSection = () => {
                 <VideoBox
                   title={item.title}
                   image={item.image.sourceUrl}
-                  url={"/craftly-landing" + item.url}
+                  url={item.url}
                 />
               </li>
             )
