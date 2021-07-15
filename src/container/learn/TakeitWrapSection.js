@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 const TakeitWrapSection = () => {
   const data = useStaticQuery(graphql`
@@ -47,8 +48,8 @@ const TakeitWrapSection = () => {
           <div className="text-wrap">
             <h2 dangerouslySetInnerHTML={{ __html: takeItTitle }} />
             <p dangerouslySetInnerHTML={{ __html: takeItDescription }} />
-            <a
-              href={scheduleButtonUrl}
+            <Link
+              to={scheduleButtonUrl}
               data-mode="popup"
               className="btn-main"
               data-size={100}
@@ -56,7 +57,7 @@ const TakeitWrapSection = () => {
               rel="noreferrer"
             >
               {scheduleButtonLabel}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

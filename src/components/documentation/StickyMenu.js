@@ -1,29 +1,30 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const StickyMenu = () => {
   return (
     <div className="left-bar-wrap">
       <div className="sticky-menu">
         <h4>
-          <a href="/documentation/">Craftly.ai</a>
+          <Link to="/documentation/">Craftly.ai</Link>
         </h4>
         <h6>Platform</h6>
         <div className="box">
           <h6>
-            <a href="/documentation/step-by-step">Step By Step</a>
+            <Link to="/documentation/step-by-step">Step By Step</Link>
           </h6>
           <ul>
             <li>
-              <a href="/documentation/">Choose Workspace</a>
+              <Link to="/documentation/">Choose Workspace</Link>
             </li>
             <li>
-              <a href="/documentation/">Recent Results</a>
+              <Link to="/documentation/">Recent Results</Link>
             </li>
             <li>
-              <a href="/documentation/">Saved Results</a>
+              <Link to="/documentation/">Saved Results</Link>
             </li>
             <li>
-              <a href="/documentation/choose-a-tone">Choose a tone</a>
+              <Link to="/documentation/choose-a-tone">Choose a tone</Link>
             </li>
           </ul>
         </div>
@@ -31,38 +32,44 @@ const StickyMenu = () => {
         <div className="box">
           <ul>
             <li>
-              <a href="/documentation/sentence-rewriter">Sentence Rewriter</a>
+              <Link to="/documentation/sentence-rewriter">
+                Sentence Rewriter
+              </Link>
             </li>
             <li>
-              <a href="/documentation/blog-builder">Blog Builder</a>
+              <Link to="/documentation/blog-builder">Blog Builder</Link>
             </li>
             <li>
-              <a href="/documentation/product-description">
+              <Link to="/documentation/product-description">
                 Product Description
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/documentation/bullets-to-paragraph">
+              <Link to="/documentation/bullets-to-paragraph">
                 Bullets to Paragraph
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/documentation/headline">Headline</a>
+              <Link to="/documentation/headline">Headline</Link>
             </li>
             <li>
-              <a href="/documentation/blog-topics">Blog Topics</a>
+              <Link to="/documentation/blog-topics">Blog Topics</Link>
             </li>
             <li>
-              <a href="/documentation/email-thank-you">Email Thank You</a>
+              <Link to="/documentation/email-thank-you">Email Thank You</Link>
             </li>
             <li>
-              <a href="/documentation/email-confirmation">Email Confirmation</a>
+              <Link to="/documentation/email-confirmation">
+                Email Confirmation
+              </Link>
             </li>
             <li>
-              <a href="/documentation/blog-ideas">Blog Ideas</a>
+              <Link to="/documentation/blog-ideas">Blog Ideas</Link>
             </li>
             <li>
-              <a href="/documentation/value-proposition">Value Proposition</a>
+              <Link to="/documentation/value-proposition">
+                Value Proposition
+              </Link>
             </li>
           </ul>
         </div>

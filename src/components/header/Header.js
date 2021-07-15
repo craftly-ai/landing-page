@@ -12,9 +12,9 @@ const Header = () => (
       <div className="header">
         <div className="header-main">
           <div className="logo">
-            <a href="/">
+            <Link to="/">
               <img src={logo} className="img-responsive" alt="Craftly" />
-            </a>
+            </Link>
           </div>
           <div className="header-left">
             <div className="nav">
@@ -34,18 +34,18 @@ const Header = () => (
                         <Link to="/affiliate/">Earn</Link>
                       </li>
                       <li>
-                        <a href="/about/">About</a>
+                        <Link to="/about/">About</Link>
                       </li>
                     </ul>
                   </li>
                   <li className="test">
-                    <a href="/#pricing">Pricing</a>
+                    <Link to="/#pricing">Pricing</Link>
                   </li>
                   <li className="mobile-li">
                     <Link to="#">Request Access</Link>
                   </li>
                   <li className="mobile-li login-li">
-                    <a href="https://craftly.web.app/auth">Login</a>
+                    <Link to="https://craftly.web.app/auth">Login</Link>
                   </li>
                 </ul>
               </div>
@@ -61,7 +61,7 @@ const Header = () => (
           <div className="login-access">
             <ul>
               <li className="mobile-li login-li">
-                <a href="https://craftly.web.app/auth">Login</a>
+                <Link to="https://craftly.web.app/auth">Login</Link>
               </li>
               <li>
                 <Link

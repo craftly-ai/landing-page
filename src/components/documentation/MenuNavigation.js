@@ -1,13 +1,14 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const MenuNavigation = () => {
   return (
     <div className="res_navigation">
-      <a href="javascript:void(0)" className="nav-toggle" id="trigger-overlay">
+      <Link to="" className="nav-toggle" id="trigger-overlay">
         <span className="top" />
         <span className="middle" />
         <span className="bottom" />
-      </a>
+      </Link>
     </div>
   )
 }

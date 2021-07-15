@@ -77,16 +77,16 @@ const Tools = () => {
                             e.map((item, i) => {
                               return (
                                 <li>
-                                  <a
+                                  <Link
                                     key={i}
                                     className={i == 0 ? "active" : ""}
                                     data-toggle="tab"
-                                    href={
+                                    to={
                                       "#" + item.toolsTitle.replace(/\s+/g, "-")
                                     }
                                   >
                                     {item.toolsTitle}
-                                  </a>
+                                  </Link>
                                 </li>
                               )
                             })
@@ -117,12 +117,12 @@ const Tools = () => {
                                         {item.toolsCard.map((item, i) => {
                                           return (
                                             <li className="grid-item" key={i}>
-                                              <a
+                                              <Link
                                                 className={
                                                   i == 0 ? "active" : ""
                                                 }
                                                 data-toggle="tab"
-                                                href={
+                                                to={
                                                   "#" +
                                                   item.cardTitle.replace(
                                                     /\s+/g,
@@ -143,7 +143,7 @@ const Tools = () => {
                                                     }}
                                                   />
                                                 </div>
-                                              </a>
+                                              </Link>
                                             </li>
                                           )
                                         })}

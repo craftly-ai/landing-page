@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const EventBox = props => {
   const { icon, title, description, buttonLabel, buttonUrl } = props
@@ -10,8 +11,8 @@ const EventBox = props => {
       </i>
       <h5 dangerouslySetInnerHTML={{ __html: title }} />
       <p dangerouslySetInnerHTML={{ __html: description }} />
-      <a
-        href={buttonUrl}
+      <Link
+        to={buttonUrl}
         data-mode="popup"
         className="btn-main"
         data-size={100}
@@ -19,7 +20,7 @@ const EventBox = props => {
         rel="noreferrer"
       >
         {buttonLabel}
-      </a>
+      </Link>
     </div>
   )
 }

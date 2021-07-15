@@ -9,9 +9,9 @@ const Footer = () => (
         <div className="row">
           <div className="col-sm-3 col-xs-12 left-conn">
             <div className="logo">
-              <a href="/">
+              <Link to="/">
                 <img src={logo} className="img-responsive" alt="Craftly" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-sm-9 col-12 right-conn">
@@ -19,13 +19,13 @@ const Footer = () => (
               <h5>Company</h5>
               <ul>
                 <li>
-                  <a href="/about/">About</a>
+                  <Link to="/about/">About</Link>
                 </li>
                 <li>
-                  <a href="/#pricing">Pricing</a>
+                  <Link to="/#pricing">Pricing</Link>
                 </li>
                 <li>
-                  <a href="#header">Demo</a>
+                  <Link to="#header">Demo</Link>
                 </li>
               </ul>
             </div>
@@ -36,20 +36,20 @@ const Footer = () => (
                   <Link to="/learn/">Help Center</Link>
                 </li>
                 <li>
-                  <a href="mailto:hello@craftly.ai?subject=Support">
+                  <Link to="mailto:hello@craftly.ai?subject=Support">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
+                  <Link
+                    to="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
                     data-mode="popup"
                     data-size={100}
                     target="_blank"
                     rel="noreferrer"
                   >
                     Partner Program
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -57,22 +57,22 @@ const Footer = () => (
               <h5>Join Communities</h5>
               <ul>
                 <li>
-                  <a
-                    href="https://www.facebook.com/groups/562335751328055/"
+                  <Link
+                    to="https://www.facebook.com/groups/562335751328055/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     Official Facebook Group
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="http://craftlyai.slack.com/"
+                  <Link
+                    to="http://craftlyai.slack.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     Slack Channel
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -95,40 +95,40 @@ const Footer = () => (
           <div className="col-sm-6 col-12">
             <ul className="social-raw">
               <li>
-                <a
-                  href="https://www.facebook.com/groups/562335751328055"
+                <Link
+                  to="https://www.facebook.com/groups/562335751328055"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i className="fa fa-facebook" aria-hidden="true" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="https://twitter.com/craftlyai"
+                <Link
+                  to="https://twitter.com/craftlyai"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i className="fa fa-twitter" aria-hidden="true" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/company/22345879/"
+                <Link
+                  to="https://www.linkedin.com/company/22345879/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i className="fa fa-linkedin" aria-hidden="true" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="https://www.instagram.com/craftly.ai"
+                <Link
+                  to="https://www.instagram.com/craftly.ai"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i className="fa fa-instagram" aria-hidden="true" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

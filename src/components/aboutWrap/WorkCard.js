@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const WorkCard = props => {
   const { className, title, description, label, link } = props
@@ -7,9 +8,9 @@ const WorkCard = props => {
     <div className={className}>
       <h3 dangerouslySetInnerHTML={{ __html: title }} />
       <p dangerouslySetInnerHTML={{ __html: description }} />
-      <a href={link} className="link">
+      <Link to={link} className="link">
         {label}
-      </a>
+      </Link>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 const CatSection = () => {
   const data = useStaticQuery(graphql`
@@ -36,16 +37,16 @@ const CatSection = () => {
           <div className="col-sm-6 col-12 left-conn ptb80">
             <h2 dangerouslySetInnerHTML={{ __html: ctaTitle }} />
             <p dangerouslySetInnerHTML={{ __html: ctaDescription }} />
-            <a
+            <Link
               className="btn-main"
-              href={startEarningButtonUrl}
+              to={startEarningButtonUrl}
               data-mode="popup"
               data-size={100}
               target="_blank"
               rel="noreferrer"
             >
               {startEarningButtonLabel}
-            </a>
+            </Link>
           </div>
           <div className="col-sm-6 col-12 right-conn text-center">
             <img src={ctaImage} alt="" className="img-fluid" />

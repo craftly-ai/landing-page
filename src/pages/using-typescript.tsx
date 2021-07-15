@@ -30,9 +30,9 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     </p>
     <p>
       To learn more, head over to our{" "}
-      <a href="https://www.gatsbyjs.com/docs/typescript/">
+      <Link to="https://www.gatsbyjs.com/docs/typescript/">
         documentation about TypeScript
-      </a>
+      </Link>
       .
     </p>
     <Link to="/">Go back to the homepage</Link>

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 const JoinCommunitySection = () => {
   const data = useStaticQuery(graphql`
@@ -37,9 +38,9 @@ const JoinCommunitySection = () => {
             <p
               dangerouslySetInnerHTML={{ __html: joinOurCommunityDescription }}
             />
-            <a className="btn-main border-btn" href={communityButtonUrl}>
+            <Link className="btn-main border-btn" to={communityButtonUrl}>
               {communityButtonLabel}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

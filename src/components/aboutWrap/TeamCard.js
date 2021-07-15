@@ -1,10 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const TeamCard = props => {
   const { link, bgColor, img, name, designation } = props
 
   return (
-    <a href={link} target="_blank" rel="noreferrer">
+    <Link to={link} target="_blank" rel="noreferrer">
       <div className="img-box" style={{ backgroundColor: bgColor }}>
         <img src={img} alt="" />
       </div>
@@ -12,7 +13,7 @@ const TeamCard = props => {
         <h3 dangerouslySetInnerHTML={{ __html: name }} />
         <h6 dangerouslySetInnerHTML={{ __html: designation }} />
       </div>
-    </a>
+    </Link>
   )
 }
 

@@ -1,11 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Button = props => {
   const { link, label } = props
   return (
-    <a href={link} className="btn-main">
+    <Link to={link} className="btn-main">
       {label}
-    </a>
+    </Link>
   )
 }
 

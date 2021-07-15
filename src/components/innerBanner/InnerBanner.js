@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const InnerBanner = props => {
   const {
@@ -25,24 +26,24 @@ const InnerBanner = props => {
               <div className="text-wrap text-center">
                 <div className="logo-btn top-action">
                   <h6>{bannerLogo}</h6>
-                  <a href={bannerButtonUrl} className="learn-btn">
+                  <Link to={bannerButtonUrl} className="learn-btn">
                     <span>{bannerButtonLabel}</span>
-                  </a>
+                  </Link>
                 </div>
                 <h1 dangerouslySetInnerHTML={{ __html: bannerTitle }} />
                 <p>{bannerDescription}</p>
                 <div className="banner-cta section">
-                  <a
-                    href={buttomButtonUrl_1}
+                  <Link
+                    to={buttomButtonUrl_1}
                     className="btn-main"
                     onclick="tidioChatApi.open()"
                   >
                     {bottomButtonLabel_1}
-                  </a>
-                  <a href={buttomButtonUrl_2} className={buttomClassButton_2}>
+                  </Link>
+                  <Link to={buttomButtonUrl_2} className={buttomClassButton_2}>
                     <i className={buttomIconButton_2} />
                     {buttomButtonLabel_2}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

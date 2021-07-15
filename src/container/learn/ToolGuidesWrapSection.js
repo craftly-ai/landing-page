@@ -2,6 +2,7 @@ import React from "react"
 import GuideBox from "./../../components/processWrap/GuideBox"
 import GuideCard from "./../../components/processWrap/GuideCard"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 const ToolGuidesWrapSection = () => {
   const data = useStaticQuery(graphql`
@@ -55,9 +56,9 @@ const ToolGuidesWrapSection = () => {
           <h2 dangerouslySetInnerHTML={{ __html: guidesTitle }} />
         </div>
         <div className="col-sm-4">
-          <a href={viewAllGuidesUrl} className="more-btn">
+          <Link to={viewAllGuidesUrl} className="more-btn">
             {viewAllGuidesLabel}
-          </a>
+          </Link>
         </div>
       </div>
       <div className="guides-main section">
@@ -92,12 +93,12 @@ const ToolGuidesWrapSection = () => {
           )}
         </ul>
       </div>
-      <a
-        href="https://craftly.ai/documentation/index.html"
+      <Link
+        to="https://craftly.ai/documentation/index.html"
         class="btn-main mobile"
       >
         View all Guides
-      </a>
+      </Link>
     </div>
   )
 }

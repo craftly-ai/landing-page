@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const OfferSection = props => {
   const { title, description, buttonLabel, buttonUrl, img } = props
@@ -10,14 +11,14 @@ const OfferSection = props => {
           <div className="col-sm-6 col-12 left-conn ptb80">
             <h2 dangerouslySetInnerHTML={{ __html: title }} />
             <p>{description}</p>
-            <a
-              href={buttonUrl}
+            <Link
+              to={buttonUrl}
               className="btn-main"
               data-mode="popup"
               data-size={100}
             >
               {buttonLabel}
-            </a>
+            </Link>
           </div>
           <div className="col-sm-6 col-12 right-conn text-center">
             <img src={img} className="img-fluid" alt="" />
