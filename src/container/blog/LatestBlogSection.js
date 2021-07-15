@@ -59,7 +59,7 @@ const LatestBlogSection = () => {
               {nuberOfMinutesToRead} min read <strong>{categories}</strong>
             </span>
             <h1>
-              <Link to={`${slug}`}>{title}</Link>
+              <Link to={slug}>{title}</Link>
             </h1>
             <div className="auther-col section">
               <img src={authorAvatarUrl} alt="" className="img-fluid avtar" />

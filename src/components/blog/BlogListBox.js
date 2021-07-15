@@ -1,8 +1,9 @@
 import React from "react"
 
 const BlogListBox = ({ data }) => {
+  const slug = "/blog/" + data.slug
   return (
-    <a href={`/blog/${data.slug}`} className="featured-list-col">
+    <a href={slug} className="featured-list-col">
       <div className="blog-img">
         <img src={data.featuredImage.node.sourceUrl} alt="" />
       </div>
