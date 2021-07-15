@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const CommunitiesBox = props => {
   const { icon, title, description, linkLabel, linkUrl } = props
@@ -10,14 +9,14 @@ const CommunitiesBox = props => {
       </i>
       <h4 dangerouslySetInnerHTML={{ __html: title }} />
       <p dangerouslySetInnerHTML={{ __html: description }} />
-      <Link
-        to={linkUrl}
+      <a
+        href={linkUrl}
         className="more-btn blue"
         target="_blank"
         rel="noreferrer"
       >
         {linkLabel}
-      </Link>
+      </a>
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
 
 const CatBox = () => {
   const data = useStaticQuery(graphql`
@@ -34,16 +33,16 @@ const CatBox = () => {
           <h6 dangerouslySetInnerHTML={{ __html: ctaTopTitle }} />
           <h2 dangerouslySetInnerHTML={{ __html: ctaTitle }} />
           <p dangerouslySetInnerHTML={{ __html: ctaDescription }} />
-          <Link
+          <a
             className="border-btn"
-            to={ctaButtonUrl}
+            href={ctaButtonUrl}
             data-mode="popup"
             data-size={100}
             target="_blank"
             rel="noreferrer"
           >
             {ctaButtonLabel}
-          </Link>
+          </a>
         </div>
       </div>
     </div>

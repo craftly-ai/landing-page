@@ -1,7 +1,6 @@
 import React from "react"
 import DocLayout from "./../../components/documentation/DocLayout"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -69,13 +68,13 @@ const Index = () => {
             {getStartedList.map((item, i) => {
               return (
                 <li key={i}>
-                  <Link>
+                  <a>
                     <div className="icon">
                       <img src={item.icon.sourceUrl} alt="icon" />
                     </div>
                     <h5 dangerouslySetInnerHTML={{ __html: item.title }} />
                     <p dangerouslySetInnerHTML={{ __html: item.description }} />
-                  </Link>
+                  </a>
                 </li>
               )
             })}

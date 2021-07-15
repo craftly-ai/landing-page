@@ -1,7 +1,6 @@
 import React from "react"
 import EventBox from "./../../components/updateWrap/EventBox"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
 
 const EventsWrapSection = () => {
   const data = useStaticQuery(graphql`
@@ -50,14 +49,14 @@ const EventsWrapSection = () => {
           <p dangerouslySetInnerHTML={{ __html: eventsWebinarsDescription }} />
         </div>
         <div className="col-sm-4">
-          <Link
-            to={viewAllEventUrl}
+          <a
+            href={viewAllEventUrl}
             data-toggle="modal"
             data-target="#join-waitlist"
             className="more-btn"
           >
             {viewAllEventLabel}
-          </Link>
+          </a>
         </div>
       </div>
       <ul className="text-center col3">
@@ -77,14 +76,14 @@ const EventsWrapSection = () => {
           })
         )}
       </ul>
-      <Link
-        to={viewAllEventUrl}
+      <a
+        href={viewAllEventUrl}
         data-toggle="modal"
         data-target="#join-waitlist"
         className="btn-main mobile"
       >
         {viewAllEventLabel}
-      </Link>
+      </a>
     </div>
   )
 }

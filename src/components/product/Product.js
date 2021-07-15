@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const Product = props => {
   const { img, heading, info, buttonTitle, buttonLink } = props
@@ -16,9 +15,9 @@ const Product = props => {
       </div>
       <h4>{heading}</h4>
       <p>{info}</p>
-      <Link to={buttonLink} className="readmore">
+      <a href={buttonLink} className="readmore">
         {buttonTitle}
-      </Link>
+      </a>
     </li>
   )
 }

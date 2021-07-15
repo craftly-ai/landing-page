@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const ValueGrowSection = props => {
   const { heading, subheading, button, buttonURL, img } = props
@@ -11,9 +10,9 @@ const ValueGrowSection = props => {
           <div class="col-sm-5 col-12 left-conn justify-content-center align-self-center">
             <h2>{heading}</h2>
             <p> {subheading} </p>
-            <Link to={buttonURL} class="btn-main">
+            <a href={buttonURL} class="btn-main">
               {button}
-            </Link>
+            </a>
           </div>
           <div class="col-sm-7 col-12 right-conn justify-content-center align-self-center">
             <div class="img-box section">

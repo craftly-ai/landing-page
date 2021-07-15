@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const RightSidebarCard = props => {
   const { title, description, buttonLabel, buttonUrl } = props
@@ -7,9 +6,9 @@ const RightSidebarCard = props => {
     <div className="content-right-cta section">
       <h5 dangerouslySetInnerHTML={{ __html: title }} />
       <p dangerouslySetInnerHTML={{ __html: description }} />
-      <Link to={buttonUrl} className="btn-main">
+      <a href={buttonUrl} className="btn-main">
         <span>{buttonLabel}</span>
-      </Link>
+      </a>
     </div>
   )
 }

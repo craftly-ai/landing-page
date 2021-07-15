@@ -1,7 +1,6 @@
 import React from "react"
 import VideoBox from "./../../components/updateWrap/VideoBox"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
 
 const VideosWrapSection = () => {
   const data = useStaticQuery(graphql`
@@ -42,9 +41,9 @@ const VideosWrapSection = () => {
           <h2>{videosTitle}</h2>
         </div>
         <div className="col-sm-4">
-          <Link to={watchAllTutorialsUrl} className="more-btn">
+          <a href={watchAllTutorialsUrl} className="more-btn">
             {watchAllTutorialsLabel}
-          </Link>
+          </a>
         </div>
       </div>
       <ul className="col3">
@@ -62,9 +61,9 @@ const VideosWrapSection = () => {
           })
         )}
       </ul>
-      <Link to={watchAllTutorialsUrl} class="btn-main mobile">
+      <a href={watchAllTutorialsUrl} class="btn-main mobile">
         {watchAllTutorialsLabel}
-      </Link>
+      </a>
     </div>
   )
 }

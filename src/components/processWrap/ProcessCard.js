@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const ProcessCard = props => {
   const { icon, title, description, buttonLabel, buttonUrl } = props
@@ -11,9 +10,9 @@ const ProcessCard = props => {
       </i>
       <h5>{title}</h5>
       <p>{description}</p>
-      <Link to={buttonUrl} className="btn-main">
+      <a href={buttonUrl} className="btn-main">
         {buttonLabel}
-      </Link>
+      </a>
     </div>
   )
 }

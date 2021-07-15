@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const GuideCard = props => {
   const { url, sourceUrl, category, title, description } = props
@@ -7,19 +6,19 @@ const GuideCard = props => {
   return (
     <div className="guies-box">
       <div className="img-wrap">
-        <Link to={url}>
+        <a href={url}>
           <img
             src={sourceUrl}
             alt="Product Description"
             className="img-fluid"
           />
-        </Link>
+        </a>
       </div>
       <div className="text-wrap">
         <span>{category}</span>
-        <Link to={url} className="guide-title">
+        <a href={url} className="guide-title">
           {title}
-        </Link>
+        </a>
         <p dangerouslySetInnerHTML={{ __html: description }} />
       </div>
     </div>

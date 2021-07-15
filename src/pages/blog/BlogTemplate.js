@@ -65,7 +65,7 @@ const BlogTemplate = props => {
                   />
                   <div className="writen-by-col section">
                     <div className="avatar-holder">
-                      <Link to="#">
+                      <a href="#">
                         <img
                           alt=""
                           src={authorAvatarUrl}
@@ -73,12 +73,12 @@ const BlogTemplate = props => {
                           height={150}
                           width={150}
                         />
-                      </Link>
+                      </a>
                     </div>
                     <div className="author-description">
                       <h6 className="label">Written By</h6>
                       <h3 className="author-name">
-                        <Link to="#">{authorName}</Link>
+                        <a href="#">{authorName}</a>
                       </h3>
                       <p
                         dangerouslySetInnerHTML={{ __html: authorDescription }}

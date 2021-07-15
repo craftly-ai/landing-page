@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
 
 const EarningWrapSection = () => {
   const data = useStaticQuery(graphql`
@@ -60,16 +59,16 @@ const EarningWrapSection = () => {
                 <h6 dangerouslySetInnerHTML={{ __html: earningTopTitle }} />
                 <h2 dangerouslySetInnerHTML={{ __html: earningTitle }} />
                 <p dangerouslySetInnerHTML={{ __html: earningDescription }} />
-                <Link
+                <a
                   className="btn-main"
-                  to={startEarningButtonUrl}
+                  href={startEarningButtonUrl}
                   data-mode="popup"
                   data-size={100}
                   target="_blank"
                   rel="noreferrer"
                 >
                   {startEarningButtonLabel}
-                </Link>
+                </a>
               </div>
             </div>
           </div>

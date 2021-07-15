@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const IdeaWrap = props => {
   const { text, url, label } = props
@@ -7,9 +6,9 @@ const IdeaWrap = props => {
   return (
     <div className="idea-wrap">
       <p className="idea" dangerouslySetInnerHTML={{ __html: text }} />
-      <Link
+      <a
         className="more-btn blue"
-        to={url}
+        href={url}
         data-mode="popup"
         data-size={100}
         data-submit-close-delay={1}
@@ -17,7 +16,7 @@ const IdeaWrap = props => {
         rel="noreferrer"
       >
         {label}
-      </Link>
+      </a>
     </div>
   )
 }
