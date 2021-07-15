@@ -9,7 +9,7 @@ const Footer = () => (
         <div className="row">
           <div className="col-sm-3 col-xs-12 left-conn">
             <div className="logo">
-              <Link to="/">
+              <Link className="replaceHref" to="/">
                 <img src={logo} className="img-responsive" alt="Craftly" />
               </Link>
             </div>
@@ -19,10 +19,14 @@ const Footer = () => (
               <h5>Company</h5>
               <ul>
                 <li>
-                  <Link to="/about/">About</Link>
+                  <Link className="replaceHref" to="/about/">
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/#pricing">Pricing</Link>
+                  <Link className="replaceHref" to="/#pricing">
+                    Pricing
+                  </Link>
                 </li>
                 <li>
                   <Link to="#header">Demo</Link>
@@ -33,7 +37,9 @@ const Footer = () => (
               <h5>Resources</h5>
               <ul>
                 <li>
-                  <Link to="/learn/">Help Center</Link>
+                  <Link className="replaceHref" to="/learn/">
+                    Help Center
+                  </Link>
                 </li>
                 <li>
                   <Link to="mailto:hello@craftly.ai?subject=Support">
@@ -80,10 +86,14 @@ const Footer = () => (
               <h5>Information </h5>
               <ul>
                 <li>
-                  <Link to="/terms-of-use/">Terms and Conditions</Link>
+                  <Link className="replaceHref" to="/terms-of-use/">
+                    Terms and Conditions
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/privacy-policy/">Privacy Policy</Link>
+                  <Link className="replaceHref" to="/privacy-policy/">
+                    Privacy Policy
+                  </Link>
                 </li>
               </ul>
             </div>

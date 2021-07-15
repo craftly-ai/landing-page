@@ -42,7 +42,9 @@ const AboutSection = () => {
           </div>
           <div className="col-md-6 col-12 right-col">
             <div className="box">
-              <p dangerouslySetInnerHTML={{ __html: aboutRightDescription }} />
+              <div
+                dangerouslySetInnerHTML={{ __html: aboutRightDescription }}
+              />
             </div>
           </div>
         </div>
@@ -55,7 +57,7 @@ const AboutSection = () => {
         </div>
         <div className="row about-box">
           <div className="col-md-12 col-12 pt-60 text-center">
-            <p dangerouslySetInnerHTML={{ __html: aboutBottomDescription }} />
+            <div dangerouslySetInnerHTML={{ __html: aboutBottomDescription }} />
           </div>
         </div>
       </div>

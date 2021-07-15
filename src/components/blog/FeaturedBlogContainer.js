@@ -5,7 +5,7 @@ const FeaturedBlogContainer = ({ data }) => {
   const slug = "/blog/" + data.slug
   return (
     <div className="col-sm-4 col-xs-12 featured-blog-col">
-      <Link to={slug} className="blog-img">
+      <Link to={slug} className="replaceHref blog-img">
         <img src={data.featuredImage.node.sourceUrl} alt="" />
       </Link>
       <div className="context-col">
@@ -13,7 +13,9 @@ const FeaturedBlogContainer = ({ data }) => {
           {data.blogPost.nuberOfMinutesToRead} min read{" "}
           <span>{data.categories.nodes.map(e => e.name)}</span>
         </p>
-        <Link to={slug}>{data.title}</Link>
+        <Link className="replaceHref" to={slug}>
+          {data.title}
+        </Link>
       </div>
       <div className="auther-col section">
         <img

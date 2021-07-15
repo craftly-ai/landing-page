@@ -6,7 +6,9 @@ const StickyMenu = () => {
     <div className="left-bar-wrap">
       <div className="sticky-menu">
         <h4>
-          <Link to="/documentation/">Craftly.ai</Link>
+          <Link className="replaceHref" to="/">
+            Craftly.ai
+          </Link>
         </h4>
         <h6>Platform</h6>
         <div className="box">

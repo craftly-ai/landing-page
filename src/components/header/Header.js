@@ -12,7 +12,7 @@ const Header = () => (
       <div className="header">
         <div className="header-main">
           <div className="logo">
-            <Link to="/">
+            <Link className="replaceHref" to="/">
               <img src={logo} className="img-responsive" alt="Craftly" />
             </Link>
           </div>
@@ -21,25 +21,35 @@ const Header = () => (
               <div className="nav-main">
                 <ul>
                   <li>
-                    <Link to="/tools/">Tools & Samples</Link>
+                    <Link className="replaceHref" to="/tools/">
+                      Tools & Samples
+                    </Link>
                   </li>
                   <li className="sub-menu">
-                    <Link to="#">Resources</Link>
+                    <Link to="#">Library</Link>
                     <span />
                     <ul>
                       <li>
-                        <Link to="/learn/">Learn</Link>
+                        <Link className="replaceHref" to="/learn/">
+                          Learn
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/affiliate/">Earn</Link>
+                        <Link className="replaceHref" to="/affiliate/">
+                          Earn
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/about/">About</Link>
+                        <Link className="replaceHref" to="/about/">
+                          About
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="test">
-                    <Link to="/#pricing">Pricing</Link>
+                    <Link className="replaceHref" to="/#pricing">
+                      Pricing
+                    </Link>
                   </li>
                   <li className="mobile-li">
                     <Link to="#">Request Access</Link>

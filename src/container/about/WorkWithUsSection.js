@@ -49,7 +49,7 @@ const WorkWithUsSection = () => {
               {workWithUsList.map(e =>
                 e.map((item, i) => {
                   return (
-                    <li key={1}>
+                    <li key={i}>
                       <WorkCard
                         className={"box" + " " + item.title.toLowerCase()}
                         title={item.title}

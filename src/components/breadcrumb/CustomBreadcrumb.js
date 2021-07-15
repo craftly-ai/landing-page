@@ -10,7 +10,9 @@ const CustomBreadcrumb = props => {
           <ul>
             {crumbs.map(crumb => (
               <li>
-                <Link to={crumb.link}>{crumb.name}</Link>
+                <Link className="replaceHref" to={crumb.link}>
+                  {crumb.name}
+                </Link>
                 <span>{"/"}</span>
               </li>
             ))}

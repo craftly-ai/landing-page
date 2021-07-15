@@ -4,7 +4,11 @@ import { Link } from "gatsby"
 const BlogListBox = ({ data }) => {
   const slug = "/blog/" + data.slug
   return (
-    <Link to={slug} className="featured-list-col">
+    <Link
+      className="replaceHref"
+      to={slug}
+      className="replaceHref featured-list-col"
+    >
       <div className="blog-img">
         <img src={data.featuredImage.node.sourceUrl} alt="" />
       </div>

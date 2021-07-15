@@ -8,7 +8,7 @@ const WorkCard = props => {
     <div className={className}>
       <h3 dangerouslySetInnerHTML={{ __html: title }} />
       <p dangerouslySetInnerHTML={{ __html: description }} />
-      <Link to={link} className="link">
+      <Link className="replaceHref link" to={link}>
         {label}
       </Link>
     </div>

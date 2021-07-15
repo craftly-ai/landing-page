@@ -51,7 +51,10 @@ const Tools = () => {
             <div className="container">
               <ul>
                 <li>
-                  <Link to="/">Home</Link> <span>/</span>
+                  <Link className="replaceHref" to="/">
+                    Home
+                  </Link>{" "}
+                  <span>/</span>
                 </li>
                 <li>List of All Tools</li>
               </ul>

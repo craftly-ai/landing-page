@@ -6,7 +6,7 @@ const Container = props => {
     <>
       <div className="text-box box">
         <h3>{title}</h3>
-        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <div dangerouslySetInnerHTML={{ __html: description }} />
       </div>
       <div className="img-box box">
         <img src={sourceUrl} alt="" />

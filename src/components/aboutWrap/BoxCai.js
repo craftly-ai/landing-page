@@ -11,7 +11,7 @@ const BoxCai = props => {
       <div className="text">
         <h3 dangerouslySetInnerHTML={{ __html: title }} />
         <h6 dangerouslySetInnerHTML={{ __html: subTitle }} />
-        <p dangerouslySetInnerHTML={{ __html: description }} />
+        <div dangerouslySetInnerHTML={{ __html: description }} />
       </div>
     </div>
   )

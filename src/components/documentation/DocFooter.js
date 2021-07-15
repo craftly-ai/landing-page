@@ -12,13 +12,19 @@ const DocFooter = () => {
                 <h5>Company</h5>
                 <ul>
                   <li>
-                    <Link to="/">Home</Link>
+                    <Link className="replaceHref" to="/">
+                      Home
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/about/">About</Link>
+                    <Link className="replaceHref" to="/about/">
+                      About
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/#pricing">Pricing</Link>
+                    <Link className="replaceHref" to="/#pricing">
+                      Pricing
+                    </Link>
                   </li>
                   <li>
                     <Link to="/documentation">Demo</Link>
@@ -29,7 +35,9 @@ const DocFooter = () => {
                 <h5>Resources</h5>
                 <ul>
                   <li>
-                    <Link to="/learn/">Help Center</Link>
+                    <Link className="replaceHref" to="/learn/">
+                      Help Center
+                    </Link>
                   </li>
                   <li>
                     <Link
@@ -43,10 +51,14 @@ const DocFooter = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/documentation">Agency partners</Link>
+                    <Link className="replaceHref" to="/documentation">
+                      Agency partners
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/documentation">Referral partners</Link>
+                    <Link className="replaceHref" to="/documentation">
+                      Referral partners
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -77,10 +89,14 @@ const DocFooter = () => {
                 <h5>Information </h5>
                 <ul>
                   <li>
-                    <Link to="/terms-of-use/">Terms and Conditions</Link>
+                    <Link className="replaceHref" to="/terms-of-use/">
+                      Terms and Conditions
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/privacy-policy/">Privacy Policy</Link>
+                    <Link className="replaceHref" to="/privacy-policy/">
+                      Privacy Policy
+                    </Link>
                   </li>
                 </ul>
               </div>

@@ -12,7 +12,7 @@ const VideoBox = props => {
           alt="Optimize your Linkedin Profile"
           className="img-fluid"
         />
-        <Link to={url} className="play-btn" />
+        <Link to={url} className="replaceHref play-btn" />
       </div>
       <h5>
         <Link to={url}>{title}</Link>

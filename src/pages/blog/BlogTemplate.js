@@ -29,10 +29,16 @@ const BlogTemplate = props => {
             <div className="container">
               <ul>
                 <li>
-                  <Link to="/">Home</Link> <span>/</span>
+                  <Link className="replaceHref" to="/">
+                    Home
+                  </Link>
+                  <span>/</span>
                 </li>
                 <li>
-                  <Link to="/blog">Blog</Link> <span>/</span>
+                  <Link className="replaceHref" to="/blog">
+                    Blog
+                  </Link>{" "}
+                  <span>/</span>
                 </li>
                 <li>{title}</li>
               </ul>

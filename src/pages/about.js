@@ -68,7 +68,10 @@ const About = () => {
             <div className="container">
               <ul>
                 <li>
-                  <Link to="/">Home</Link> <span>/</span>
+                  <Link className="replaceHref" to="/">
+                    Home
+                  </Link>{" "}
+                  <span>/</span>
                 </li>
                 <li>About</li>
               </ul>

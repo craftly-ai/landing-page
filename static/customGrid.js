@@ -1,4 +1,8 @@
 ;(function ($) {
+  $(".replaceHref").click(function () {
+    var href = $(this).attr("href")
+    window.location.replace(href)
+  })
   //our clients reviews card grid
   $(".review-slider").slick({
     speed: 10000,

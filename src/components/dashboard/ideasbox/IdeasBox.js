@@ -28,7 +28,7 @@ const IdeasBox = props => {
         </div>
         <ul>
           <li>
-            <Link to="learn.html">
+            <Link to="/learn">
               <div className="icon">
                 <svg
                   version="1.1"

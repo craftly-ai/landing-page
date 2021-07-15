@@ -16,10 +16,16 @@ const Video = () => {
             <div className="container">
               <ul>
                 <li>
-                  <Link to="/">Home</Link> <span>/</span>
+                  <Link className="replaceHref" to="/">
+                    Home
+                  </Link>{" "}
+                  <span>/</span>
                 </li>
                 <li>
-                  <Link to="/learn">The Academy</Link> <span>/</span>
+                  <Link className="replaceHref" to="/learn">
+                    The Academy
+                  </Link>{" "}
+                  <span>/</span>
                 </li>
                 <li>Optimize your Linkedin Profile</li>
               </ul>

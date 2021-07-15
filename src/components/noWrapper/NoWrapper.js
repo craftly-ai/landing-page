@@ -10,7 +10,7 @@ const NoWrapper = props => {
             <h2>
               <span>{title}</span>
             </h2>
-            <h3 dangerouslySetInnerHTML={{ __html: description }} />
+            <div dangerouslySetInnerHTML={{ __html: description }} />
           </div>
         </div>
       </div>
