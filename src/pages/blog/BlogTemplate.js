@@ -8,23 +8,17 @@ import RightSidebar from "../../container/blog/RightSidebar"
 import FeaturedBlogRaw from "../../container/blog/FeaturedBlogRaw"
 import { Link } from "gatsby"
 
-const BlogTemplate = ({ data }) => {
-  let authorName = data.allWpPost.nodes.map(node => node.author.node.name)
-  let authorDescription = data.allWpPost.nodes.map(
-    node => node.author.node.description
-  )
-  let authorAvatarUrl = data.allWpPost.nodes.map(
-    node => node.author.node.avatar.url
-  )
-  let categories = data.allWpPost.nodes.map(node =>
-    node.categories.nodes.map(data => data.name)
-  )
-  let date = data.allWpPost.nodes.map(node => node.date)
-  let nuberOfMinutesToRead = data.allWpPost.nodes.map(
-    node => node.blogPost.nuberOfMinutesToRead
-  )
-  let title = data.allWpPost.nodes.map(node => node.title)
-  let content = data.allWpPost.nodes.map(node => node.content)
+const BlogTemplate = props => {
+  const {
+    authorName,
+    authorDescription,
+    authorAvatarUrl,
+    categories,
+    date,
+    nuberOfMinutesToRead,
+    title,
+    content,
+  } = props
 
   return (
     <>
