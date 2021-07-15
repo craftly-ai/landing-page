@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const VideoBox = props => {
   const { title, image, url } = props
@@ -11,10 +12,10 @@ const VideoBox = props => {
           alt="Optimize your Linkedin Profile"
           className="img-fluid"
         />
-        <a href={url} className="play-btn" />
+        <Link to={url} className="play-btn" />
       </div>
       <h5>
-        <a href={url}>{title}</a>
+        <Link to={url}>{title}</Link>
       </h5>
     </div>
   )

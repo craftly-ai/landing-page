@@ -32,15 +32,15 @@ const DocFooter = () => {
                     <Link to="/learn/">Help Center</Link>
                   </li>
                   <li>
-                    <a
-                      href="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
+                    <Link
+                      to="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
                       data-mode="popup"
                       data-size={100}
                       target="_blank"
                       rel="noreferrer"
                     >
                       Partner Program
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/documentation">Agency partners</Link>
@@ -54,22 +54,22 @@ const DocFooter = () => {
                 <h5>Join Communities</h5>
                 <ul>
                   <li>
-                    <a
-                      href="https://www.facebook.com/groups/562335751328055/"
+                    <Link
+                      to="https://www.facebook.com/groups/562335751328055/"
                       target="_blank"
                       rel="noreferrer"
                     >
                       Official Facebook Group
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="http://craftlyai.slack.com/"
+                    <Link
+                      to="http://craftlyai.slack.com/"
                       target="_blank"
                       rel="noreferrer"
                     >
                       Slack Channel
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -92,40 +92,40 @@ const DocFooter = () => {
             <div class="col-sm-6 col-12">
               <ul class="social-raw">
                 <li>
-                  <a
-                    href="https://www.facebook.com/groups/562335751328055"
+                  <Link
+                    to="https://www.facebook.com/groups/562335751328055"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://twitter.com/craftlyai"
+                  <Link
+                    to="https://twitter.com/craftlyai"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.linkedin.com/company/22345879/"
+                  <Link
+                    to="https://www.linkedin.com/company/22345879/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.instagram.com/craftly.ai"
+                  <Link
+                    to="https://www.instagram.com/craftly.ai"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
