@@ -3427,6 +3427,7 @@ input:focus + .slider {
 .documentation-wrapper .right-box-wrap {
   width: calc(100% - 400px);
   float: left;
+  padding: 0rem 1rem;
 }
 .documentation-wrapper .search-wrap {
   padding: 40px 0 0;
