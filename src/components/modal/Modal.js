@@ -1,6 +1,6 @@
 import React from "react"
-import heartImg from "../../images/ic-heart.png"
-import wishlistBannerImg from "../../images/wishlist-banner.png"
+import heartImg from "../../images/ic-heart-min.png"
+import wishlistBannerImg from "../../images/wishlist-banner-min.png"
 
 const Modal = () => {
   return (

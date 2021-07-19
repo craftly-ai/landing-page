@@ -1,5 +1,5 @@
 import React from "react"
-import poster from "../../images/linkedin-video.jpg"
+import poster from "../../images/linkedin-video-min.jpg"
 
 const VideoContainer = () => {
   return (

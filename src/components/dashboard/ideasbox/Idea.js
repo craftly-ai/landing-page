@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import favoriteImg from "../../../images/ic-favorite.png"
-import copyButtonImg from "../../../images/ic-copy-btn.png"
+import favoriteImg from "../../../images/ic-favorite-min.png"
+import copyButtonImg from "../../../images/ic-copy-btn-min.png"
 
 const Idea = props => {
   const { info, chars } = props

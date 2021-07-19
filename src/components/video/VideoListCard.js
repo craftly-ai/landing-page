@@ -1,5 +1,5 @@
 import React from "react"
-import poster from "../../images/linkedin-small-video-img.jpg"
+import poster from "../../images/linkedin-small-video-img-min.jpg"
 
 const VideoListCard = () => {
   return (

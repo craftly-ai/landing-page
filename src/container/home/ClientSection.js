@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-import trustpiloatLogo from "../../images/trustpiloat-logo.png"
+import trustpiloatLogo from "../../images/trustpiloat-logo-min.png"
 
 const ClientSection = () => {
   const data = useStaticQuery(graphql`

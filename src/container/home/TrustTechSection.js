@@ -1,6 +1,6 @@
 import React from "react"
 import CardCollapse from "../../components/trustTech/CardCollapse"
-import backimg from "../../images/world-map.png"
+import backimg from "../../images/world-map-min.png"
 import Parameters from "../../components/trustTech/Parameters"
 import { useStaticQuery, graphql } from "gatsby"
 

@@ -45,7 +45,6 @@ function SEO({ description, lang, title }) {
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
-      <meta http-equiv="cache-control" content="max-age=0" />
 
       <script
         async

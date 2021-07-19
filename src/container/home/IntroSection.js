@@ -1,6 +1,6 @@
 import React from "react"
 import Typewriter from "../../components/Typewriter/Typewriter"
-import img from "../../images/banner-bg-image.png"
+import img from "../../images/banner-bg-image-min.png"
 import { useStaticQuery, graphql } from "gatsby"
 
 const IntroSection = () => {

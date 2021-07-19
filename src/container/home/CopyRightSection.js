@@ -49,7 +49,7 @@ const CopyRightSection = () => {
             {copywritingStepList.map(e =>
               e.map((item, i) => (
                 <div className="col-sm-4 col-12 li1" key={i}>
-                  <div className="img-box">
+                  <div className="">
                     <img
                       src={item.stepImage.sourceUrl}
                       alt=""

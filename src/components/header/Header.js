@@ -1,5 +1,5 @@
 import * as React from "react"
-import logo from "../../images/logo.png"
+import logo from "../../images/logo-min.png"
 import { Link } from "gatsby"
 const Header = () => (
   <header

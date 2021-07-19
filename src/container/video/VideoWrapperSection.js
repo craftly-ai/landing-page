@@ -1,6 +1,6 @@
 import React from "react"
 import VideoContainer from "../../components/video/VideoContainer"
-import avtar from "../../images/peter-johnson.jpg"
+import avtar from "../../images/peter-johnson-min.jpg"
 
 const VideoWrapperSection = () => {
   return (
