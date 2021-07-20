@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
-import trustpiloatLogo from "../../images/trustpiloat-logo-min.png"
 
 const ClientSection = () => {
   const data = useStaticQuery(graphql`
@@ -78,13 +77,6 @@ const ClientSection = () => {
             <div className="review-item">
               {items.map(item => (
                 <div class="review-box">
-                  <i>
-                    <img
-                      src={trustpiloatLogo}
-                      className="img-fluid"
-                      alt="Trustpilot"
-                    />
-                  </i>
                   <p>{item.description}</p>
                   <div className="review-by section">
                     <span className="avatar">
