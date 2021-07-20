@@ -1,9 +1,10 @@
 import React from "react"
 
 const TipsBox = props => {
-  const { title, description } = props
+  const { className, title, description } = props
+  const addClassName = `tips-wrap ${className}`
   return (
-    <div className="tips-wrap">
+    <div className={addClassName}>
       <h2 dangerouslySetInnerHTML={{ __html: title }} />
       <div dangerouslySetInnerHTML={{ __html: description }} />
     </div>

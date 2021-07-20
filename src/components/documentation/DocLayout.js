@@ -4,8 +4,9 @@ import MenuNavigation from "./MenuNavigation"
 import SearchBox from "./SearchBox"
 import CatBox from "./CatBox"
 import DocFooter from "./DocFooter"
+import JoinUs from "./JoinUs"
 
-const DocLayout = ({ children }) => {
+const DocLayout = ({ children, page }) => {
   return (
     <>
       <section className="section documentation-wrapper bg-white">
@@ -14,7 +15,7 @@ const DocLayout = ({ children }) => {
           <MenuNavigation />
           <SearchBox />
           {children}
-          <CatBox />
+          {page !== "stepByStepGuide" ? <CatBox /> : <JoinUs />}
           <DocFooter />
         </div>
       </section>
