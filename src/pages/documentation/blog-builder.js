@@ -2,7 +2,6 @@ import * as React from "react"
 import DocLayout from "./../../components/documentation/DocLayout"
 import { useStaticQuery, graphql } from "gatsby"
 import TipsBox from "./../../components/documentation/TipsBox"
-import VsBox from "./../../components/documentation/VsBox"
 import ContentBox from "./../../components/documentation/ContentBox"
 import StepList from "./../../components/documentation/StepList"
 
@@ -22,15 +21,7 @@ const BlogBuilder = () => {
               }
               tipsTitle
               tipsDescription
-              basicInputVsDetailedInput {
-                title
-                leftHeading
-                rightHeading
-                row {
-                  leftContent
-                  rightContent
-                }
-              }
+              basicInputVsDetailedInput
               contentCreationsTitle
               contentCreationsImage {
                 sourceUrl
@@ -49,18 +40,8 @@ const BlogBuilder = () => {
   let tipsTitle = data.allWpPage.nodes[0].documentation.blogBuilder.tipsTitle
   let tipsDescription =
     data.allWpPage.nodes[0].documentation.blogBuilder.tipsDescription
-  let vsTitle =
+  let basicInputVsDetailedInput =
     data.allWpPage.nodes[0].documentation.blogBuilder.basicInputVsDetailedInput
-      .title
-  let leftHeading =
-    data.allWpPage.nodes[0].documentation.blogBuilder.basicInputVsDetailedInput
-      .leftHeading
-  let rightHeading =
-    data.allWpPage.nodes[0].documentation.blogBuilder.basicInputVsDetailedInput
-      .rightHeading
-  let row =
-    data.allWpPage.nodes[0].documentation.blogBuilder.basicInputVsDetailedInput
-      .row
   let contentCreationsTitle =
     data.allWpPage.nodes[0].documentation.blogBuilder.contentCreationsTitle
 
@@ -92,11 +73,9 @@ const BlogBuilder = () => {
             </ul>
           </div>
           <TipsBox title={tipsTitle} description={tipsDescription} />
-          <VsBox
-            title={vsTitle}
-            leftHeading={leftHeading}
-            rightHeading={rightHeading}
-            row={row}
+          <div
+            class="vs-box-wrap ptb80"
+            dangerouslySetInnerHTML={{ __html: basicInputVsDetailedInput }}
           />
           <ContentBox
             className={"content-creations"}

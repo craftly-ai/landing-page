@@ -1,7 +1,6 @@
 import * as React from "react"
 import DocLayout from "./../../components/documentation/DocLayout"
 import StepList from "./../../components/documentation/StepList"
-import VsBox from "./../../components/documentation/VsBox"
 import TipsBox from "./../../components/documentation/TipsBox"
 import ContentBox from "./../../components/documentation/ContentBox"
 import { useStaticQuery, graphql } from "gatsby"
@@ -22,15 +21,7 @@ const SentenceRewriter = () => {
               }
               tipsTitle
               tipsDescription
-              inputVsOutput {
-                title
-                leftHeading
-                rightHeading
-                row {
-                  leftContent
-                  rightContent
-                }
-              }
+              inputVsOutput
               contentCreationsTitle
               contentCreationsImage {
                 sourceUrl
@@ -53,16 +44,8 @@ const SentenceRewriter = () => {
     data.allWpPage.nodes[0].documentation.sentenceRewriter.tipsTitle
   let tipsDescription =
     data.allWpPage.nodes[0].documentation.sentenceRewriter.tipsDescription
-  let vsTitle =
-    data.allWpPage.nodes[0].documentation.sentenceRewriter.inputVsOutput.title
-  let leftHeading =
+  let inputVsOutput =
     data.allWpPage.nodes[0].documentation.sentenceRewriter.inputVsOutput
-      .leftHeading
-  let rightHeading =
-    data.allWpPage.nodes[0].documentation.sentenceRewriter.inputVsOutput
-      .rightHeading
-  let row =
-    data.allWpPage.nodes[0].documentation.sentenceRewriter.inputVsOutput.row
   let contentCreationsTitle =
     data.allWpPage.nodes[0].documentation.sentenceRewriter.contentCreationsTitle
 
@@ -94,11 +77,9 @@ const SentenceRewriter = () => {
             </ul>
           </div>
           <TipsBox title={tipsTitle} description={tipsDescription} />
-          <VsBox
-            title={vsTitle}
-            leftHeading={leftHeading}
-            rightHeading={rightHeading}
-            row={row}
+          <div
+            class="vs-box-wrap ptb80"
+            dangerouslySetInnerHTML={{ __html: inputVsOutput }}
           />
           <ContentBox
             className={"content-creations"}
