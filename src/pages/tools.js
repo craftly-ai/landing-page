@@ -53,7 +53,7 @@ const Tools = () => {
                 <li>
                   <Link className="replaceHref" to="/">
                     Home
-                  </Link>{" "}
+                  </Link>
                   <span>/</span>
                 </li>
                 <li>List of All Tools</li>
@@ -71,7 +71,6 @@ const Tools = () => {
                   <div className="row">
                     <div className="col-sm-6 col-12 left-conn">
                       <div className="tools-tab">
-                        {/* map tools and get list of nav item and add with id */}
                         <ul
                           className="nav nav-tabs tools-tab-nav"
                           role="tablist"
@@ -87,7 +86,10 @@ const Tools = () => {
                                     }
                                     data-toggle="tab"
                                     href={
-                                      "#" + item.toolsTitle.replace(/\s+/g, "-")
+                                      "#" +
+                                      item.toolsTitle
+                                        .replace(/\s+/g, "-")
+                                        .replace(/[^A-Za-z0-9 -]/g, "-")
                                     }
                                   >
                                     {item.toolsTitle}
@@ -100,13 +102,14 @@ const Tools = () => {
                       </div>
                     </div>
                   </div>
-                  {/* map tools and get nav item id for div id */}
                   {toolsList.map(e =>
                     e.map((item, i) => {
                       return (
                         <div
                           Key={i}
-                          id={item.toolsTitle.replace(/\s+/g, "-")}
+                          id={item.toolsTitle
+                            .replace(/\s+/g, "-")
+                            .replace(/[^A-Za-z0-9 -]/g, "-")}
                           className={i === 0 ? "active tab-pane" : "tab-pane"}
                         >
                           <div className="row">
@@ -115,9 +118,6 @@ const Tools = () => {
                                 <div className="one-product-raw section">
                                   <div className="one-product-col">
                                     <div className="one-product-col-animate">
-                                      {/* 1. map cardGroup and get card  name, info 
-                                      2. get index from map and add with card name for card data id  
-                                  */}
                                       <ul className="grid nav nav-tabs">
                                         {item.toolsCard.map((item, i) => {
                                           return (
@@ -129,10 +129,12 @@ const Tools = () => {
                                                 data-toggle="tab"
                                                 href={
                                                   "#" +
-                                                  item.cardTitle.replace(
-                                                    /\s+/g,
-                                                    "-"
-                                                  )
+                                                  item.cardTitle
+                                                    .replace(/\s+/g, "-")
+                                                    .replace(
+                                                      /[^A-Za-z0-9 -]/g,
+                                                      "-"
+                                                    )
                                                 }
                                               >
                                                 <div className="white-box section">
@@ -161,15 +163,13 @@ const Tools = () => {
                             <div className="col-sm-6 col-12 right-conn">
                               <div className="all-tools-raw section">
                                 <div className="tab-content">
-                                  {/* 
-                                      1. get index from map and add with card name for card data id  
-                                      2. map cardGroup and get card data 
-                                  */}
                                   {item.toolsCard.map((item, i) => {
                                     return (
                                       <div
                                         key={i}
-                                        id={item.cardTitle.replace(/\s+/g, "-")}
+                                        id={item.cardTitle
+                                          .replace(/\s+/g, "-")
+                                          .replace(/[^A-Za-z0-9 -]/g, "-")}
                                         className={
                                           i === 0
                                             ? "active tab-pane"
