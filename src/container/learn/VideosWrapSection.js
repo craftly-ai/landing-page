@@ -11,12 +11,16 @@ const VideosWrapSection = () => {
             videosTitle
             watchAllTutorialsLabel
             watchAllTutorialsUrl
-            videosList {
-              title
-              image {
-                sourceUrl
-              }
-              url
+          }
+        }
+      }
+      allWpPost(filter: { blogPost: { postType: { video: { eq: true } } } }) {
+        nodes {
+          title
+          slug
+          featuredImage {
+            node {
+              sourceUrl
             }
           }
         }
@@ -32,7 +36,6 @@ const VideosWrapSection = () => {
   let watchAllTutorialsUrl = data.allWpPage.nodes.map(
     node => node.learn.watchAllTutorialsUrl
   )
-  let videosList = data.allWpPage.nodes.map(node => node.learn.videosList)
 
   return (
     <div className="videos-wrap section">
@@ -47,19 +50,17 @@ const VideosWrapSection = () => {
         </div>
       </div>
       <ul className="col3">
-        {videosList.map(e =>
-          e.map((item, i) => {
-            return (
-              <li key={i}>
-                <VideoBox
-                  title={item.title}
-                  image={item.image.sourceUrl}
-                  url={item.url}
-                />
-              </li>
-            )
-          })
-        )}
+        {data.allWpPost.nodes.map((item, i) => {
+          return (
+            <li key={i}>
+              <VideoBox
+                title={item.title}
+                image={item.featuredImage.node.sourceUrl}
+                url={item.slug}
+              />
+            </li>
+          )
+        })}
       </ul>
       <a href={watchAllTutorialsUrl} class="btn-main mobile">
         {watchAllTutorialsLabel}

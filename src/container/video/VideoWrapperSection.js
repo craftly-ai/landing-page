@@ -1,15 +1,23 @@
 import React from "react"
 import VideoContainer from "../../components/video/VideoContainer"
-import avatar from "../../images/peter-johnson-min.jpg"
 
-const VideoWrapperSection = () => {
+const VideoWrapperSection = props => {
+  const {
+    videoUrl,
+    poster,
+    authorName,
+    authorAvatarUrl,
+    date,
+    numberOfMinutesToRead,
+    content,
+  } = props
   return (
     <div className="video-wrapper section">
       <div className="video-box-row section">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-7 col-12 left-box">
-              <VideoContainer />
+              <VideoContainer videoUrl={videoUrl} poster={poster} />
             </div>
           </div>
         </div>
@@ -19,31 +27,20 @@ const VideoWrapperSection = () => {
           <div className="row">
             <div className="col-md-7 col-12 left-box"></div>
             <div className="col-md-5 col-12 right-box">
-              <h2>
-                Optimize your <br />
-                Linkedin Profile
-              </h2>
-              <h4>Introduction</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consec adipiscing elit, sed diam
-                nonummy nibh euismo tincidunt ut laoreet dolore magna aliquam
-                erat volutpat. Ut wisi enim ad minim veniam, quis nost exerci
-                tation ullamcorper suscipit lobortis nisla aliquip ex ea commodo
-                consequat. Duis autem dseum iriure dolor in hendrerit in
-                vulputate velit esssd molestie consequat, vel illum dolore eu
-                feugiat nulla facilisis at vero eros et accumsan et iustfo odio
-                dignissim qui blandit praesent luptatugm zzril delenit augue
-                duis dolore.
-              </p>
+              <div dangerouslySetInnerHTML={{ __html: content }} />
               <div className="auther-col section">
                 <div className="avatar">
-                  <img src={avatar} alt="" className="img-fluid avatar" />
+                  <img
+                    src={authorAvatarUrl}
+                    alt=""
+                    className="img-fluid avatar"
+                  />
                 </div>
                 <div className="avatar-text">
-                  <h6>Peter johnson</h6>
+                  <h6>{authorName}</h6>
                   <div className="sub">
-                    <span>April 26</span>
-                    <span>10 min</span>
+                    <span>{date}</span>
+                    <span>{numberOfMinutesToRead} min</span>
                   </div>
                 </div>
               </div>

@@ -10,6 +10,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
+    const videoslug = createFilePath({ node, getNode, basePath: `video` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: videoslug,
+    })
   }
 }
 
@@ -29,6 +35,15 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: "blog/" + slug,
       component: path.resolve(`./src/pages/blog/index.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: slug,
+      },
+    })
+    createPage({
+      path: "video/" + slug,
+      component: path.resolve(`./src/pages/video/index.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.

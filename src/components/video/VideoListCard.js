@@ -1,13 +1,16 @@
 import React from "react"
-import poster from "../../images/linkedin-small-video-img-min.jpg"
+import { Link } from "gatsby"
 
-const VideoListCard = () => {
+const VideoListCard = props => {
+  const { image, url } = props
+  const slug = "/video/" + url
+
   return (
     <>
-      <a href="/video/" className="replaceHref video-box">
-        <img src={poster} alt="" />
+      <Link to={slug} className="replaceHref video-box">
+        <img src={image} alt="" />
         <span className="play-btn" />
-      </a>
+      </Link>
     </>
   )
 }

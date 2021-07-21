@@ -1,18 +1,11 @@
 import React from "react"
-import poster from "../../images/linkedin-video-min.jpg"
 
-const VideoContainer = () => {
+const VideoContainer = props => {
+  const { videoUrl, poster } = props
   return (
     <div className="cb-video-container">
       <video className="video" width={320} height={176} loop poster={poster}>
-        <source
-          src="https://www.w3schools.com/tags/mov_bbb.mp4"
-          type="video/mp4"
-        />
-        <source
-          src="https://www.w3schools.com/tags/mov_bbb.ogg"
-          type="video/ogg"
-        />
+        <source src={videoUrl} type="video/mp4" />
         <track
           src=""
           kind="captions"
