@@ -13,6 +13,12 @@ const VideoContainer = () => {
           src="https://www.w3schools.com/tags/mov_bbb.ogg"
           type="video/ogg"
         />
+        <track
+          src=""
+          kind="captions"
+          srclang="en"
+          label="english_captions"
+        ></track>
         Your browser does not support HTML5 video.
       </video>
       <div className="play-pause--click-area">

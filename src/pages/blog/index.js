@@ -31,7 +31,7 @@ const BlogIndex = props => {
         authorAvatarUrl={authorAvatarUrl}
         categories={categories}
         date={date}
-        nuberOfMinutesToRead={nuberOfMinutesToRead}
+        numberOfMinutesToRead={nuberOfMinutesToRead}
         title={title}
         content={content}
       />

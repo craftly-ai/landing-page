@@ -87,7 +87,7 @@ const StepByStep = () => {
                           <div className="img-box box">
                             <img
                               src={item.step.imageOrDifference.image.sourceUrl}
-                              alt="image"
+                              alt=""
                             />
                           </div>
                         ) : (

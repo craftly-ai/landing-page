@@ -51,7 +51,7 @@ const WorkWithUsSection = () => {
                   return (
                     <li key={i}>
                       <WorkCard
-                        className={"box" + " " + item.title.toLowerCase()}
+                        className={`box ${item.title.toLowerCase()}`}
                         title={item.title}
                         description={item.description}
                         label={item.anchorLabel}

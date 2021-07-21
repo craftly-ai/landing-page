@@ -1,6 +1,6 @@
 import React from "react"
 import VideoContainer from "../../components/video/VideoContainer"
-import avtar from "../../images/peter-johnson-min.jpg"
+import avatar from "../../images/peter-johnson-min.jpg"
 
 const VideoWrapperSection = () => {
   return (
@@ -36,8 +36,8 @@ const VideoWrapperSection = () => {
                 duis dolore.
               </p>
               <div className="auther-col section">
-                <div className="avtar">
-                  <img src={avtar} alt="" className="img-fluid avtar" />
+                <div className="avatar">
+                  <img src={avatar} alt="" className="img-fluid avatar" />
                 </div>
                 <div className="avatar-text">
                   <h6>Peter johnson</h6>

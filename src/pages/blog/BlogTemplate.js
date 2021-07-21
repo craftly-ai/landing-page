@@ -15,7 +15,7 @@ const BlogTemplate = props => {
     authorAvatarUrl,
     categories,
     date,
-    nuberOfMinutesToRead,
+    numberOfMinutesToRead,
     title,
     content,
   } = props
@@ -48,7 +48,7 @@ const BlogTemplate = props => {
             <div className="container">
               <div className="title-raw">
                 <span>
-                  {nuberOfMinutesToRead} min read <strong>{categories}</strong>
+                  {numberOfMinutesToRead} min read <strong>{categories}</strong>
                 </span>
                 <h1>{title}</h1>
                 <div className="date-and-auth-col">
@@ -56,7 +56,7 @@ const BlogTemplate = props => {
                     <img
                       src={authorAvatarUrl}
                       alt=""
-                      className="img-fluid avtar"
+                      className="img-fluid avatar"
                     />
                     <p>{authorName}</p>
                   </div>
@@ -71,7 +71,7 @@ const BlogTemplate = props => {
                   />
                   <div className="writen-by-col section">
                     <div className="avatar-holder">
-                      <a href="#">
+                      <Link to="">
                         <img
                           alt=""
                           src={authorAvatarUrl}
@@ -79,12 +79,12 @@ const BlogTemplate = props => {
                           height={150}
                           width={150}
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="author-description">
                       <h6 className="label">Written By</h6>
                       <h3 className="author-name">
-                        <a href="#">{authorName}</a>
+                        <Link to="">{authorName}</Link>
                       </h3>
                       <p
                         dangerouslySetInnerHTML={{ __html: authorDescription }}

@@ -15,7 +15,9 @@ const VideoBox = props => {
         <Link to={url} className="replaceHref play-btn" />
       </div>
       <h5>
-        <Link to={url}>{title}</Link>
+        <Link to={url} className="replaceHref">
+          {title}
+        </Link>
       </h5>
     </div>
   )

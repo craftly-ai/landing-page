@@ -82,7 +82,9 @@ const Tools = () => {
                                 <li>
                                   <a
                                     key={i}
-                                    className={i == 0 ? "active" : ""}
+                                    className={
+                                      i === 0 ? "active masonry" : "masonry"
+                                    }
                                     data-toggle="tab"
                                     href={
                                       "#" + item.toolsTitle.replace(/\s+/g, "-")
@@ -105,7 +107,7 @@ const Tools = () => {
                         <div
                           Key={i}
                           id={item.toolsTitle.replace(/\s+/g, "-")}
-                          className={i == 0 ? "active tab-pane" : "tab-pane"}
+                          className={i === 0 ? "active tab-pane" : "tab-pane"}
                         >
                           <div className="row">
                             <div className="col-sm-6 col-12 left-conn">
@@ -122,7 +124,7 @@ const Tools = () => {
                                             <li className="grid-item" key={i}>
                                               <a
                                                 className={
-                                                  i == 0 ? "active" : ""
+                                                  i === 0 ? "active" : ""
                                                 }
                                                 data-toggle="tab"
                                                 href={
@@ -169,7 +171,7 @@ const Tools = () => {
                                         key={i}
                                         id={item.cardTitle.replace(/\s+/g, "-")}
                                         className={
-                                          i == 0
+                                          i === 0
                                             ? "active tab-pane"
                                             : "tab-pane"
                                         }

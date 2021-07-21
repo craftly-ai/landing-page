@@ -54,6 +54,7 @@ const JoinUs = () => {
                       href={item.buttonUrl}
                       className="more-btn blue"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       {item.buttonLabel}
                     </a>

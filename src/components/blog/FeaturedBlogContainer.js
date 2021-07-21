@@ -21,7 +21,7 @@ const FeaturedBlogContainer = ({ data }) => {
         <img
           src={data.author.node.avatar.url}
           alt=""
-          className="img-fluid avtar"
+          className="img-fluid avatar"
         />
         <p>
           {data.author.node.name} <br />

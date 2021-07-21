@@ -64,7 +64,7 @@ const LatestBlogSection = () => {
               </Link>
             </h1>
             <div className="auther-col section">
-              <img src={authorAvatarUrl} alt="" className="img-fluid avtar" />
+              <img src={authorAvatarUrl} alt="" className="img-fluid avatar" />
               <p>
                 {authorName} <br />
                 <span>{date}</span>
