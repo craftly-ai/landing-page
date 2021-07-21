@@ -5,7 +5,11 @@ import { useStaticQuery, graphql } from "gatsby"
 const LatestBlogSection = () => {
   const data = useStaticQuery(graphql`
     {
-      allWpPost(sort: { fields: date, order: DESC }, limit: 1) {
+      allWpPost(
+        filter: { blogPost: { postType: { blog: { eq: true } } } }
+        sort: { fields: date, order: DESC }
+        limit: 1
+      ) {
         nodes {
           author {
             node {

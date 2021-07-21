@@ -5,7 +5,13 @@ import { useStaticQuery, graphql } from "gatsby"
 const FeaturedBlogSection = () => {
   const data = useStaticQuery(graphql`
     {
-      allWpPost(filter: { blogPost: { featurePost: { eq: true } } }) {
+      allWpPost(
+        filter: {
+          blogPost: {
+            postType: { blog: { eq: true }, featurePost: { eq: true } }
+          }
+        }
+      ) {
         nodes {
           author {
             node {
@@ -24,7 +30,6 @@ const FeaturedBlogSection = () => {
           date(formatString: "MMMM DD, YYYY")
           blogPost {
             nuberOfMinutesToRead
-            featurePost
           }
           featuredImage {
             node {

@@ -6,19 +6,13 @@ const BlogListSection = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPost(
-        sort: { fields: date, order: DESC }
-        skip: 1
-        filter: { blogPost: { featurePost: { ne: true } } }
+        filter: {
+          blogPost: {
+            postType: { blog: { eq: true }, featurePost: { eq: null } }
+          }
+        }
       ) {
         nodes {
-          author {
-            node {
-              name
-              avatar {
-                url
-              }
-            }
-          }
           slug
           categories {
             nodes {
@@ -28,7 +22,6 @@ const BlogListSection = () => {
           date(formatString: "MMMM DD, YYYY")
           blogPost {
             nuberOfMinutesToRead
-            featurePost
           }
           featuredImage {
             node {
