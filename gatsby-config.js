@@ -4,7 +4,7 @@ module.exports = {
     title: `Craftly.AI`,
     description: `AI Copywriter`,
     author: `Cai @ Craftly`,
-    siteUrl: "https://imanbashir.com/craftly-landing/",
+    siteUrl: "https://craftly.ai",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: `https://wepixel.in/craftly-wp/graphql`,
+        url: `https://craftly.ai/craftly-wp/graphql`,
       },
     },
   ],
