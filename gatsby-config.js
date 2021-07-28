@@ -1,3 +1,5 @@
+let graphqlURL = `https://craftly.ai/craftly-wp/graphql`
+
 module.exports = {
   pathPrefix: `/craftly-landing`,
   siteMetadata: {
@@ -43,7 +45,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: `https://craftly.ai/craftly-wp/graphql`,
+        url: graphqlURL,
       },
     },
   ],

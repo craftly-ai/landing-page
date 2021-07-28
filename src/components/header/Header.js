@@ -55,7 +55,7 @@ const Header = () => (
                     <Link to="#">Request Access</Link>
                   </li>
                   <li className="mobile-li login-li">
-                    <Link to="https://craftly.web.app/auth">Login</Link>
+                    <Link to="https://app.craftly.ai/auth">Login</Link>
                   </li>
                 </ul>
               </div>
@@ -71,7 +71,7 @@ const Header = () => (
           <div className="login-access">
             <ul>
               <li className="mobile-li login-li">
-                <Link to="https://craftly.web.app/auth">Login</Link>
+                <Link to="https://app.craftly.ai/auth">Login</Link>
               </li>
               <li>
                 <Link
