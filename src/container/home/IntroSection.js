@@ -60,9 +60,9 @@ const IntroSection = () => {
                   ></iframe>
                 </div>
               </div>
-              <h6>
+              {/* <h6>
                 <span /> {freeTrialLabel}
-              </h6>
+              </h6> */}
             </div>
           </div>
           <div className="col-sm-6 col-12 justify-content-center align-self-center right-conn">
