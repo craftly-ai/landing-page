@@ -19,6 +19,11 @@ const Footer = () => (
               <h5>Company</h5>
               <ul>
                 <li>
+                  <Link className="replaceHref" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li>
                   <Link className="replaceHref" to="/about/">
                     About
                   </Link>
@@ -42,11 +47,6 @@ const Footer = () => (
                   </Link>
                 </li>
                 <li>
-                  <Link to="mailto:hello@craftly.ai?subject=Support">
-                    Contact Us
-                  </Link>
-                </li>
-                <li>
                   <Link
                     to="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
                     data-mode="popup"
@@ -56,6 +56,12 @@ const Footer = () => (
                   >
                     Partner Program
                   </Link>
+                </li>
+                <li>
+                  <Link to="/">Agency partners</Link>
+                </li>
+                <li>
+                  <Link to="/">Referral partners</Link>
                 </li>
               </ul>
             </div>
@@ -80,6 +86,9 @@ const Footer = () => (
                     Slack Channel
                   </Link>
                 </li>
+                <li>
+                  <Link to="/">Foum</Link>
+                </li>
               </ul>
             </div>
             <div className="ft-menu ft-menu4">
@@ -93,6 +102,11 @@ const Footer = () => (
                 <li>
                   <Link className="replaceHref" to="/privacy-policy/">
                     Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link className="replaceHref" to="/faqs/">
+                    FAQs
                   </Link>
                 </li>
               </ul>
