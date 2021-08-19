@@ -78,7 +78,8 @@ const IndexPage = () => {
   )
   let ctaImage = data.allWpPage.nodes.map(node => node.home.ctaImage.sourceUrl)
 
-  const metaTitle = "Home"
+  const metaTitle =
+    "Craftly.AI | AI Powered Copywriter for Marketing Copy and Content"
   const metaDescription =
     "Craftly.AI is your AI-Powered Copywriting assistant that generates high-performing original content the way you like it. Marketing copy and content. Free Trial."
 

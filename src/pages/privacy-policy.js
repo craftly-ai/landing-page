@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
   let intro = data.allWpPage.nodes.map(node => node.privacyPolicy.intro)
   let points = data.allWpPage.nodes.map(node => node.privacyPolicy.points)
 
-  const metaTitle = "Privacy Policy"
+  const metaTitle = "Craftly.AI | Privacy Policy"
   const metaDescription = ""
 
   return (

@@ -55,7 +55,7 @@ const About = () => {
     node => node.about.footerCtaImage.sourceUrl
   )
 
-  const metaTitle = "About"
+  const metaTitle = "Meet Craftly.AI | GPT3 Copywriter Assistant"
   const metaDescription =
     "Cai is your AI-Powered copywriter. We’re SEO’ers from Toronto bringing the latest in artificial intelligence, GPT3 and machine learning to craft content at scale."
 

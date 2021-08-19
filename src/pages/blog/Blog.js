@@ -9,10 +9,13 @@ import FeaturedBlogSection from "./../../container/blog/FeaturedBlogSection"
 import BlogListSection from "./../../container/blog/BlogListSection"
 import { Link } from "gatsby"
 
+const metaTitle = "Craftly.AI | Blog, Resources & Updates"
+const metaDescription =
+  "Learn from SEO and content marketing experts. Checkout content written using our tech & some tips on how to get your content ranking with your AI copywriter."
 const Blog = () => {
   return (
     <>
-      <SEO />
+      <SEO title={metaTitle} description={metaDescription} />
       <Layout>
         <section className="blog-page-warpper section stick-gradient">
           <div className="breadcrumbs mrt112 section">
