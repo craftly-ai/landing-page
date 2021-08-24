@@ -45,7 +45,7 @@ const PricingSection = () => {
 
   return (
     <div className="wrote-more-raw section right-section-container ptb100">
-      <div className="container">
+      <div className="container" id="pricingInfo">
         <div className="row">
           <div className="col-lg-12 text-center">
             <div className="w-m-top">

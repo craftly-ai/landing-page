@@ -63,7 +63,7 @@ const DashboardSection = () => {
   return (
     <>
       <div className="production-raw section ptb100">
-        <div className="container">
+        <div className="container" id="craftly-ai-demo">
           <div className="desktop-block craftly-ai-demo section">
             <SearchBar url={dashboardTitle} />
             <div className="desktop-screen">

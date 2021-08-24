@@ -47,7 +47,7 @@ const Header = () => (
                     </ul>
                   </li>
                   <li className="test">
-                    <Link className="replaceHref" to="/#pricing">
+                    <Link className="replaceHref" to="/#pricingInfo">
                       Pricing
                     </Link>
                   </li>

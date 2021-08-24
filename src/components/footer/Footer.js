@@ -29,12 +29,14 @@ const Footer = () => (
                   </Link>
                 </li>
                 <li>
-                  <Link className="replaceHref" to="/#pricing">
+                  <Link className="replaceHref" to="/#pricingInfo">
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link to="#header">Demo</Link>
+                  <Link className="replaceHref" to="/#craftly-ai-demo">
+                    Demo
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -97,16 +99,6 @@ const Footer = () => (
                 <li>
                   <Link className="replaceHref" to="/privacy-policy/">
                     Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link className="replaceHref" to="/faqs/">
-                    FAQs
-                  </Link>
-                </li>
-                <li>
-                  <Link className="replaceHref" to="/tempesta/">
-                    Tempesta
                   </Link>
                 </li>
               </ul>
