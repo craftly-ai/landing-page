@@ -35,11 +35,17 @@ const InnerBanner = props => {
                   <a
                     href={buttomButtonUrl_1}
                     className="btn-main"
-                    onclick="tidioChatApi.open()"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {bottomButtonLabel_1}
                   </a>
-                  <a href={buttomButtonUrl_2} className={buttomClassButton_2}>
+                  <a
+                    href={buttomButtonUrl_2}
+                    className={buttomClassButton_2}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className={buttomIconButton_2} />
                     {buttomButtonLabel_2}
                   </a>

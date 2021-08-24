@@ -48,12 +48,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     <script
       type="text/javascript"
       rel="preconnect"
-      src="https://widget-v4.tidiochat.com/1_69_0/static/js/render.d02d6132b6e06cd0a41d.js"
-      defer
-    ></script>,
-    <script
-      type="text/javascript"
-      rel="preconnect"
       src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"
       defer
     ></script>,
@@ -67,12 +61,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
       type="text/javascript"
       rel="preconnect"
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-      defer
-    ></script>,
-    <script
-      type="text/javascript"
-      rel="preconnect"
-      src="https://code.tidio.co/4okfxoik8goeafk6fywrgilwux7mavdq.js"
       defer
     ></script>,
     <script

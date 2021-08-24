@@ -104,7 +104,6 @@ const IndexPage = () => {
           <ProductSection />
           <CopyRightSection />
           <TrustTechSection />
-          <VersusSection />
           <PricingSection />
           <TestimonialSection />
           <SubscribeSection />

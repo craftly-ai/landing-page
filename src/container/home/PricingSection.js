@@ -44,10 +44,7 @@ const PricingSection = () => {
   let priceTable = data.allWpPage.nodes.map(node => node.home.priceTable)
 
   return (
-    <div
-      className="wrote-more-raw section right-section-container ptb100"
-      id="pricing"
-    >
+    <div className="wrote-more-raw section right-section-container ptb100">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
@@ -61,11 +58,11 @@ const PricingSection = () => {
                 </label>
                 <p className="annual">{annuallyTabLabel}</p>
               </div>
-              <p className="save-col">Save</p>
+              <p className="save-col">2 Months free on annual plans!</p>
             </div>
           </div>
         </div>
-        <div className="pricing-table-raw section">
+        <div className="pricing-table-raw section" id="PricingSection">
           {/* pricing table  */}
           <div className="row">
             {priceTable.map(e =>

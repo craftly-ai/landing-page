@@ -47,21 +47,19 @@ const Footer = () => (
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
-                    data-mode="popup"
-                    data-size={100}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <Link className="replaceHref" to="/affiliate/">
                     Partner Program
                   </Link>
                 </li>
                 <li>
-                  <Link to="/">Agency partners</Link>
+                  <Link className="replaceHref" to="/affiliate/">
+                    Agency Partners
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/">Referral partners</Link>
+                  <Link className="replaceHref" to="/affiliate/">
+                    Referral Partners
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -85,9 +83,6 @@ const Footer = () => (
                   >
                     Slack Channel
                   </Link>
-                </li>
-                <li>
-                  <Link to="/">Foum</Link>
                 </li>
               </ul>
             </div>

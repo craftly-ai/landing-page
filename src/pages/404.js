@@ -8,9 +8,9 @@ import { useStaticQuery, graphql } from "gatsby"
 const NotFoundPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allWpPage(filter: { slug: { eq: "page-404" } }) {
+      allWpPage(filter: { slug: { eq: "404-2" } }) {
         nodes {
-          page404 {
+          craftly404 {
             pageTopTitle
             image {
               sourceUrl
@@ -27,11 +27,17 @@ const NotFoundPage = () => {
     }
   `)
 
-  let pageTopTitle = data.allWpPage.nodes.map(node => node.page404.pageTopTitle)
-  let image = data.allWpPage.nodes.map(node => node.page404.image.sourceUrl)
-  let title = data.allWpPage.nodes.map(node => node.page404.title)
-  let description = data.allWpPage.nodes.map(node => node.page404.description)
-  let buttonGroup = data.allWpPage.nodes.map(node => node.page404.buttonGroup)
+  let pageTopTitle = data.allWpPage.nodes.map(
+    node => node.craftly404.pageTopTitle
+  )
+  let image = data.allWpPage.nodes.map(node => node.craftly404.image.sourceUrl)
+  let title = data.allWpPage.nodes.map(node => node.craftly404.title)
+  let description = data.allWpPage.nodes.map(
+    node => node.craftly404.description
+  )
+  let buttonGroup = data.allWpPage.nodes.map(
+    node => node.craftly404.buttonGroup
+  )
 
   return (
     <>

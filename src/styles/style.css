@@ -14416,3 +14416,11 @@ input[type="text"] {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 768px) {
+  .faq-sidelist {
+    display: none;
+  }
+  .faq-list {
+    padding: 0 20px;
+  }
+}

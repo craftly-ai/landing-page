@@ -55,9 +55,13 @@
     t(".switch input:checkbox").change(function () {
       t(this).is(":checked")
         ? (t(".toggle-button .month").removeClass("active"),
-          t(".toggle-button .annual").addClass("active"))
+          t(".toggle-button .annual").addClass("active"),
+          (t(".price")[1].innerHTML = "$250<small>/Year</small>"),
+          (t(".price")[2].innerHTML = "$750<small>/Year</small>"))
         : (t(".toggle-button .month").addClass("active"),
-          t(".toggle-button .annual").removeClass("active"))
+          t(".toggle-button .annual").removeClass("active"),
+          (t(".price")[1].innerHTML = "$25<small>/month</small>"),
+          (t(".price")[2].innerHTML = "$79<small>/month</small>"))
     }),
     document.documentElement.clientWidth < 768 &&
       t(".partners-logo-raw ul").slick({
