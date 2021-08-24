@@ -30,6 +30,12 @@ export const onRenderBody = ({ setHeadComponents }) => {
     <script
       type="text/javascript"
       rel="preconnect"
+      src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"
+      async
+    ></script>,
+    <script
+      type="text/javascript"
+      rel="preconnect"
       src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"
       defer
     ></script>,

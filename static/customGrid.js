@@ -9,6 +9,10 @@
     }),
     t("#qlinklist li a").click(function () {
       t(this).parent().addClass("active").siblings().removeClass("active")
+    }),
+    t(".tempesta-numberList-marquee").marquee({
+      direction: "left",
+      duration: 7000,
     })
   t(".review-slider").slick({
     speed: 1e4,

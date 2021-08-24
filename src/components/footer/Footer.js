@@ -109,6 +109,11 @@ const Footer = () => (
                     FAQs
                   </Link>
                 </li>
+                <li>
+                  <Link className="replaceHref" to="/tempesta/">
+                    Tempesta
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
