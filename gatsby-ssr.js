@@ -25,7 +25,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
       type="text/javascript"
       rel="preconnect"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      async
     ></script>,
     <script
       type="text/javascript"

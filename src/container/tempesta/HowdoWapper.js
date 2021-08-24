@@ -39,7 +39,7 @@ const HowdoWapper = () => {
                     <li key={i}>
                       <div className="text-box box">
                         <h3 dangerouslySetInnerHTML={{ __html: data.title }} />
-                        <p
+                        <div
                           dangerouslySetInnerHTML={{ __html: data.description }}
                         />
                       </div>

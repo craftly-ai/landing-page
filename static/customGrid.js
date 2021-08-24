@@ -57,7 +57,7 @@
         ? (t(".toggle-button .month").removeClass("active"),
           t(".toggle-button .annual").addClass("active"),
           (t(".price")[1].innerHTML = "$250<small>/Year</small>"),
-          (t(".price")[2].innerHTML = "$750<small>/Year</small>"))
+          (t(".price")[2].innerHTML = "$790<small>/Year</small>"))
         : (t(".toggle-button .month").addClass("active"),
           t(".toggle-button .annual").removeClass("active"),
           (t(".price")[1].innerHTML = "$25<small>/month</small>"),
@@ -253,9 +253,27 @@
     t(".slider-for").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: !1,
-      fade: !0,
+      arrows: false,
+      fade: true,
+      asNavFor: ".slider-nav",
     })
+  t(".slider-nav").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    dots: false,
+    centerMode: true,
+    centerPadding: "30px",
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
+  })
   var u = new TimelineMax(),
     d = t(".cb-video-container"),
     p = d.find(".video"),
