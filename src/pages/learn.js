@@ -51,9 +51,9 @@ const Learn = () => {
   )
   let emailId = data.allWpPage.nodes.map(node => node.learn.emailId)
 
-  const metaTitle = "Academy"
+  const metaTitle = "Craftly.AI Academy | Help Center"
   const metaDescription =
-    "Craftly.AI | AI Powered Copywriter for Marketing Copy and Content"
+    "Get started with our education centre. We have training, tutorials, and tips for using your Craftly.AI Copywriting Assistant more effectively. Learn. Craft. Scale."
 
   return (
     <>

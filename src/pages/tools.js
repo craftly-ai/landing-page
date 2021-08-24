@@ -39,7 +39,7 @@ const Tools = () => {
   )
   let toolsList = data.allWpPage.nodes.map(node => node.tools.toolsList)
 
-  const metaTitle = "Tools"
+  const metaTitle = "Craftly.AI | AI-Powered Copywriter Tools & Templates"
   const metaDescription =
     "See our wide variety of tools & templates: Essays, Blogs, Articles, Ads, Web Copy, Landing Pages, E-commerce, Writing Tools, SEO Assistance, Company, Emails, and more!"
   return (

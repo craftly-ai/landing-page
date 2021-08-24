@@ -23,7 +23,7 @@ const TermsOfUse = () => {
   let intro = data.allWpPage.nodes.map(node => node.termsOfUse.intro)
   let points = data.allWpPage.nodes.map(node => node.termsOfUse.points)
 
-  const metaTitle = "Terms of Use"
+  const metaTitle = "Craftly.AI | Terms of Use"
   const metaDescription = ""
 
   return (

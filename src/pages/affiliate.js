@@ -96,7 +96,7 @@ const Affiliate = () => {
     node => node.affiliate.audienceList
   )
 
-  const metaTitle = "Affiliate"
+  const metaTitle = "Craftly.AI | Affiliate Partner Program [Refer and Earn]"
   const metaDescription =
     "Earn money monthly. High earning potential. Earn up to 30% passive income / commission by referring friends, family, randoms. Seriously, there is no limit."
 

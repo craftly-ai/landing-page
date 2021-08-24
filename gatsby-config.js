@@ -3,8 +3,8 @@ let graphqlURL = `https://craftly.ai/craftly-wp/graphql`
 module.exports = {
   pathPrefix: `/craftly-landing`,
   siteMetadata: {
-    title: `Craftly.AI`,
-    description: `AI Copywriter`,
+    title: ``,
+    description: ``,
     author: `Cai @ Craftly`,
     siteUrl: "https://craftly.ai",
   },
