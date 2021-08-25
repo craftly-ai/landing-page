@@ -56,12 +56,12 @@
       t(this).is(":checked")
         ? (t(".toggle-button .month").removeClass("active"),
           t(".toggle-button .annual").addClass("active"),
-          (t(".price")[1].innerHTML = "$250<small>/Year</small>"),
-          (t(".price")[2].innerHTML = "$790<small>/Year</small>"))
+          t(".Annually").css("display", "block"),
+          t(".Monthly").css("display", "none"))
         : (t(".toggle-button .month").addClass("active"),
           t(".toggle-button .annual").removeClass("active"),
-          (t(".price")[1].innerHTML = "$25<small>/month</small>"),
-          (t(".price")[2].innerHTML = "$79<small>/month</small>"))
+          t(".Monthly").css("display", "block"),
+          t(".Annually").css("display", "none"))
     }),
     document.documentElement.clientWidth < 768 &&
       t(".partners-logo-raw ul").slick({

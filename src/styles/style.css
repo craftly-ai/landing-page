@@ -1398,14 +1398,13 @@ button:focus {
   color: #fff;
   margin-top: 15px;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 .pricing-table-raw .pricing-table-col p.price {
   font-size: 54px;
   color: #fff;
-  margin-top: 20px;
   font-weight: 700;
   line-height: 130%;
-  height: 72px;
   margin-bottom: 0;
   width: auto;
   display: inline-block;
@@ -14508,4 +14507,10 @@ input[type="text"] {
   width: 315px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.pricing-table-raw .pricing-table-col .pricing-table p.price.Monthly {
+  display: block;
+}
+.pricing-table-raw .pricing-table-col .pricing-table p.price.Annually {
+  display: none;
 }

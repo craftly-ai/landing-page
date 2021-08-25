@@ -14,8 +14,10 @@ const PricingSection = () => {
             annuallyTabLabel
             priceTable {
               title
-              price
-              duration
+              monthlyPrice
+              monthlyDuration
+              annualPrice
+              annualDuration
               shortDescription
               description
               buttonLabel
@@ -70,8 +72,10 @@ const PricingSection = () => {
                 <PricingCard
                   key={i}
                   title={item.title}
-                  price={item.price}
-                  time={item.duration}
+                  monthlyPrice={item.monthlyPrice}
+                  monthlyDuration={item.monthlyDuration}
+                  annualPrice={item.annualPrice}
+                  annualDuration={item.annualDuration}
                   subtitle={item.shortDescription}
                   list={item.description}
                   button={item.buttonLabel}

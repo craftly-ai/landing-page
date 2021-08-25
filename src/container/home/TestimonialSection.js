@@ -52,7 +52,10 @@ const TestimonialSection = () => {
                                 <i>{item.reviewTitle}</i>
                               </h3>
                               <p>{item.description}</p>
-                              <div className="item-thumbnail">
+                              <div
+                                className="item-thumbnail"
+                                style={{ width: "100%" }}
+                              >
                                 <div className="img-box">
                                   <img src={item.avatar.sourceUrl} alt="" />
                                 </div>

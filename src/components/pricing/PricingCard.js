@@ -4,8 +4,10 @@ import { Link } from "gatsby"
 const PricingCard = props => {
   const {
     title,
-    price,
-    time,
+    monthlyPrice,
+    monthlyDuration,
+    annualPrice,
+    annualDuration,
     subtitle,
     list,
     button,
@@ -23,9 +25,13 @@ const PricingCard = props => {
         <div className="pricing-table text-center">
           <div className="top">
             <p className="f-medium">{title}</p>
-            <p className="price">
-              {price}
-              <small>{time}</small>
+            <p className="price Monthly">
+              {monthlyPrice}
+              <small>{monthlyDuration}</small>
+            </p>
+            <p className="price Annually">
+              {annualPrice}
+              <small>{annualDuration}</small>
             </p>
             <p className="light_weight">{subtitle}</p>
           </div>
