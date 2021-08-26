@@ -39,7 +39,7 @@ const PowerSection = () => {
             </div>
           </div>
           <div className="col-md-7 col-12 img-box">
-            <img src={powerOfAiImage} alt="" />
+            <img src={powerOfAiImage} alt="PowerSection" />
           </div>
         </div>
       </div>

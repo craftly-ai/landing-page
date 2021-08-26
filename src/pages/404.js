@@ -48,7 +48,7 @@ const NotFoundPage = () => {
             <div className="container">
               <h3 dangerouslySetInnerHTML={{ __html: pageTopTitle }} />
               <div className="img-box">
-                <img src={image} alt="" />
+                <img src={image} alt="404" />
               </div>
               <h1 dangerouslySetInnerHTML={{ __html: title }} />
               <h5 dangerouslySetInnerHTML={{ __html: description }} />

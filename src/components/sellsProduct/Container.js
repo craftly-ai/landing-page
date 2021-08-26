@@ -9,7 +9,7 @@ const Container = props => {
         <div dangerouslySetInnerHTML={{ __html: description }} />
       </div>
       <div className="img-box box">
-        <img src={sourceUrl} alt="" />
+        <img src={sourceUrl} alt="Container" />
       </div>
     </>
   )

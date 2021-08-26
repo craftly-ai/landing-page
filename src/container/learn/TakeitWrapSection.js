@@ -39,7 +39,11 @@ const TakeitWrapSection = () => {
       <div className="row align-items-center">
         <div className="col-md-6">
           <div className="img-wrap dot-sep">
-            <img src={takeItImage} className="img-fluid" alt="" />
+            <img
+              src={takeItImage}
+              className="img-fluid"
+              alt="TakeitWrapSection"
+            />
             <span className="img-sep circle" />
           </div>
         </div>

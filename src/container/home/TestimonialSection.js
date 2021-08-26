@@ -57,7 +57,10 @@ const TestimonialSection = () => {
                                 style={{ width: "100%" }}
                               >
                                 <div className="img-box">
-                                  <img src={item.avatar.sourceUrl} alt="" />
+                                  <img
+                                    src={item.avatar.sourceUrl}
+                                    alt="TestimonialSection"
+                                  />
                                 </div>
                                 <div className="testi-conn">
                                   <h5>{item.reviewerName}</h5>

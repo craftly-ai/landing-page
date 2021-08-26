@@ -44,7 +44,7 @@ const HowdoWapper = () => {
                         />
                       </div>
                       <div className="img-box box">
-                        <img src={data.image.sourceUrl} alt="" />
+                        <img src={data.image.sourceUrl} alt="HowdoWapper" />
                       </div>
                     </li>
                   )

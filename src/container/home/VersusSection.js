@@ -65,7 +65,7 @@ const VersusSection = () => {
             <img
               src={humanVersusImage}
               className="img-radius img-fluid"
-              alt=""
+              alt="VersusSection"
             />
           </div>
           <div className="col-sm-4 col-xs-12 hcol1 pt-4 content-col">

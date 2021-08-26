@@ -6,7 +6,7 @@ const GrowListItem = props => {
   return (
     <div className="value-list">
       <div className="icon-box">
-        <img className="img-fluid" src={img} alt="" />
+        <img className="img-fluid" src={img} alt="GrowListItem" />
       </div>
       <h4>{heading}</h4>
       <p>{subheading}</p>

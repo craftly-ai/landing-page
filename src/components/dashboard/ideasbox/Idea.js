@@ -10,10 +10,10 @@ const Idea = props => {
     <li>
       <div className="btn-box">
         <Link>
-          <img src={favoriteImg} className="icon" alt="" />
+          <img src={favoriteImg} className="icon" alt=" Idea" />
         </Link>
         <Link>
-          <img src={copyButtonImg} className="icon" alt="" />
+          <img src={copyButtonImg} className="icon" alt="Idea" />
         </Link>
       </div>
       <div className="text-box">

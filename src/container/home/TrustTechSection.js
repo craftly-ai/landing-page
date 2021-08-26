@@ -84,7 +84,11 @@ const TrustTechSection = () => {
           </div>
         </div>
       </div>
-      <img className="img-fluid desktop-none" src={backimg} alt="" />
+      <img
+        className="img-fluid desktop-none"
+        src={backimg}
+        alt="TrustTechSection"
+      />
     </div>
   )
 }

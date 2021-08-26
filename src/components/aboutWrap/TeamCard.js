@@ -6,7 +6,7 @@ const TeamCard = props => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
       <div className="img-box" style={{ backgroundColor: bgColor }}>
-        <img src={img} alt="" />
+        <img src={img} alt="TeamCard" />
       </div>
       <div className="text-box">
         <h3 dangerouslySetInnerHTML={{ __html: name }} />

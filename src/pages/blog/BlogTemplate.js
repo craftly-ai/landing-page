@@ -55,7 +55,7 @@ const BlogTemplate = props => {
                   <div className="auther-col">
                     <img
                       src={authorAvatarUrl}
-                      alt=""
+                      alt="BlogTemplate"
                       className="img-fluid avatar"
                     />
                     <p>{authorName}</p>
@@ -73,7 +73,7 @@ const BlogTemplate = props => {
                     <div className="avatar-holder">
                       <Link to="">
                         <img
-                          alt=""
+                          alt="BlogTemplate"
                           src={authorAvatarUrl}
                           className="avatar"
                           height={150}

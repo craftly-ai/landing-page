@@ -51,7 +51,7 @@ const AboutSection = () => {
         <div className="row">
           <div className="col-md-12 col-12">
             <div className="about-image">
-              <img src={aboutImage} alt="" />
+              <img src={aboutImage} alt="AboutSection" />
             </div>
           </div>
         </div>

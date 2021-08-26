@@ -6,7 +6,10 @@ const FeaturedBlogContainer = ({ data }) => {
   return (
     <div className="col-sm-4 col-xs-12 featured-blog-col">
       <Link to={slug} className="replaceHref blog-img">
-        <img src={data.featuredImage.node.sourceUrl} alt="" />
+        <img
+          src={data.featuredImage.node.sourceUrl}
+          alt="FeaturedBlogContainer"
+        />
       </Link>
       <div className="context-col">
         <p className="context">
@@ -20,7 +23,7 @@ const FeaturedBlogContainer = ({ data }) => {
       <div className="auther-col section">
         <img
           src={data.author.node.avatar.url}
-          alt=""
+          alt="FeaturedBlogContainer"
           className="img-fluid avatar"
         />
         <p>

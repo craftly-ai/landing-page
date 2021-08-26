@@ -81,7 +81,7 @@ const Card = ({ icon, title, list }) => {
   return (
     <div className="card">
       <div>
-        <img src={icon} alt="" />
+        <img src={icon} alt="CardList" />
       </div>
       <h2 dangerouslySetInnerHTML={{ __html: title }} />
       <div dangerouslySetInnerHTML={{ __html: list }} />

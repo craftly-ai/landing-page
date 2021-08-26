@@ -20,7 +20,7 @@ const OfferSection = props => {
             </a>
           </div>
           <div className="col-sm-6 col-12 right-conn text-center">
-            <img src={img} className="img-fluid" alt="" />
+            <img src={img} className="img-fluid" alt="OfferSection" />
           </div>
         </div>
       </div>

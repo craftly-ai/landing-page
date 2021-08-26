@@ -44,7 +44,7 @@ const JoinUs = () => {
                     <i>
                       <img
                         src={item.logo.sourceUrl}
-                        alt=""
+                        alt="JoinUs"
                         className="img-fluid"
                       />
                     </i>

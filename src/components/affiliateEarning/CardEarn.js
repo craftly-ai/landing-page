@@ -6,7 +6,7 @@ const CardEarn = props => {
   return (
     <div className="value-list">
       <div className="icon-box">
-        <img className="img-fluid" src={sourceUrl} alt="" />
+        <img className="img-fluid" src={sourceUrl} alt="CardEarn" />
       </div>
       <h4>{title}</h4>
       <p dangerouslySetInnerHTML={{ __html: description }} />

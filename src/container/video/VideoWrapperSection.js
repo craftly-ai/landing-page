@@ -32,7 +32,7 @@ const VideoWrapperSection = props => {
                 <div className="avatar">
                   <img
                     src={authorAvatarUrl}
-                    alt=""
+                    alt="VideoWrapperSection"
                     className="img-fluid avatar"
                   />
                 </div>

@@ -83,7 +83,7 @@ const ClientSection = () => {
                       <img
                         src={item.avatar.sourceUrl}
                         className="img-rounded"
-                        alt=""
+                        alt="ClientSection"
                       />
                     </span>
                     <h6>

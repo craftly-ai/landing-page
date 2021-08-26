@@ -8,7 +8,7 @@ const VideoListCard = props => {
   return (
     <>
       <Link to={slug} className="replaceHref video-box">
-        <img src={image} alt="" />
+        <img src={image} alt="VideoListCard" />
         <span className="play-btn" />
       </Link>
     </>

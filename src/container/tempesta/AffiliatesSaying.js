@@ -70,7 +70,10 @@ const AffiliatesSaying = () => {
                       return (
                         <div className="item-thumbnail">
                           <div className="img-box">
-                            <img src={data.avatar.sourceUrl} />
+                            <img
+                              src={data.avatar.sourceUrl}
+                              alt="AffiliatesSaying"
+                            />
                           </div>
                           <div className="testi-conn">
                             <h5

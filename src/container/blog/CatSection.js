@@ -48,7 +48,7 @@ const CatSection = () => {
             </a>
           </div>
           <div className="col-sm-6 col-12 right-conn text-center">
-            <img src={ctaImage} alt="" className="img-fluid" />
+            <img src={ctaImage} alt="CatSection" className="img-fluid" />
           </div>
         </div>
       </div>

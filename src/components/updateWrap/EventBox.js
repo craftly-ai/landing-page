@@ -6,7 +6,7 @@ const EventBox = props => {
   return (
     <div className="box-wrap">
       <i>
-        <img src={icon} className="img-fluid" alt="" />
+        <img src={icon} className="img-fluid" alt="EventBox" />
       </i>
       <h5 dangerouslySetInnerHTML={{ __html: title }} />
       <p dangerouslySetInnerHTML={{ __html: description }} />

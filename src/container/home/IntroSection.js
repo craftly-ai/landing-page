@@ -67,7 +67,7 @@ const IntroSection = () => {
           </div>
           <div className="col-sm-6 col-12 justify-content-center align-self-center right-conn">
             <div className="img-box" id="lottie">
-              <img src={img} alt="" />
+              <img src={img} alt="IntroSection" />
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const Product = props => {
         <img
           className="img-fluid"
           src={img}
-          alt=""
+          alt="Product"
           style={{ maxWidth: "20%" }}
         />
       </div>

@@ -21,7 +21,7 @@ const Modal = () => {
               <img
                 className="modal-banner img-fluid"
                 src={wishlistBannerImg}
-                alt=""
+                alt="Modal"
               />
               <div className="content-wrapper-raw section">
                 <h3>Meet Cai at Craftly.ai</h3>
@@ -87,7 +87,11 @@ const Modal = () => {
               </div>
               <p className="thanks-col">
                 Thanks for your Support{" "}
-                <img src={heartImg} className="img-fluid ic-heart" alt="" />
+                <img
+                  src={heartImg}
+                  className="img-fluid ic-heart"
+                  alt="Modal"
+                />
               </p>
             </div>
           </div>

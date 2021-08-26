@@ -52,7 +52,7 @@ const CopyRightSection = () => {
                   <div className="">
                     <img
                       src={item.stepImage.sourceUrl}
-                      alt=""
+                      alt="CopyRightSection"
                       className="img-fluid"
                     />
                   </div>
