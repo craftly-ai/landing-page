@@ -14112,22 +14112,36 @@ input[type="text"] {
   margin-top: 90px;
   display: flex;
 }
-.media-by-numbers-section .number-list .block-1 .number-list-row2 {
-  width: 600px;
-}
 
 .media-by-numbers-section .number-list .number-list-row1 {
   color: #fff;
   font-size: 110px;
-  margin-right: 300px;
 }
 .media-by-numbers-section .number-list .number-list-row2 {
-  width: 400px;
   color: #fff;
   font-size: 30px;
   opacity: 0.6;
   margin-top: 20px;
   font-weight: 300px;
+}
+
+.media-by-numbers-section .number-list .block-1 .number-list-row1 {
+  margin-right: 180px;
+}
+.media-by-numbers-section .number-list .block-2 .number-list-row1 {
+  margin-right: 210px;
+}
+.media-by-numbers-section .number-list .block-3 .number-list-row1 {
+  margin-right: 360px;
+}
+.media-by-numbers-section .number-list .block-4 .number-list-row2 {
+  width: 300px;
+}
+
+@media (max-width: 1120px) {
+  .tempesta-numberList-parallax {
+    overflow: hidden;
+  }
 }
 
 .tempesta-pricing-section .top p {
@@ -14205,12 +14219,6 @@ input[type="text"] {
   img.img3 {
   width: 130px;
   height: 130px;
-}
-
-.tempesta-numberList-marquee {
-  overflow: hidden;
-  margin-left: -200px;
-  margin-right: -200px;
 }
 
 .tempesta-card-section {
@@ -14386,10 +14394,6 @@ input[type="text"] {
   .media-by-numbers-section .number-list .number-list-row2 {
     font-size: 23px;
   }
-  .tempesta-numberList-marquee {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
   .media-by-numbers-section .number-list .block-1 .number-list-row2 {
     width: 274px;
   }
@@ -14400,6 +14404,21 @@ input[type="text"] {
     width: 60px;
     height: 60px;
   }
+  .media-by-numbers-section .number-list .block-1 .number-list-row1 {
+    margin-right: 90px;
+  }
+  .media-by-numbers-section .number-list .block-2 .number-list-row1 {
+    margin-right: 0px;
+  }
+  .media-by-numbers-section .number-list .block-2 .number-list-row2 {
+    width: 170px;
+  }
+  .media-by-numbers-section .number-list .block-3 .number-list-row1 {
+    margin-right: 0px;
+  }
+  .media-by-numbers-section .number-list .block-3 .number-list-row1 {
+    width: 310px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1120px) {
   .inner-banner.affiliate-banner .text-wrap h1 {
@@ -14408,11 +14427,14 @@ input[type="text"] {
   .tempesta-card-section .tempesta-card-list .card-col {
     margin-left: 55px;
   }
-}
-@media only screen and (min-width: 992px) and (max-width: 1120px) {
-  .tempesta-numberList-marquee {
-    margin-left: 0;
-    margin-right: 0;
+  .media-by-numbers-section .number-list .block-1 .number-list-row1 {
+    margin-right: 110px;
+  }
+  .media-by-numbers-section .number-list .block-2 .number-list-row1 {
+    margin-right: 130px;
+  }
+  .media-by-numbers-section .number-list .block-3 .number-list-row1 {
+    margin-right: 290px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -14423,23 +14445,12 @@ input[type="text"] {
     padding: 0 20px;
   }
 }
-
 .tags-raw .slick-list {
   padding: 30px 0;
 }
 .tags-raw .slick-arrow {
   display: none !important;
 }
-/* .testimonial-raw .right-conn .slider-container .item-thumbnail.slick-slide img {
-  width: 70px;
-  height: 70px;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  margin: 0 auto;
-  object-fit: cover;
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-} */
 .testimonial-raw .right-conn .slider-container .item-thumbnail.slick-slide h5,
 .testimonial-raw .right-conn .slider-container .item-thumbnail.slick-slide p {
   display: none;
@@ -14456,22 +14467,6 @@ input[type="text"] {
   p {
   display: block;
 }
-/* .testimonial-raw
-  .right-conn
-  .slider-container
-  .item-thumbnail.slick-slide.slick-active
-  img {
-  width: 90px;
-  height: 90px;
-} */
-/* .testimonial-raw
-  .right-conn
-  .slider-container
-  .item-thumbnail.slick-slide.slick-active.slick-current
-  img {
-  width: 100px;
-  height: 100px;
-} */
 .testimonial-raw .right-conn .slider-container .slick-arrow {
   display: none !important;
 }
@@ -14513,4 +14508,7 @@ input[type="text"] {
 }
 .pricing-table-raw .pricing-table-col .pricing-table p.price.Annually {
   display: none;
+}
+.bg-move {
+  position: inherit;
 }

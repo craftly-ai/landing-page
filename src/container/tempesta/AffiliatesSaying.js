@@ -45,9 +45,8 @@ const AffiliatesSaying = () => {
                 <div className="slider-for">
                   {tempestaReviewList.map(e =>
                     e.map((data, i) => {
-                      console.log(data)
                       return (
-                        <div className="item">
+                        <div className="item" key={i}>
                           <h3
                             dangerouslySetInnerHTML={{
                               __html: data.reviewTitle,
@@ -66,9 +65,8 @@ const AffiliatesSaying = () => {
                 <div className="slider-nav">
                   {tempestaReviewList.map(e =>
                     e.map((data, i) => {
-                      console.log(data)
                       return (
-                        <div className="item-thumbnail">
+                        <div className="item-thumbnail" key={i}>
                           <div className="img-box">
                             <img
                               src={data.avatar.sourceUrl}

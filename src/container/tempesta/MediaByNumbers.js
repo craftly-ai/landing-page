@@ -43,35 +43,32 @@ const MediaByNumbers = () => {
             </div>
           </div>
         </div>
-        <div
-          class="tempesta-numberList-marquee"
-          data-speed="1000"
-          data-duplicated="true"
-          data-direction="left"
-        >
-          <div className="number-list">
-            <div className="block-1">
-              <div className="number-list-row1">27,000+</div>
-              <div className="number-list-row2">Expert Writers Vetted</div>
-            </div>
-            <div className="block-2">
-              <div className="number-list-row1">26</div>
-              <div className="number-list-row2">Industries</div>
-            </div>
-            <div className="block-3">
-              <div className="number-list-row1">05</div>
-              <div className="number-list-row2">
-                Day Turnaround Time
-                <br />
-                (Business Days)
+        <div className="row tempesta-numberList-parallax">
+          <div class="col-lg-10 col-md-12 m-auto bg-static">
+            <div className="number-list bg-move">
+              <div className="block-1">
+                <div className="number-list-row1">27,000+</div>
+                <div className="number-list-row2">Expert Writers Vetted</div>
               </div>
-            </div>
-            <div className="block-4">
-              <div className="number-list-row1">37</div>
-              <div className="number-list-row2">
-                Revisions Requested
-                <br />
-                (Pre Article)
+              <div className="block-2">
+                <div className="number-list-row1">26</div>
+                <div className="number-list-row2">Industries</div>
+              </div>
+              <div className="block-3">
+                <div className="number-list-row1">05</div>
+                <div className="number-list-row2">
+                  Day Turnaround Time
+                  <br />
+                  (Business Days)
+                </div>
+              </div>
+              <div className="block-4">
+                <div className="number-list-row1">37</div>
+                <div className="number-list-row2">
+                  Revisions Requested
+                  <br />
+                  (Pre Article)
+                </div>
               </div>
             </div>
           </div>

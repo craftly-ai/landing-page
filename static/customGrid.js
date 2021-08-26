@@ -1,4 +1,23 @@
 !(function (t) {
+  t(window).on("load resize scroll", function () {
+    t(".bg-static").each(function () {
+      var windowTop = t(window).scrollTop()
+      var elementTop = t(this).offset().top
+      var windowSize = $(window).width()
+      var leftPosition = windowTop - elementTop + 450
+
+      t(this).find(".bg-move").css({ right: leftPosition })
+      if (windowSize <= 1279) {
+        var leftPosition = windowTop - elementTop + 700
+        t(this).find(".bg-move").css({ right: leftPosition })
+      }
+      if (windowSize <= 479) {
+        var leftPosition = windowTop - elementTop + 630
+        t(this).find(".bg-move").css({ right: leftPosition })
+      }
+    })
+  })
+
   t(".replaceHref").click(function () {
     var o = t(this).attr("href")
     window.location.replace(o)
@@ -10,48 +29,44 @@
     t("#qlinklist li a").click(function () {
       t(this).parent().addClass("active").siblings().removeClass("active")
     }),
-    t(".tempesta-numberList-marquee").marquee({
-      direction: "left",
-      duration: 7000,
-    })
-  t(".review-slider").slick({
-    speed: 1e4,
-    autoplay: !0,
-    autoplaySpeed: 0,
-    centerMode: !0,
-    cssEase: "linear",
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: !0,
-    initialSlide: 1,
-    arrows: !1,
-    buttons: !1,
-    centerPadding: "320px",
-    responsive: [
-      { breakpoint: 1700, settings: { centerPadding: "200px" } },
-      { breakpoint: 1500, settings: { centerPadding: "80px" } },
-      {
-        breakpoint: 1280,
-        settings: { slidesToShow: 2, centerPadding: "100px" },
-      },
-      {
-        breakpoint: 1121,
-        settings: { slidesToShow: 2, centerPadding: "100px" },
-      },
-      {
-        breakpoint: 991,
-        settings: { slidesToShow: 2, centerPadding: "40px" },
-      },
-      {
-        breakpoint: 767,
-        settings: { slidesToShow: 2, centerPadding: "40px" },
-      },
-      {
-        breakpoint: 576,
-        settings: { slidesToShow: 1, centerPadding: "40px" },
-      },
-    ],
-  }),
+    t(".review-slider").slick({
+      speed: 1e4,
+      autoplay: !0,
+      autoplaySpeed: 0,
+      centerMode: !0,
+      cssEase: "linear",
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: !0,
+      initialSlide: 1,
+      arrows: !1,
+      buttons: !1,
+      centerPadding: "320px",
+      responsive: [
+        { breakpoint: 1700, settings: { centerPadding: "200px" } },
+        { breakpoint: 1500, settings: { centerPadding: "80px" } },
+        {
+          breakpoint: 1280,
+          settings: { slidesToShow: 2, centerPadding: "100px" },
+        },
+        {
+          breakpoint: 1121,
+          settings: { slidesToShow: 2, centerPadding: "100px" },
+        },
+        {
+          breakpoint: 991,
+          settings: { slidesToShow: 2, centerPadding: "40px" },
+        },
+        {
+          breakpoint: 767,
+          settings: { slidesToShow: 2, centerPadding: "40px" },
+        },
+        {
+          breakpoint: 576,
+          settings: { slidesToShow: 1, centerPadding: "40px" },
+        },
+      ],
+    }),
     t(".switch input:checkbox").change(function () {
       t(this).is(":checked")
         ? (t(".toggle-button .month").removeClass("active"),

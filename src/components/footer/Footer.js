@@ -101,6 +101,16 @@ const Footer = () => (
                     Privacy Policy
                   </Link>
                 </li>
+                <li>
+                  <Link className="replaceHref" to="/faqs/">
+                    FAQs
+                  </Link>
+                </li>
+                <li>
+                  <Link className="replaceHref" to="/tempesta/">
+                    Tempesta
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
