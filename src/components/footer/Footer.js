@@ -77,15 +77,6 @@ const Footer = () => (
                     Official Facebook Group
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="http://craftlyai.slack.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Slack Channel
-                  </Link>
-                </li>
               </ul>
             </div>
             <div className="ft-menu ft-menu4">
