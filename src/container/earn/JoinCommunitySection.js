@@ -37,7 +37,12 @@ const JoinCommunitySection = () => {
             <p
               dangerouslySetInnerHTML={{ __html: joinOurCommunityDescription }}
             />
-            <a className="btn-main border-btn" href={communityButtonUrl}>
+            <a
+              className="btn-main border-btn"
+              target="_blank"
+              rel="noreferrer"
+              href={communityButtonUrl}
+            >
               {communityButtonLabel}
             </a>
           </div>
