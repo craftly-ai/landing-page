@@ -52,7 +52,13 @@ const Header = () => (
                     </Link>
                   </li>
                   <li className="mobile-li">
-                    <Link to="#">Request Access</Link>
+                    <Link
+                      to="https://app.craftly.ai/signup"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Start Free Trial
+                    </Link>
                   </li>
                   <li className="mobile-li login-li">
                     <Link to="https://app.craftly.ai/auth">Login</Link>
@@ -75,12 +81,12 @@ const Header = () => (
               </li>
               <li>
                 <Link
-                  to="#"
-                  data-toggle="modal"
-                  data-target="#join-waitlist"
+                  to="https://app.craftly.ai/signup"
+                  target="_blank"
+                  rel="noreferrer"
                   className="btn-main"
                 >
-                  Request Access
+                  Start Free Trial
                 </Link>
               </li>
             </ul>
