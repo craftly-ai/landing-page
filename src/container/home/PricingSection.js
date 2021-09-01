@@ -78,7 +78,8 @@ const PricingSection = () => {
                   annualDuration={item.annualDuration}
                   subtitle={item.shortDescription}
                   list={item.description}
-                  button={item.buttonLabel}
+                  buttonLabel={item.buttonLabel}
+                  buttonUrl={item.buttonUrl}
                   active={item.activeStatus}
                   activeheading={item.activeTitle}
                 />

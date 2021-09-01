@@ -10,7 +10,8 @@ const PricingCard = props => {
     annualDuration,
     subtitle,
     list,
-    button,
+    buttonLabel,
+    buttonUrl,
     active,
     activeheading,
   } = props
@@ -37,11 +38,12 @@ const PricingCard = props => {
           </div>
           <div className="middle" dangerouslySetInnerHTML={{ __html: list }} />
           <Link
+            to={buttonUrl}
             className="btn-pricing"
-            data-toggle="modal"
-            data-target="#join-waitlist"
+            target="_blank"
+            rel="noreferrer"
           >
-            {button}
+            {buttonLabel}
           </Link>
         </div>
       </div>
