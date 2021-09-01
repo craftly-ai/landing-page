@@ -48,5 +48,15 @@ module.exports = {
         url: graphqlURL,
       },
     },
+    //google gtag
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-M9QSBYGC2F"],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
   ],
 }
