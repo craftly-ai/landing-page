@@ -66,7 +66,6 @@ function SEO({ description, lang, title }) {
         src={withPrefix("custom.js")}
         defer
       />
-      <script type="application/javascript" src={withPrefix("zoho.js")} defer />
     </Helmet>
   )
 }

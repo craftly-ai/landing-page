@@ -29,6 +29,12 @@ export const onRenderBody = ({ setHeadComponents }) => {
     <script
       type="text/javascript"
       rel="preconnect"
+      src="https://widget-v4.tidiochat.com/1_69_0/static/js/render.d02d6132b6e06cd0a41d.js"
+      defer
+    ></script>,
+    <script
+      type="text/javascript"
+      rel="preconnect"
       src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"
       defer
     ></script>,
@@ -60,6 +66,12 @@ export const onRenderBody = ({ setHeadComponents }) => {
       type="text/javascript"
       rel="preconnect"
       src="https://widget.prefinery.com/widget/v2/g72qxl5b.js"
+      defer
+    ></script>,
+    <script
+      type="text/javascript"
+      rel="preconnect"
+      src="https://itsnu.slack.com//code.tidio.co/4okfxoik8goeafk6fywrgilwux7mavdq.js"
       defer
     ></script>,
   ])
