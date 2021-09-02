@@ -64,7 +64,7 @@ function SEO({ description, lang, title }) {
       <script
         type="application/javascript"
         src={withPrefix("custom.js")}
-        defer
+        async
       />
     </Helmet>
   )

@@ -50,17 +50,7 @@ const Footer = () => (
                 </li>
                 <li>
                   <Link className="replaceHref" to="/affiliate/">
-                    Partner Program
-                  </Link>
-                </li>
-                <li>
-                  <Link className="replaceHref" to="/affiliate/">
-                    Agency Partners
-                  </Link>
-                </li>
-                <li>
-                  <Link className="replaceHref" to="/affiliate/">
-                    Referral Partners
+                    Partners
                   </Link>
                 </li>
               </ul>

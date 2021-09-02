@@ -57,7 +57,7 @@ const Header = () => (
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Start Free Trial
+                      Sign up
                     </Link>
                   </li>
                   <li className="mobile-li login-li">
@@ -86,7 +86,7 @@ const Header = () => (
                   rel="noreferrer"
                   className="btn-main"
                 >
-                  Start Free Trial
+                  Sign up
                 </Link>
               </li>
             </ul>
