@@ -1,8 +1,7 @@
 import React from "react"
 
 const ValueGrowSection = props => {
-  const { heading, subheading, button, buttonURL, img } = props
-
+  const { heading, subheading, button, buttonURl, img } = props
   return (
     <div class="value-grow-section section ptb100">
       <div class="container">
@@ -10,7 +9,7 @@ const ValueGrowSection = props => {
           <div class="col-sm-5 col-12 left-conn justify-content-center align-self-center">
             <h2>{heading}</h2>
             <p> {subheading} </p>
-            <a href={buttonURL} class="btn-main">
+            <a href={buttonURl} class="btn-main">
               {button}
             </a>
           </div>

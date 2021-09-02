@@ -13,6 +13,7 @@ const ProductSection = () => {
             oneProductTitle
             oneProductDescription
             requestAccessButtonLabel
+            requestAccessButtonUrl
             oneProductList {
               icon {
                 sourceUrl
@@ -41,13 +42,15 @@ const ProductSection = () => {
   let requestAccessButtonLabel = data.allWpPage.nodes.map(
     node => node.home.requestAccessButtonLabel
   )
+  let requestAccessButtonUrl = data.allWpPage.nodes.map(
+    node => node.home.requestAccessButtonUrl
+  )
   let oneProductList = data.allWpPage.nodes.map(
     node => node.home.oneProductList
   )
   let oneProductCardList = data.allWpPage.nodes.map(
     node => node.home.oneProductCardList
   )
-
   return (
     <div className="one-product-raw section">
       <div className="container">
@@ -60,13 +63,14 @@ const ProductSection = () => {
                   <p
                     dangerouslySetInnerHTML={{ __html: oneProductDescription }}
                   />
-                  <Link
-                    data-toggle="modal"
-                    data-target="#join-waitlist"
+                  <a
                     className="btn-main"
+                    href={requestAccessButtonUrl}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {requestAccessButtonLabel}
-                  </Link>
+                  </a>
                 </div>
                 <ul className="one-product-li">
                   {oneProductList.map(e =>
