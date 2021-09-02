@@ -1601,7 +1601,7 @@ input:focus + .slider {
 .cta-raw .btn-main {
   background: #08091c;
   color: #fff;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 .cta-raw .btn-main:hover {
   background: #fff;
@@ -9332,7 +9332,7 @@ footer.white-footer .copyright-social-raw .copywrights p {
     font-size: 24px;
   }
   .cta-raw .btn-main {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .form-wrapper .box {
     margin-top: 20px;
@@ -10831,7 +10831,7 @@ footer.white-footer .copyright-social-raw .copywrights p {
     font-size: 24px;
   }
   .cta-raw .btn-main {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .form-wrapper .box {
     margin-top: 20px;
@@ -12854,7 +12854,7 @@ footer.white-footer .copyright-social-raw .copywrights p {
     font-size: 20px;
   }
   .cta-raw .btn-main {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .form-wrapper .box {
     margin-top: 20px;
@@ -13482,7 +13482,7 @@ footer.white-footer .copyright-social-raw .copywrights p {
     margin: 15px 0 0;
   }
   .cta-raw .btn-main {
-    padding: 0 30px;
+    padding: 0 20px;
     width: 100%;
   }
   h5 {
