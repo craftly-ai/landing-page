@@ -53,13 +53,13 @@ const PricingSection = () => {
             <div className="w-m-top">
               <h2>{writeMoreTitle}</h2>
               <p dangerouslySetInnerHTML={{ __html: writeMoreDescription }} />
-              <div className="toggle-button">
+              {/* <div className="toggle-button">
                 <p className="month active">{monthlyTabLabel}</p>
                 <label className="switch">
                   <input type="checkbox" /> <span className="slider round" />
                 </label>
                 <p className="annual">{annuallyTabLabel}</p>
-              </div>
+              </div> */}
               <p className="save-col">2 Months free on annual plans!</p>
             </div>
           </div>
