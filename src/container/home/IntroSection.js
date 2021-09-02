@@ -1,7 +1,7 @@
 import React from "react"
 import Typewriter from "../../components/Typewriter/Typewriter"
 import img from "../../images/banner-bg-image-min.png"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const IntroSection = () => {
   const data = useStaticQuery(graphql`
@@ -13,7 +13,7 @@ const IntroSection = () => {
             typerText
             bannerShortDescription
             requestAccessLabel
-            freeTrialLabel
+            requestAccessUrl
           }
         }
       }
@@ -27,8 +27,8 @@ const IntroSection = () => {
   let requestAccessLabel = data.allWpPage.nodes.map(
     node => node.home.requestAccessLabel
   )
-  let freeTrialLabel = data.allWpPage.nodes.map(
-    node => node.home.freeTrialLabel
+  let requestAccessUrl = data.allWpPage.nodes.map(
+    node => node.home.requestAccessUrl
   )
   let typerText = data.allWpPage.nodes.map(node => node.home.typerText)
 
@@ -44,13 +44,14 @@ const IntroSection = () => {
               dataRotate={typerText}
             />
             <p>{bannerShortDescription}</p>
-            <Link
-              data-toggle="modal"
-              data-target="#join-waitlist"
+            <a
               className="btn-main"
+              target="_blank"
+              rel="noreferrer"
+              href={requestAccessUrl}
             >
-              {"Request Access"}
-            </Link>
+              {requestAccessLabel}
+            </a>
           </div>
           <div className="col-sm-6 col-12 justify-content-center align-self-center right-conn">
             <div className="img-box" id="lottie">
