@@ -5629,7 +5629,8 @@ footer .footer .right-conn .ft-menu ul .default-page-raw li {
   position: absolute;
 }
 .affiliates-saying .no-wrapper {
-  padding-top: 150px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .affiliates-saying .no-wrapper h2 {
   font-size: 74px;
@@ -6476,7 +6477,8 @@ footer.white-footer .copyright-social-raw .copywrights p {
     padding: 140px 0;
   }
   .affiliates-saying .no-wrapper {
-    padding-top: 140px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .about-title .about-image {
     margin-left: -15%;
@@ -6820,7 +6822,8 @@ footer.white-footer .copyright-social-raw .copywrights p {
     padding: 120px 0;
   }
   .affiliates-saying .no-wrapper {
-    padding-top: 120px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .affiliates-saying .no-wrapper h2 {
     font-size: 70px;
@@ -7413,7 +7416,8 @@ footer.white-footer .copyright-social-raw .copywrights p {
     padding: 120px 0;
   }
   .affiliates-saying .no-wrapper {
-    padding-top: 120px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .affiliates-saying .no-wrapper h2 {
     font-size: 66px;
@@ -8241,7 +8245,8 @@ footer.white-footer .copyright-social-raw .copywrights p {
     padding: 100px 0;
   }
   .affiliates-saying .no-wrapper {
-    padding-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .affiliates-saying .no-wrapper h2 {
     font-size: 62px;
@@ -9323,7 +9328,8 @@ footer.white-footer .copyright-social-raw .copywrights p {
     padding: 90px 0;
   }
   .affiliates-saying .no-wrapper {
-    padding-top: 90px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .affiliates-saying .no-wrapper h2 {
     font-size: 58px;
@@ -10822,7 +10828,8 @@ footer.white-footer .copyright-social-raw .copywrights p {
     padding: 80px 0;
   }
   .affiliates-saying .no-wrapper {
-    padding-top: 80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .affiliates-saying .no-wrapper h2 {
     font-size: 54px;
@@ -12845,7 +12852,8 @@ footer.white-footer .copyright-social-raw .copywrights p {
     padding: 70px 0;
   }
   .affiliates-saying .no-wrapper {
-    padding-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .affiliates-saying .no-wrapper h2 {
     font-size: 48px;
@@ -14001,7 +14009,6 @@ input[type="text"] {
   margin-bottom: 30px;
   line-height: 1.5;
 }
-
 .faq-sidelist a {
   color: #fff;
   font-size: 17px;
@@ -14016,13 +14023,11 @@ input[type="text"] {
   color: #f81f9f;
   text-decoration: underline;
 }
-
 .question {
   font-weight: 500;
   font-size: 20px;
   line-height: normal;
 }
-
 .answer p {
   margin-top: 15px;
   line-height: 1.8;
@@ -14037,25 +14042,22 @@ input[type="text"] {
   font-weight: 600;
   margin-bottom: 60px;
 }
-
 .faq-subscribesection {
   border-top: 2px solid #19122c;
 }
-
 @media (max-width: 479px) {
   .faqs-container h2 {
     font-size: 36px;
-    padding: 0px 45px;
+    padding: 0 45px;
     font-weight: 600;
   }
   .faq-sidelist {
     display: none;
   }
   .faq-list {
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 }
-
 @media (max-width: 768px) {
   .faqs-container h2 {
     font-size: 46px;
@@ -14071,15 +14073,13 @@ input[type="text"] {
   }
 }
 .howdo-wrapper {
-  background: none;
+  background: 0 0;
   padding: 0 0 50px 0;
   margin-top: 50px;
 }
-
 .tempesta-banner .text-wrap h1 {
   font-size: 60px;
 }
-
 .tempesta-banner .text-wrap p {
   color: #fff;
   margin-top: 15px;
@@ -14090,7 +14090,6 @@ input[type="text"] {
   font-size: 18px;
   opacity: 0.7;
 }
-
 .tempesta-banner .logo-btn {
   display: inline-flex;
 }
@@ -14099,20 +14098,17 @@ input[type="text"] {
   margin: 0 12px 0 18px;
   opacity: 0.15;
 }
-
 .media-by-numbers-section .number-content p {
   font-size: 22px;
   color: #fff;
   margin-top: 70px;
   opacity: 0.7;
 }
-
 .media-by-numbers-section .number-list {
   line-height: 1;
   margin-top: 90px;
   display: flex;
 }
-
 .media-by-numbers-section .number-list .number-list-row1 {
   color: #fff;
   font-size: 110px;
@@ -14124,7 +14120,6 @@ input[type="text"] {
   margin-top: 20px;
   font-weight: 300px;
 }
-
 .media-by-numbers-section .number-list .block-1 .number-list-row1 {
   margin-right: 180px;
 }
@@ -14137,13 +14132,11 @@ input[type="text"] {
 .media-by-numbers-section .number-list .block-4 .number-list-row2 {
   width: 300px;
 }
-
 @media (max-width: 1120px) {
   .tempesta-numberList-parallax {
     overflow: hidden;
   }
 }
-
 .tempesta-pricing-section .top p {
   margin-top: 10px;
 }
@@ -14154,15 +14147,13 @@ input[type="text"] {
   color: #fff;
   font-size: 22px;
 }
-
 .tempesta-pricing-section
   .pricing-table-raw
   .pricing-table-col
   .pricing-table
   .middle {
-  margin-top: 0px;
+  margin-top: 0;
 }
-
 .pricing-table-raw .pricing-table-col .pricing-table .top .btn-pricing {
   position: static;
   margin-top: 25px;
@@ -14174,7 +14165,6 @@ input[type="text"] {
   opacity: 0.5;
   margin-bottom: 20px;
 }
-
 .middle .list-title {
   color: #fff;
   font-size: 22px;
@@ -14184,7 +14174,6 @@ input[type="text"] {
   width: 100%;
   height: 900px;
 }
-
 .affiliates-saying-section.testimonial-raw .testimonial-col {
   border: none;
 }
@@ -14220,7 +14209,6 @@ input[type="text"] {
   width: 130px;
   height: 130px;
 }
-
 .tempesta-card-section {
   padding: 100px 0 0 0;
 }
@@ -14232,11 +14220,9 @@ input[type="text"] {
   display: flex;
   flex-direction: column;
 }
-
 .tempesta-card-section .tempesta-card-list .col2 .card:first-child {
   margin-top: 200px;
 }
-
 .tempesta-card-list .card {
   background: #110e24;
   height: fit-content;
@@ -14248,14 +14234,12 @@ input[type="text"] {
 .tempesta-banner .text-wrap p span {
   border-bottom: 5px solid #34265e;
 }
-
 .tempesta-card-list .card h2 {
   color: #fff;
   margin: 15px 0 20px 0;
   font-size: 43px;
   font-weight: 500;
 }
-
 .tempesta-card-list .card ul li::before {
   content: "\2022";
   color: #8429a5;
@@ -14264,14 +14248,12 @@ input[type="text"] {
   font-size: 30px;
   font-weight: bolder;
 }
-
 .tempesta-card-list .card ul li {
   font-size: 17px;
   color: #fff;
   opacity: 0.7;
   margin-top: 20px;
 }
-
 @media (max-width: 479px) {
   .workcycle-container {
     width: 100%;
@@ -14358,9 +14340,8 @@ input[type="text"] {
     margin-left: 4%;
   }
   .tempesta-card-section .tempesta-card-list .col2 .card:first-child {
-    margin-top: 0px;
+    margin-top: 0;
   }
-
   .affiliates-saying-section.testimonial-raw
     .slider-container
     .item-thumbnail
@@ -14398,7 +14379,7 @@ input[type="text"] {
     width: 274px;
   }
   .tempesta-pricing-section .top p.startsat {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .testimonial-raw .right-conn .slider-container .item-thumbnail img {
     width: 60px;
@@ -14408,13 +14389,13 @@ input[type="text"] {
     margin-right: 90px;
   }
   .media-by-numbers-section .number-list .block-2 .number-list-row1 {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .media-by-numbers-section .number-list .block-2 .number-list-row2 {
     width: 170px;
   }
   .media-by-numbers-section .number-list .block-3 .number-list-row1 {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .media-by-numbers-section .number-list .block-3 .number-list-row1 {
     width: 310px;

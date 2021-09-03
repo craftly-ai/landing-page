@@ -40,7 +40,7 @@ const CopyRightSection = () => {
           <h2>Copywriting doesn’t have to be so hard</h2>
           <p>
             How can any human be expected to turn out mountains of engaging,
-            creative, eye catching, content at{" "}
+            creative, eye catching, content at
           </p>
           <h4>
             Let your new AI assistant boost your creativity in 3 easy steps:

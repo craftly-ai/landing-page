@@ -26,8 +26,8 @@ if (document.documentElement.clientWidth > 767)
     valueIndicatorWidth: 200,
     valueIndicatorHeight: 50,
   })
-if (document.documentElement.clientWidth < 768)
-  rangeslide = rangeslide("#rangeslide", {
+document.documentElement.clientWidth < 768 &&
+  (rangeslide = rangeslide("#rangeslide", {
     data: data1,
     showValue: !0,
     thumbWidth: 22,
@@ -40,17 +40,4 @@ if (document.documentElement.clientWidth < 768)
     valueIndicatorWidth: 100,
     valueIndicatorHeight: 30,
     ticksWidth: 30,
-  })
-!(function () {
-  var e,
-    t,
-    a = document,
-    n = a.getElementById,
-    i = a.createElement,
-    l = a.getElementsByTagName,
-    r = "typef_orm"
-  n.call(a, r) ||
-    (((e = i.call(a, "script")).id = r),
-    (e.src = "https://embed.typeform.com/embed.js"),
-    (t = l.call(a, "script")[0]).parentNode.insertBefore(e, t))
-})()
+  }))
