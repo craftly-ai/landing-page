@@ -22,12 +22,14 @@ const DocFooter = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="replaceHref" to="/#pricing">
+                    <Link className="replaceHref" to="/#pricingInfo">
                       Pricing
                     </Link>
                   </li>
                   <li>
-                    <Link to="/documentation">Demo</Link>
+                    <Link className="replaceHref" to="/#craftly-ai-demo">
+                      Demo
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -40,24 +42,8 @@ const DocFooter = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="https://form.typeform.com/to/XXMw4Nem?typeform-medium=embed-snippet"
-                      data-mode="popup"
-                      data-size={100}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Partner Program
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="replaceHref" to="/documentation">
-                      Agency partners
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="replaceHref" to="/documentation">
-                      Referral partners
+                    <Link className="replaceHref" to="/affiliate/">
+                      Partners
                     </Link>
                   </li>
                 </ul>
@@ -72,15 +58,6 @@ const DocFooter = () => {
                       rel="noreferrer"
                     >
                       Official Facebook Group
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="http://craftlyai.slack.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Slack Channel
                     </Link>
                   </li>
                 </ul>
