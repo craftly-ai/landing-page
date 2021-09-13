@@ -82,7 +82,7 @@ const Footer = () => (
                     Privacy Policy
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link className="replaceHref" to="/faqs/">
                     FAQs
                   </Link>
@@ -91,7 +91,7 @@ const Footer = () => (
                   <Link className="replaceHref" to="/tempesta/">
                     Tempesta
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

@@ -41,7 +41,6 @@ const About = () => {
   let footerCtaTitle = data.allWpPage.nodes.map(
     node => node.about.footerCtaTitle
   )
-
   let footerCtaDescription = data.allWpPage.nodes.map(
     node => node.about.footerCtaDescription
   )

@@ -6359,6 +6359,425 @@ footer.white-footer .copyright-social-raw .copywrights p {
 .copyright-social-raw .copywrights p {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.container.sm-container {
+  max-width: 1030px;
+}
+
+.scholer-head {
+  background: url(../images/scholership-center-sep.png) no-repeat center;
+  display: flex;
+  min-height: 900px;
+  align-items: center;
+  position: relative;
+}
+.scholer-head:before {
+  background: url(../images/scholarship-head-sep.png) no-repeat center;
+  background-size: 100%;
+  width: 739px;
+  height: 855px;
+  position: absolute;
+  left: -212px;
+  top: -210px;
+  content: "";
+  z-index: -1;
+}
+.scholer-head .head-imoji {
+  width: 302px;
+  position: absolute;
+  left: 130px;
+}
+.scholer-head .head-imoji:nth-of-type(2) {
+  left: inherit;
+  right: 130px;
+}
+.scholer-head .text-wrap {
+  padding: 0 70px;
+}
+.scholer-head h5 {
+  font-weight: 500;
+  color: rgb(255, 255, 255, 0.5);
+  letter-spacing: 2.5px;
+}
+.scholer-head h2 {
+  padding: 40px 0;
+  font-weight: 500;
+}
+.scholer-head h2 b {
+  font-weight: 700;
+}
+.scholer-head .btn-main {
+  background: rgb(116, 220, 228);
+  background: -moz-linear-gradient(
+    77deg,
+    rgba(116, 220, 228, 1) 0%,
+    rgba(221, 141, 236, 1) 29%,
+    rgba(142, 107, 249, 1) 51%,
+    rgba(142, 107, 249, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    77deg,
+    rgba(116, 220, 228, 1) 0%,
+    rgba(221, 141, 236, 1) 29%,
+    rgba(142, 107, 249, 1) 51%,
+    rgba(142, 107, 249, 1) 100%
+  );
+  background: linear-gradient(
+    77deg,
+    rgba(116, 220, 228, 1) 0%,
+    rgba(221, 141, 236, 1) 29%,
+    rgba(142, 107, 249, 1) 51%,
+    rgba(142, 107, 249, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#74dce4",endColorstr="#8e6bf9",GradientType=1);
+}
+.whoapply-wrap p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 170%;
+}
+.whoapply-wrap h5 {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.related-fields-wrap {
+  padding: 175px 0 0;
+  position: relative;
+}
+
+.related-fields-wrap h3 {
+  color: #fff;
+}
+
+.related-fields-wrap .tags-raw {
+  margin: 50px 0 0;
+}
+.related-fields-wrap .tags-raw ul li {
+  padding: 19px 20px;
+  font-weight: 500;
+}
+
+.howapply-wrap {
+  padding: 180px 0;
+  position: relative;
+}
+.howapply-wrap::before {
+  background: url(../images/howapply-left-sep.png) no-repeat center;
+  background-size: 100%;
+  width: 1022px;
+  height: 1022px;
+  position: absolute;
+  left: -220px;
+  bottom: 100px;
+  content: "";
+  z-index: -1;
+}
+.howapply-wrap::after {
+  background: url(../images/howapply-right-sep.png) no-repeat center;
+  background-size: 100%;
+  width: 1016px;
+  height: 1000px;
+  position: absolute;
+  right: -220px;
+  top: -40%;
+  content: "";
+  z-index: -1;
+}
+.howapply-wrap .text-wrap {
+  padding-right: 35px;
+}
+.howapply-wrap .text-wrap h3 {
+  color: #fff;
+}
+.howapply-wrap .text-wrap p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #b3b6b9;
+}
+.howapply-wrap .text-wrap h5 {
+  color: white;
+  margin-top: 20px;
+  letter-spacing: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.submission-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 100%;
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+.submission-wrap h5 {
+  width: auto;
+}
+.submission-wrap .btn-main {
+  background: rgb(116, 220, 228);
+  background: -moz-linear-gradient(
+    81deg,
+    rgba(116, 220, 228, 1) 0%,
+    rgba(221, 141, 236, 1) 29%,
+    rgba(154, 99, 243, 1) 51%,
+    rgba(142, 107, 249, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    81deg,
+    rgba(116, 220, 228, 1) 0%,
+    rgba(221, 141, 236, 1) 29%,
+    rgba(154, 99, 243, 1) 51%,
+    rgba(142, 107, 249, 1) 100%
+  );
+  background: linear-gradient(
+    81deg,
+    rgba(116, 220, 228, 1) 0%,
+    rgba(221, 141, 236, 1) 29%,
+    rgba(154, 99, 243, 1) 51%,
+    rgba(142, 107, 249, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#74dce4",endColorstr="#8e6bf9",GradientType=1);
+  min-width: 180px;
+}
+
+.dedline-box {
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+.dedline-con {
+  padding: 110px 20px 0;
+  background: url(../images/ic-calender.png) no-repeat center top;
+}
+.dedline-con p {
+  padding-bottom: 10px;
+  color: #575964;
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 700;
+}
+.ded-date {
+  position: relative;
+  display: inline-block;
+}
+.ded-date span {
+  display: inline-block;
+  width: auto;
+  padding-right: 30px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 120%;
+  position: relative;
+}
+.ded-date sub {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: lowercase;
+}
+.announce-con {
+  background: url(../images/winner-cup.png) no-repeat left center;
+  padding: 10px 0 10px 80px;
+}
+.announce-box {
+  background: rgb(121, 42, 166);
+  background: -moz-linear-gradient(
+    71deg,
+    rgba(121, 42, 166, 1) 0%,
+    rgba(250, 33, 159, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    71deg,
+    rgba(121, 42, 166, 1) 0%,
+    rgba(250, 33, 159, 1) 100%
+  );
+  background: linear-gradient(
+    71deg,
+    rgba(121, 42, 166, 1) 0%,
+    rgba(250, 33, 159, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#792aa6",endColorstr="#fa219f",GradientType=1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  min-height: 130px;
+  margin-top: 60px;
+  justify-content: center;
+  position: relative;
+}
+.announce-box::after,
+.announce-box::before {
+  background-size: 100% !important;
+  width: 118px;
+  height: 66px;
+  position: absolute;
+  top: 30px;
+  content: "";
+}
+.announce-box::after {
+  background: url(../images/announce-left-sep.svg) no-repeat center;
+  left: 40px;
+}
+.announce-box::before {
+  background: url(../images/announce-right-sep.svg) no-repeat center;
+  right: 40px;
+}
+.announce-box .title {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  line-height: 120%;
+}
+.eligibility-box {
+  background-color: #19122c;
+  padding: 50px;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+.eligibility-box h3 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.eligibility-box p {
+  font-size: 18px;
+  color: #b3b6b9;
+  line-height: 170%;
+}
+.eligibility-box li {
+  background: url(../images/list-sep.png) no-repeat left top 5px;
+  float: left;
+  width: 100%;
+  padding-left: 35px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #b3b6b9;
+  line-height: 170%;
+}
+
+.winner-wrap {
+  padding: 0 50px;
+  position: relative;
+}
+.winner-wrap .img-wrap img {
+  border-radius: 5px;
+}
+.winner-wrap .left-wrap {
+  float: left;
+  width: 32.5%;
+}
+.winner-wrap .right-wrap {
+  float: right;
+  width: 31.5%;
+}
+.winner-wrap .right-wrap .img-wrap:last-child {
+  width: 39%;
+  margin-top: 70px;
+}
+
+.winners-con {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  top: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.winners-con h5 {
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: rgb(255, 255, 255, 0.5);
+  letter-spacing: 2.5px;
+}
+.winners-con .text-wrap {
+  width: 88%;
+  letter-spacing: 0;
+  float: none;
+  display: inline-block;
+}
+.winners-con .text-wrap h2:first-child {
+  float: right;
+  margin-right: 88px;
+}
+.winners-con .text-wrap h2 {
+  width: auto;
+  font-size: 150px;
+  color: white;
+  line-height: 90%;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0;
+  clear: both;
+}
+.winners-selection {
+  padding-top: 170px;
+}
+.winners-selection h3 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.winners-selection p {
+  margin-bottom: 20px;
+}
+.winners-selection p span {
+  width: 142px;
+  display: inline-block;
+  height: 1px;
+  background: #b4b6ba;
+}
+.winners-selection p:last-child {
+  margin-bottom: 0;
+}
+
+.apptreciate-wrap {
+  background: url(../images/message-sep.png) no-repeat center;
+  padding: 150px 0 210px;
+}
+.apptreciate-wrap h2 {
+  float: none;
+  display: inline-block;
+  width: 76%;
+  padding-top: 80px;
+  letter-spacing: 0;
+  position: relative;
+}
+.apptreciate-wrap h2::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/message-left-sep.png) no-repeat center;
+  background-size: 100%;
+  width: 75px;
+  height: 102px;
+  content: "";
+}
+.apptreciate-wrap h2::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../images/message-right-sep.png) no-repeat center;
+  background-size: 100%;
+  width: 87px;
+  height: 106px;
+  content: "";
+}
 @media (min-width: 1650px) {
   .container-sec .container {
     max-width: 1510px;
@@ -6368,6 +6787,7 @@ footer.white-footer .copyright-social-raw .copywrights p {
   .container {
     max-width: 1310px;
   }
+
   .hero .container {
     max-width: 1500px;
   }
@@ -6483,6 +6903,53 @@ footer.white-footer .copyright-social-raw .copywrights p {
   .about-title .about-image {
     margin-left: -15%;
     padding-right: 10%;
+  }
+
+  .scholer-head {
+    background-size: 1000px;
+    min-height: 800px;
+  }
+  .scholer-head::before {
+    width: 640px;
+    height: 750px;
+    position: absolute;
+    left: -190px;
+    top: -210px;
+  }
+  .scholer-head .head-imoji {
+    width: 252px;
+    left: 70px;
+  }
+  .scholer-head .head-imoji:nth-of-type(2) {
+    right: 70px;
+  }
+  .related-fields-wrap {
+    padding: 150px 0 0;
+  }
+
+  .howapply-wrap {
+    padding: 150px 0;
+  }
+  .winner-wrap {
+    padding: 0 30px;
+  }
+  .winner-wrap .right-wrap .img-wrap:last-child {
+    width: 44%;
+  }
+  .winners-con .text-wrap {
+    width: 68%;
+  }
+  .winners-con .text-wrap h2 {
+    font-size: 130px;
+  }
+  .winners-con .text-wrap h2:first-child {
+    margin-right: 50px;
+  }
+  .winners-selection {
+    padding-top: 140px;
+  }
+  .apptreciate-wrap {
+    padding: 120px 0 180px;
   }
 }
 @media only screen and (min-width: 1366px) and (max-width: 1499px) {
@@ -6877,6 +7344,79 @@ footer.white-footer .copyright-social-raw .copywrights p {
   }
   .clients-results {
     padding: 50px 0 130px;
+  }
+
+  .scholer-head {
+    background-size: 900px;
+    min-height: 750px;
+  }
+  .scholer-head::before {
+    width: 560px;
+    height: 690px;
+    position: absolute;
+    left: -190px;
+    top: -210px;
+  }
+  .scholer-head .head-imoji {
+    width: 220px;
+    left: 35px;
+  }
+  .scholer-head .head-imoji:nth-of-type(2) {
+    right: 35px;
+  }
+  .related-fields-wrap {
+    padding: 130px 0 0;
+  }
+
+  .howapply-wrap {
+    padding: 130px 0;
+  }
+  .howapply-wrap::before,
+  .howapply-wrap::after {
+    width: 950px;
+    height: 950px;
+  }
+  .announce-con {
+    background-size: 58px;
+  }
+  .ded-date span {
+    font-size: 44px;
+  }
+  .ded-date sub {
+    font-size: 20px;
+  }
+  .eligibility-box {
+    margin-top: 80px;
+  }
+  .winner-wrap {
+    padding: 0 30px;
+  }
+  .winner-wrap .left-wrap {
+    width: 36%;
+  }
+  .winner-wrap .right-wrap {
+    width: 34%;
+  }
+  .winner-wrap .right-wrap .img-wrap:last-child {
+    width: 44%;
+  }
+  .winners-con .text-wrap {
+    width: 68%;
+  }
+  .winners-con .text-wrap h2 {
+    font-size: 120px;
+  }
+  .winners-con .text-wrap h2:first-child {
+    margin-right: 50px;
+  }
+  .winners-selection {
+    padding-top: 120px;
+  }
+  .apptreciate-wrap {
+    padding: 120px 0 180px;
+  }
+  .apptreciate-wrap h2 {
+    width: 68%;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
@@ -7491,6 +8031,97 @@ footer.white-footer .copyright-social-raw .copywrights p {
   }
   .clients-results .review-list .review-item {
     margin: 0 10px;
+  }
+
+  .scholer-head {
+    background-size: 820px;
+    min-height: 620px;
+  }
+  .scholer-head::before {
+    width: 460px;
+    height: 600px;
+    left: -150px;
+    top: -120px;
+  }
+  .scholer-head .head-imoji {
+    width: 180px;
+    left: 25px;
+  }
+  .scholer-head .head-imoji:nth-of-type(2) {
+    right: 25px;
+  }
+  .whoapply-wrap p {
+    font-size: 18px;
+  }
+  .whoapply-wrap h5 {
+    font-size: 20px;
+  }
+  .related-fields-wrap {
+    padding: 100px 0 0;
+  }
+  .related-fields-wrap .tags-raw ul li {
+    padding: 15px 20px;
+  }
+
+  .howapply-wrap {
+    padding: 100px 0;
+  }
+  .howapply-wrap .text-wrap h5 {
+    font-size: 20px;
+  }
+  .howapply-wrap::before,
+  .howapply-wrap::after {
+    width: 800px;
+    height: 800px;
+  }
+  .announce-con {
+    padding: 10px 0 10px 70px;
+    background-size: 56px;
+  }
+  .ded-date span {
+    font-size: 40px;
+  }
+  .announce-box {
+    min-height: 110px;
+  }
+  .announce-box .title {
+    font-size: 26px;
+  }
+  .ded-date sub {
+    font-size: 20px;
+  }
+  .eligibility-box {
+    margin-top: 80px;
+  }
+  .winner-wrap {
+    padding: 0 20px;
+  }
+  .winner-wrap .left-wrap {
+    width: 36%;
+  }
+  .winner-wrap .right-wrap {
+    width: 34%;
+  }
+  .winner-wrap .right-wrap .img-wrap:last-child {
+    width: 46%;
+  }
+  .winners-con .text-wrap {
+    width: 60%;
+  }
+  .winners-con .text-wrap h2 {
+    font-size: 110px;
+  }
+  .winners-con .text-wrap h2:first-child {
+    margin-right: 50px;
+  }
+  .winners-selection {
+    padding-top: 100px;
+  }
+  .apptreciate-wrap {
+    padding: 100px 0 160px;
+  }
+  .apptreciate-wrap h2 {
+    width: 68%;
   }
 }
 @media only screen and (min-width: 1121px) and (max-width: 1279px) {
@@ -8364,6 +8995,117 @@ footer.white-footer .copyright-social-raw .copywrights p {
   }
   .clients-results .review-list .review-box .review-by h6 {
     width: calc(100% - 46px);
+  }
+
+  .scholer-head {
+    background-size: 780px;
+    min-height: 570px;
+  }
+  .scholer-head .text-wrap {
+    padding: 0 130px;
+  }
+  .scholer-head h2 {
+    padding: 30px 0;
+  }
+  .scholer-head::before {
+    width: 420px;
+    height: 520px;
+    left: -130px;
+    top: -170px;
+  }
+  .scholer-head .head-imoji {
+    width: 180px;
+    left: 15px;
+  }
+  .scholer-head .head-imoji:nth-of-type(2) {
+    right: 15px;
+  }
+  .whoapply-wrap p {
+    font-size: 18px;
+  }
+  .whoapply-wrap h5 {
+    font-size: 20px;
+  }
+  .submission-wrap .btn-main {
+    min-width: 160px;
+  }
+  .related-fields-wrap {
+    padding: 70px 0 0;
+  }
+  .related-fields-wrap .tags-raw ul li {
+    padding: 15px 20px;
+  }
+
+  .howapply-wrap {
+    padding: 80px 0;
+  }
+  .howapply-wrap .text-wrap p {
+    font-size: 18px;
+  }
+  .howapply-wrap .text-wrap h5 {
+    font-size: 20px;
+  }
+  .howapply-wrap::before,
+  .howapply-wrap::after {
+    width: 700px;
+    height: 700px;
+  }
+  .announce-con {
+    padding: 10px 0 10px 70px;
+    background-size: 56px;
+  }
+  .dedline-con p {
+    font-size: 16px;
+  }
+  .ded-date span {
+    font-size: 40px;
+  }
+  .announce-box {
+    min-height: 110px;
+  }
+  .announce-box .title {
+    font-size: 26px;
+  }
+  .ded-date sub {
+    font-size: 20px;
+  }
+  .eligibility-box {
+    padding: 40px;
+    margin-top: 70px;
+  }
+  .eligibility-box p,
+  .eligibility-box li {
+    font-size: 16px;
+  }
+  .winner-wrap {
+    padding: 0 20px;
+  }
+  .winner-wrap .left-wrap {
+    width: 36%;
+  }
+  .winner-wrap .right-wrap {
+    width: 34%;
+  }
+  .winner-wrap .right-wrap .img-wrap:last-child {
+    width: 46%;
+  }
+  .winners-con .text-wrap {
+    width: 58%;
+  }
+  .winners-con .text-wrap h2 {
+    font-size: 100px;
+  }
+  .winners-con .text-wrap h2:first-child {
+    margin-right: 50px;
+  }
+  .winners-selection {
+    padding-top: 80px;
+  }
+  .apptreciate-wrap {
+    padding: 80px 0 140px;
+  }
+  .apptreciate-wrap h2 {
+    width: 61%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1120px) {
@@ -9490,6 +10232,138 @@ footer.white-footer .copyright-social-raw .copywrights p {
   }
   .clients-results .review-list .review-box .review-by h6 {
     width: calc(100% - 46px);
+  }
+
+  .scholer-head {
+    background-size: 780px;
+    min-height: 570px;
+  }
+  .scholer-head .text-wrap {
+    padding: 0 130px;
+  }
+  .scholer-head h2 {
+    padding: 30px 0;
+  }
+  .scholer-head h5,
+  .winners-con h5 {
+    font-size: 18px;
+  }
+  .scholer-head::before {
+    width: 420px;
+    height: 520px;
+    left: -130px;
+    top: -170px;
+  }
+  .scholer-head .head-imoji {
+    width: 140px;
+    left: 15px;
+  }
+  .scholer-head .head-imoji:nth-of-type(2) {
+    right: 15px;
+  }
+  .whoapply-wrap p {
+    font-size: 18px;
+  }
+  .whoapply-wrap h5 {
+    font-size: 20px;
+  }
+  .submission-wrap .btn-main {
+    min-width: 160px;
+  }
+  .related-fields-wrap {
+    padding: 70px 0 0;
+  }
+  .related-fields-wrap .tags-raw ul li {
+    padding: 15px 20px;
+  }
+  .related-fields-wrap .tags-raw {
+    margin: 40px 0 0;
+  }
+
+  .howapply-wrap {
+    padding: 80px 0;
+  }
+  .howapply-wrap .text-wrap p {
+    font-size: 18px;
+  }
+  .howapply-wrap .text-wrap h5 {
+    font-size: 20px;
+  }
+  .howapply-wrap::before,
+  .howapply-wrap::after {
+    width: 650px;
+    height: 650px;
+  }
+  .announce-con {
+    padding: 10px 0 10px 70px;
+    background-size: 52px;
+  }
+  .dedline-con p {
+    font-size: 16px;
+  }
+  .ded-date span {
+    font-size: 38px;
+  }
+  .announce-box {
+    min-height: 110px;
+  }
+  .announce-box .title {
+    font-size: 26px;
+  }
+  .announce-box::after,
+  .announce-box::before {
+    width: 98px;
+    height: 56px;
+  }
+  .ded-date sub {
+    font-size: 18px;
+  }
+  .eligibility-box {
+    padding: 40px;
+    margin-top: 70px;
+  }
+  .eligibility-box p,
+  .eligibility-box li {
+    font-size: 16px;
+  }
+  .winner-wrap {
+    padding: 0 20px;
+  }
+  .winner-wrap .left-wrap {
+    width: 36%;
+  }
+  .winner-wrap .right-wrap {
+    width: 34%;
+  }
+  .winner-wrap .right-wrap .img-wrap:last-child {
+    width: 46%;
+  }
+  .winners-con .text-wrap {
+    width: 53%;
+  }
+  .winners-con .text-wrap h2 {
+    font-size: 90px;
+  }
+  .winners-con .text-wrap h2:first-child {
+    margin-right: 40px;
+  }
+  .winners-selection {
+    padding-top: 80px;
+  }
+  .apptreciate-wrap {
+    padding: 80px 0 120px;
+  }
+  .apptreciate-wrap h2 {
+    width: 61%;
+    padding-top: 60px;
+  }
+  .apptreciate-wrap h2::before {
+    width: 55px;
+    height: 82px;
+  }
+  .apptreciate-wrap h2::after {
+    width: 67px;
+    height: 86px;
   }
 }
 @media (max-width: 991px) {
@@ -11024,6 +11898,153 @@ footer.white-footer .copyright-social-raw .copywrights p {
   }
   .clients-results .review-list .review-box .review-by h6 {
     width: calc(100% - 44px);
+  }
+
+  .scholer-head {
+    background-size: 700px;
+    min-height: 530px;
+  }
+  .scholer-head .text-wrap {
+    padding: 0 30px;
+  }
+  .scholer-head h2 {
+    padding: 30px 0;
+  }
+  .scholer-head h5,
+  .winners-con h5 {
+    font-size: 18px;
+  }
+  .scholer-head::before {
+    width: 340px;
+    height: 440px;
+    left: -100px;
+    top: -170px;
+  }
+  .scholer-head .head-imoji {
+    width: 140px;
+    left: 15px;
+    display: none;
+  }
+  .scholer-head .head-imoji:nth-of-type(2) {
+    right: 15px;
+  }
+  .whoapply-wrap p {
+    font-size: 16px;
+  }
+  .whoapply-wrap h5 {
+    font-size: 18px;
+  }
+  .submission-wrap .btn-main {
+    min-width: 120px;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .related-fields-wrap {
+    padding: 70px 0 0;
+  }
+  .related-fields-wrap .tags-raw ul li {
+    padding: 15px 20px;
+  }
+  .related-fields-wrap .tags-raw {
+    margin: 40px 0 0;
+  }
+
+  .howapply-wrap {
+    padding: 80px 0;
+  }
+  .howapply-wrap .text-wrap {
+    padding-right: 0;
+  }
+  .howapply-wrap .text-wrap p {
+    font-size: 16px;
+  }
+  .howapply-wrap .text-wrap h5 {
+    font-size: 18px;
+  }
+  .howapply-wrap::before,
+  .howapply-wrap::after {
+    width: 550px;
+    height: 550px;
+  }
+  .announce-con {
+    padding: 10px 0 10px 65px;
+    background-size: 44px;
+  }
+  .dedline-con {
+    background-size: 60px;
+    padding: 80px 15px 0;
+  }
+  .dedline-con p {
+    font-size: 16px;
+  }
+  .ded-date span {
+    font-size: 30px;
+    padding-right: 20px;
+  }
+  .announce-box {
+    min-height: 100px;
+    margin-top: 50px;
+  }
+  .announce-box .title {
+    font-size: 22px;
+  }
+  .announce-box::after,
+  .announce-box::before {
+    width: 68px;
+    height: 46px;
+  }
+  .ded-date sub {
+    font-size: 16px;
+  }
+  .eligibility-box {
+    padding: 40px;
+    margin-top: 60px;
+  }
+  .eligibility-box p,
+  .eligibility-box li {
+    font-size: 16px;
+  }
+  .winner-wrap {
+    padding: 0 20px;
+  }
+  .winner-wrap .left-wrap {
+    width: 33%;
+  }
+  .winner-wrap .right-wrap {
+    width: 31%;
+  }
+  .winner-wrap .right-wrap .img-wrap:last-child {
+    width: 48%;
+    margin-top: 30px;
+  }
+  .winners-con .text-wrap {
+    width: 53%;
+  }
+  .winners-con .text-wrap h2 {
+    font-size: 70px;
+  }
+  .winners-con .text-wrap h2:first-child {
+    margin-right: 40px;
+  }
+  .winners-selection {
+    padding-top: 80px;
+  }
+  .apptreciate-wrap {
+    background-size: 700px;
+    padding: 60px 0 100px;
+  }
+  .apptreciate-wrap h2 {
+    width: 80%;
+    padding-top: 50px;
+  }
+  .apptreciate-wrap h2::before {
+    width: 55px;
+    height: 82px;
+  }
+  .apptreciate-wrap h2::after {
+    width: 67px;
+    height: 86px;
   }
 }
 @media (min-width: 767px) {
@@ -13106,6 +14127,175 @@ footer.white-footer .copyright-social-raw .copywrights p {
   .clients-results .review-list .review-box .review-by h6 {
     width: calc(100% - 44px);
   }
+
+  .scholer-head {
+    background-size: 650px;
+    min-height: 500px;
+  }
+  .scholer-head .text-wrap {
+    padding: 0;
+  }
+  .scholer-head h2 {
+    padding: 30px 0;
+    letter-spacing: 0;
+  }
+  .scholer-head h5,
+  .winners-con h5 {
+    font-size: 16px;
+  }
+  .scholer-head::before {
+    width: 300px;
+    height: 400px;
+    left: -120px;
+    top: -190px;
+  }
+  .scholer-head .head-imoji {
+    width: 140px;
+    left: 15px;
+    display: none;
+  }
+  .scholer-head .head-imoji:nth-of-type(2) {
+    right: 15px;
+  }
+  .whoapply-wrap p {
+    font-size: 16px;
+  }
+  .whoapply-wrap h5 {
+    font-size: 18px;
+  }
+  .submission-wrap .btn-main {
+    min-width: 120px;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .related-fields-wrap {
+    padding: 70px 0 0;
+  }
+  .related-fields-wrap .tags-raw ul li {
+    padding: 15px 20px;
+  }
+  .related-fields-wrap .tags-raw {
+    margin: 40px 0 0;
+  }
+
+  .howapply-wrap {
+    padding: 80px 0;
+  }
+  .howapply-wrap .text-wrap {
+    padding-right: 0;
+  }
+  .howapply-wrap .text-wrap p {
+    font-size: 16px;
+  }
+  .howapply-wrap .text-wrap h5 {
+    font-size: 18px;
+  }
+  .howapply-wrap::before,
+  .howapply-wrap::after {
+    width: 550px;
+    height: 550px;
+  }
+  .announce-con {
+    padding: 80px 0 0;
+    background-size: 50px;
+    margin-top: 40px;
+    background-position: top center;
+    text-align: center;
+  }
+  .dedline-box {
+    padding: 40px 15px;
+    margin-top: 50px;
+    height: auto;
+  }
+  .dedline-con {
+    background-size: 60px;
+    padding: 80px 0 0;
+  }
+  .dedline-con p {
+    font-size: 16px;
+  }
+  .ded-date span {
+    font-size: 30px;
+    padding-right: 20px;
+  }
+  .announce-box {
+    min-height: auto;
+    margin-top: 50px;
+    padding: 30px;
+  }
+  .announce-box .title {
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-size: 22px;
+  }
+  .announce-box::after,
+  .announce-box::before {
+    width: 68px;
+    height: 46px;
+  }
+  .ded-date sub {
+    font-size: 16px;
+  }
+  .eligibility-box {
+    padding: 30px;
+    margin-top: 50px;
+  }
+  .eligibility-box p,
+  .eligibility-box li {
+    font-size: 16px;
+  }
+  .winner-wrap {
+    padding: 0 20px;
+  }
+  .winner-wrap .left-wrap {
+    width: 33%;
+    display: none;
+  }
+  .winner-wrap .right-wrap {
+    width: 31%;
+    display: none;
+  }
+  .winner-wrap .right-wrap .img-wrap:last-child {
+    width: 48%;
+    margin-top: 30px;
+  }
+  .winners-con .text-wrap {
+    width: 100%;
+  }
+  .winners-con {
+    position: relative;
+  }
+  .winners-con .text-wrap h2 {
+    margin: 0 !important;
+    width: 100%;
+    font-size: 70px;
+    text-align: center !important;
+  }
+  .winners-con .text-wrap h2:first-child {
+    margin-right: 40px;
+  }
+  .winners-selection {
+    padding-top: 80px;
+  }
+  .apptreciate-wrap {
+    background-size: 100%;
+    padding: 60px 0 100px;
+  }
+  .apptreciate-wrap h2 {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .apptreciate-wrap h2::before {
+    width: 55px;
+    height: 82px;
+    left: 40px;
+  }
+  .apptreciate-wrap h2::after {
+    width: 67px;
+    height: 86px;
+    right: 40px;
+  }
 }
 @media only screen and (max-device-width: 480px) {
   html {
@@ -13359,6 +14549,59 @@ footer.white-footer .copyright-social-raw .copywrights p {
   }
   .tools-raw .tools-col .right-conn h3 {
     font-size: 24px;
+  }
+
+  .scholer-head {
+    background-size: 120%;
+    min-height: inherit;
+    padding: 50px 0;
+    margin-top: 90px;
+  }
+  .scholer-head .btn-main {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  .submission-wrap {
+    display: inherit;
+  }
+  .submission-wrap .btn-main {
+    margin-top: 20px !important;
+  }
+  .howapply-wrap::before,
+  .howapply-wrap::after {
+    width: 370px;
+    height: 370px;
+  }
+  .howapply-wrap::after {
+    right: -130px;
+    top: -220px;
+  }
+  .howapply-wrap::before {
+    left: -150px;
+    bottom: 600px;
+    z-index: 9;
+  }
+  .winners-con .container.sm-container {
+    padding: 0;
+  }
+  .winners-con .text-wrap h2 {
+    font-size: 56px;
+  }
+  .apptreciate-wrap {
+    width: calc(100% - -40px);
+    margin-left: -20px;
+    padding: 80px 20px;
+    background-size: cover;
+  }
+  .apptreciate-wrap h2 br {
+    display: none;
+  }
+  .apptreciate-wrap h2::before {
+    left: 0;
+  }
+  .apptreciate-wrap h2::after {
+    right: 0;
   }
 }
 @media (max-width: 479px) {
