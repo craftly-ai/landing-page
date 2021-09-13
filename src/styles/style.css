@@ -6629,11 +6629,11 @@ footer.white-footer .copyright-social-raw .copywrights p {
   content: "";
 }
 .announce-box::after {
-  background: url(../images/announce-left-sep.svg) no-repeat center;
+  background: url(../images/announce-left-sep.png) no-repeat center;
   left: 40px;
 }
 .announce-box::before {
-  background: url(../images/announce-right-sep.svg) no-repeat center;
+  background: url(../images/announce-right-sep.png) no-repeat center;
   right: 40px;
 }
 .announce-box .title {
