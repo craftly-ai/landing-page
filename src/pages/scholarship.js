@@ -8,7 +8,6 @@ import LeftImoji from "./../images/left-imoji.png"
 import RightImoji from "./../images/right-imoji.png"
 import HowToApplySection from "../container/scholarship/HowToApplySection"
 import WinnerSelectionSection from "../container/scholarship/WinnerSelectionSection"
-import OfferSection from "../container/home/OfferSection"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Scholarship = () => {
@@ -22,13 +21,6 @@ const Scholarship = () => {
             submissionsButtonLabel
             submissionsButtonUrl
             whoApplyText
-            footerCtaTitle
-            footerCtaDescription
-            footerCtaButtonLabel
-            footerCtaButtonUrl
-            footerCtaImage {
-              sourceUrl
-            }
           }
         }
       }
@@ -49,21 +41,6 @@ const Scholarship = () => {
     node => node.scholarship.whoApplyText
   )
 
-  let footerCtaTitle = data.allWpPage.nodes.map(
-    node => node.scholarship.footerCtaTitle
-  )
-  let footerCtaDescription = data.allWpPage.nodes.map(
-    node => node.scholarship.footerCtaDescription
-  )
-  let footerCtaButtonLabel = data.allWpPage.nodes.map(
-    node => node.scholarship.footerCtaButtonLabel
-  )
-  let footerCtaButtonUrl = data.allWpPage.nodes.map(
-    node => node.scholarship.footerCtaButtonUrl
-  )
-  let footerCtaImage = data.allWpPage.nodes.map(
-    node => node.scholarship.footerCtaImage.sourceUrl
-  )
 
   const metaTitle = "Craftly.AI Academy | Scholarship"
   const metaDescription =
@@ -111,13 +88,6 @@ const Scholarship = () => {
 
           <WinnerSelectionSection />
 
-          <OfferSection
-            title={footerCtaTitle}
-            description={footerCtaDescription}
-            buttonLabel={footerCtaButtonLabel}
-            buttonUrl={footerCtaButtonUrl}
-            img={footerCtaImage}
-          />
         </section>
       </Layout>
       <Footer />
