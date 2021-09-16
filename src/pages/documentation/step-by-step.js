@@ -63,7 +63,7 @@ const StepByStep = () => {
             title={tipsTitle}
             description={tipsDescription}
           />
-          <div className="step-box-wrapper">
+          <div className="step-box-wrapper section">
             <div className="row">
               <div className="col-md-12 col-12">
                 <ul>

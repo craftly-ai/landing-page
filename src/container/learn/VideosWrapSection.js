@@ -44,9 +44,12 @@ const VideosWrapSection = () => {
           <h2>{videosTitle}</h2>
         </div>
         <div className="col-sm-4">
-          <a href={watchAllTutorialsUrl} className="more-btn replaceHref">
+          <span className="more-btn replaceHref">
             {watchAllTutorialsLabel}
-          </a>
+          </span>
+          {/* <a href={watchAllTutorialsUrl} className="more-btn replaceHref">
+            {watchAllTutorialsLabel}
+          </a> */}
         </div>
       </div>
       <ul className="col3">

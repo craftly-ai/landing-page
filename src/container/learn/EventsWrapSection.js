@@ -44,11 +44,11 @@ const EventsWrapSection = () => {
   return (
     <div className="events-wrap section ptb100">
       <div className="row align-items-center title-wrap">
-        <div className="col-sm-8">
+        <div className="col-sm-12">
           <h2 dangerouslySetInnerHTML={{ __html: eventsTitle }} />
           <p dangerouslySetInnerHTML={{ __html: eventsWebinarsDescription }} />
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-4 d-none">
           <a
             href={viewAllEventUrl}
             data-toggle="modal"

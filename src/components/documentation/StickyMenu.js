@@ -39,7 +39,7 @@ const StickyMenu = () => {
               </Link>
             </li>
             <li>
-              <Link to="/documentation/blog-builder">Blog Builder</Link>
+              <Link to="/documentation/blog-builder">Blog Introduction</Link>
             </li>
             <li>
               <Link to="/documentation/product-description">
@@ -58,16 +58,16 @@ const StickyMenu = () => {
               <Link to="/documentation/blog-topics">Blog Topics</Link>
             </li>
             <li>
-              <Link to="/documentation/email-thank-you">Email Thank You</Link>
+              <Link to="/documentation/email-thank-you">Thank You Email</Link>
             </li>
             <li>
               <Link to="/documentation/email-confirmation">
-                Email Confirmation
+                  Confirmation Email
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/documentation/blog-ideas">Blog Ideas</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/documentation/value-proposition">
                 Value Proposition
