@@ -989,6 +989,10 @@ section {
   font-size: 16px;
   line-height: 160%;
 }
+.one-product-li li .readmore{
+  background-image: none;
+  padding-right: 0;
+}
 .readmore {
   float: left;
   color: #25a9f1;

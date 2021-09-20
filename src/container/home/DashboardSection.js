@@ -83,7 +83,7 @@ const DashboardSection = () => {
                     tooltipstep1={tooltipFirstStepText}
                     labelinfo={"Description of your product*"}
                     countof={"0 of 500"}
-                    datarotateinfo={"Multivitamin for hair, nail and skin"}
+                    datarotateinfo={"Multivitamin for hair, nails and skin"}
                     info={"A couple words will do!"}
                     button={generateIdeasButtonLabel}
                     tooltipstep2={tooltipSecondStepText}

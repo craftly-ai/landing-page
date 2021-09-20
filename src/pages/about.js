@@ -81,12 +81,12 @@ const About = () => {
           <CommandmentsSection />
           <PowerSection />
           <WorkWithUsSection />
-          <SubscribeWrapSection
+          {/* <SubscribeWrapSection
             title={subscribeTitle}
             description={subscribeDescription}
             inputPlaceholder={"Enter Your Email"}
             submitLabel={"I Want it!"}
-          />
+          /> */}
           <OfferSection
             title={footerCtaTitle}
             description={footerCtaDescription}

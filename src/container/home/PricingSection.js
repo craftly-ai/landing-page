@@ -60,13 +60,13 @@ const PricingSection = () => {
                 </label>
                 <p className="annual">{annuallyTabLabel}</p>
               </div> */}
-              <p className="save-col">2 Months free on annual plans!</p>
+              {/* <p className="save-col">2 Months free on annual plans!</p> */}
             </div>
           </div>
         </div>
         <div className="pricing-table-raw section" id="PricingSection">
           {/* pricing table  */}
-          <div className="row">
+          <div className="row justify-content-center">
             {priceTable.map(e =>
               e.map((item, i) => (
                 <PricingCard
