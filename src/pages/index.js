@@ -103,17 +103,17 @@ const IndexPage = () => {
           <ClientSection />
           <ProductSection />
           <CopyRightSection />
-          <TrustTechSection />
+          {/* <TrustTechSection /> */}
           <PricingSection />
-          <TestimonialSection />
+          {/* <TestimonialSection /> */}
           {/* <SubscribeSection /> */}
-          <OfferSection
+          {/* <OfferSection
             title={ctaTitle}
             description={ctaDescription}
             buttonLabel={startEarningButtonLabel}
             buttonUrl={startEarningButtonUrl}
             img={ctaImage}
-          />
+          /> */}
           <Footer />
         </section>
       </Layout>
