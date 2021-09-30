@@ -105,7 +105,7 @@ const HowToApplySection = () => {
             </div>
         </div>
 
-        <div className="section announce-box">
+        {/* <div className="section announce-box">
             <div className="announce-con">
                 <span className="title" dangerouslySetInnerHTML={{ __html: winnerAnnouncedLabel }} />
                 <div className="ded-date">
@@ -113,7 +113,7 @@ const HowToApplySection = () => {
                     <sub dangerouslySetInnerHTML={{ __html: winnerAnnouncedDateSuffix }} /> 
                 </div> 
             </div>
-        </div>
+        </div> */}
 
         <div className="eligibility-box section">
             <h3 dangerouslySetInnerHTML={{ __html: eligibilityTitle }} />
