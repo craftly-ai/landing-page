@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
     createPage({
       path: "video/" + slug,
-      component: path.resolve(`./src/pages/video/index.js`),
+      component: path.resolve(`./src/pages/Video/index.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
