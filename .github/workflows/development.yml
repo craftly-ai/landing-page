@@ -1,7 +1,7 @@
 name: Build and Deploy development
 on:
   push:
-    branches: main
+    branches: development
 jobs:
   build-and-deploy:
     name: Build and deploy craftly.ai
