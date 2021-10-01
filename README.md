@@ -68,8 +68,22 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     ```
     Your site is now running at `http://localhost:9000`
 
-3.  **Deploy on server**
-    - Upload public directory data on your server
+3.  **Deploy on server using Github Actions**
+    - Add Github Secrets For FTP server
+
+    #### **Deploy on production server**
+    - Push on main branch using Github action build Project and Upload on server
+    - Github Secrets For production FTP server
+        - PRODUCTION_FTP_HOSTNAME
+        - PRODUCTION_FTP_USERNAME
+        - PRODUCTION_FTP_PASSWORD
+
+    #### **Deploy on development server**
+    - Push on development branch using Github action build Project and Upload on server
+    - Github Secrets For development FTP server
+        - DEVELOPMENT_FTP_HOSTNAME
+        - DEVELOPMENT_FTP_USERNAME
+        - DEVELOPMENT_FTP_PASSWORD
 
 ## 💫 Deploy on Subdomain
 
@@ -94,109 +108,19 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     ```
     Your site is now running with Prefix at `http://localhost:9000/craftly-landing`
 
-3.  **Deploy on server**
-    - Upload public directory data on your server
-  
-## 🧐 What's inside?
+3.  **Deploy on server using Github Actions**
+    - Add Github Secrets For FTP server
 
-```
-landing-page/
-┣ .vscode/
-┃ ┗ settings.json
-┣ src/
-┃ ┣ animations/
-┃ ┣ components/
-┃ ┃ ┣ 404/
-┃ ┃ ┣ aboutWrap/
-┃ ┃ ┣ affiliateEarning/
-┃ ┃ ┣ audience/
-┃ ┃ ┣ blog/
-┃ ┃ ┣ breadcrumb/
-┃ ┃ ┣ carousel/
-┃ ┃ ┣ copywritingSteps/
-┃ ┃ ┣ dashboard/
-┃ ┃ ┣ documentation/
-┃ ┃ ┣ footer/
-┃ ┃ ┣ header/
-┃ ┃ ┣ innerBanner/
-┃ ┃ ┣ layout/
-┃ ┃ ┣ modal/
-┃ ┃ ┣ noWrapper/
-┃ ┃ ┣ pricing/
-┃ ┃ ┣ processWrap/
-┃ ┃ ┣ product/
-┃ ┃ ┣ rangeslide/
-┃ ┃ ┣ sellsProduct/
-┃ ┃ ┣ seo/
-┃ ┃ ┣ trustTech/
-┃ ┃ ┣ typeform/
-┃ ┃ ┣ Typewriter/
-┃ ┃ ┣ updateWrap/
-┃ ┃ ┣ valueGrow/
-┃ ┃ ┗ video/
-┃ ┣ container/
-┃ ┃ ┣ about/
-┃ ┃ ┣ blog/
-┃ ┃ ┣ earn/
-┃ ┃ ┣ home/
-┃ ┃ ┣ learn/
-┃ ┃ ┗ video/
-┃ ┣ images/
-┃ ┣ pages/
-┃ ┃ ┣ blog/
-┃ ┃ ┣ ┣ Blog.js
-┃ ┃ ┣ ┣ BlogTemplate.js
-┃ ┃ ┣ ┗ index.js
-┃ ┃ ┣ documentation/d
-┃ ┃ ┣ ┣ blog-builder.js
-┃ ┃ ┣ ┣ blog-ideas.js
-┃ ┃ ┣ ┣ blog-topics.js
-┃ ┃ ┣ ┣ bullets-to-paragraph.js
-┃ ┃ ┣ ┣ choose-a-tone.js
-┃ ┃ ┣ ┣ email-confirmation.js
-┃ ┃ ┣ ┣ email-thank-you.js
-┃ ┃ ┣ ┣ headline.js
-┃ ┃ ┣ ┣ index.js
-┃ ┃ ┣ ┣ product-description.js
-┃ ┃ ┣ ┣ sentence-rewriter.js
-┃ ┃ ┣ ┣ step-by-step.js
-┃ ┃ ┣ ┗ value-proposition.js
-┃ ┃ ┣ Video/
-┃ ┃ ┣ ┣ index.js
-┃ ┃ ┣ ┣ Video.js
-┃ ┃ ┣ ┗ VideoTemplate.js
-┃ ┃ ┣ 404.js
-┃ ┃ ┣ about.js
-┃ ┃ ┣ affiliate.js
-┃ ┃ ┣ index.js
-┃ ┃ ┣ learn.js
-┃ ┃ ┣ page-2.js
-┃ ┃ ┣ privacy-policy.js
-┃ ┃ ┣ terms-of-use.js
-┃ ┃ ┣ tools.js
-┃ ┃ ┗ using-typescript.tsx
-┃ ┗ styles/
-┃   ┣ fonts/
-┃   ┣ aos.css
-┃   ┣ bootstrap.min.css
-┃   ┣ font-awesome.css
-┃   ┣ slick.css
-┃   ┗ style.css
-┣ static/
-┃ ┣ animator.js
-┃ ┣ custom.js
-┃ ┣ customGrid.js
-┃ ┗ rangeslide.js
-┣ .gitignore
-┣ .prettierignore
-┣ .prettierrc
-┣ gatsby-browser.js
-┣ gatsby-config.js
-┣ gatsby-node.js
-┣ gatsby-ssr.js
-┣ LICENSE
-┣ package-lock.json
-┣ package.json
-┗ README.md
+    #### **Deploy on production server**
+    - Push on main branch using Github action build Project and Upload on server
+    - Github Secrets For production FTP server
+        - PRODUCTION_FTP_HOSTNAME
+        - PRODUCTION_FTP_USERNAME
+        - PRODUCTION_FTP_PASSWORD
 
-```
+    #### **Deploy on development server**
+    - Push on development branch using Github action build Project and Upload on server
+    - Github Secrets For development FTP server
+        - DEVELOPMENT_FTP_HOSTNAME
+        - DEVELOPMENT_FTP_USERNAME
+        - DEVELOPMENT_FTP_PASSWORD
