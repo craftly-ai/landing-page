@@ -1,0 +1,39 @@
+name: Build and Deploy Production
+on:
+  push:
+    branches: main
+jobs:
+  build-and-deploy:
+    name: Build and deploy craftly.ai
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2.3.1
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '13.x'
+      
+      - name: Install Project Dependencies
+        run: npm ci
+      
+      - name: Install Gatsby CLI
+        run: npm install -g gatsby-cli
+      
+      - name: Build
+        run: gatsby build
+      
+      - name: Verify build
+        run: ls -la public
+
+      - name: FTP Deploy
+        uses: cinderblockgames/ftp-action@v1.2.2
+        with:
+          server: ${{ secrets.PRODUCTION_FTP_HOSTNAME }}
+          username: ${{ secrets.PRODUCTION_FTP_USERNAME }}
+          password: ${{ secrets.PRODUCTION_FTP_PASSWORD }}
+          port: 21
+          source: ./public/
+          destination: /craftly.ai/public_html/
+          skipUnchanged: false
