@@ -50,7 +50,7 @@ const ValueProposition = () => {
     data.allWpPage.nodes[0].documentation.valueProposition
       .contentCreationsImage != null
       ? data.allWpPage.nodes[0].documentation.valueProposition
-          .contentCreationsImage.sourceUrl
+          .contentCreationsImage?.sourceUrl
       : null
 
   return (

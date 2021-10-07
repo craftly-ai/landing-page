@@ -41,7 +41,9 @@ const CraftersSection = () => {
   let caiDescription = data.allWpPage.nodes.map(
     node => node.about.caiDescription
   )
-  let caiImage = data.allWpPage.nodes.map(node => node.about.caiImage.sourceUrl)
+  let caiImage = data.allWpPage.nodes.map(
+    node => node.about.caiImage?.sourceUrl
+  )
   let teamList = data.allWpPage.nodes.map(node => node.about.teamList)
 
   return (
@@ -75,7 +77,7 @@ const CraftersSection = () => {
                       <TeamCard
                         link={item.profileLink}
                         bgColor={item.backgroundColorHashcode}
-                        img={item.memberAvatar.sourceUrl}
+                        img={item.memberAvatar?.sourceUrl}
                         name={item.name}
                         designation={item.designation}
                       />

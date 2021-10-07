@@ -58,7 +58,7 @@ const TestimonialSection = () => {
                               >
                                 <div className="img-box">
                                   <img
-                                    src={item.avatar.sourceUrl}
+                                    src={item.avatar?.sourceUrl}
                                     alt="TestimonialSection"
                                   />
                                 </div>

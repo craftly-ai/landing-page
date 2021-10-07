@@ -42,7 +42,7 @@ const AffiliateEarningSection = () => {
               return (
                 <CardEarn
                   key={i}
-                  sourceUrl={item.icon.sourceUrl}
+                  sourceUrl={item.icon?.sourceUrl}
                   title={item.title}
                   description={item.description}
                 />

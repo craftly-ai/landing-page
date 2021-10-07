@@ -19,7 +19,7 @@ const ProductSellsSection = props => {
                       <Container
                         title={item.title}
                         description={item.description}
-                        sourceUrl={item.image.sourceUrl}
+                        sourceUrl={item.image?.sourceUrl}
                       />
                     </li>
                   )

@@ -43,7 +43,7 @@ const CommunitiesWrapSection = () => {
             return (
               <li key={i}>
                 <CommunitiesBox
-                  icon={item.icon.sourceUrl}
+                  icon={item.icon?.sourceUrl}
                   title={item.title}
                   description={item.description}
                   linkLabel={item.linkLabel}

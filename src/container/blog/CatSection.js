@@ -27,7 +27,7 @@ const CatSection = () => {
     data.allWpPage.nodes[0].blogRightCardAndCat.startEarningButtonLabel
   let startEarningButtonUrl =
     data.allWpPage.nodes[0].blogRightCardAndCat.startEarningButtonUrl
-  let ctaImage = data.allWpPage.nodes[0].blogRightCardAndCat.ctaImage.sourceUrl
+  let ctaImage = data.allWpPage.nodes[0].blogRightCardAndCat.ctaImage?.sourceUrl
 
   return (
     <div className="cta-raw section">

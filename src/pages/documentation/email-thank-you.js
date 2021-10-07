@@ -48,7 +48,7 @@ const EmailThankYou = () => {
     data.allWpPage.nodes[0].documentation.thankYouEmail.contentCreationsImage !=
     null
       ? data.allWpPage.nodes[0].documentation.thankYouEmail
-          .contentCreationsImage.sourceUrl
+          .contentCreationsImage?.sourceUrl
       : null
 
   return (

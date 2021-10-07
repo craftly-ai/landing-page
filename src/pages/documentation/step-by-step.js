@@ -86,7 +86,7 @@ const StepByStep = () => {
                         {item.step.imageOrDifference.image !== null ? (
                           <div className="img-box box">
                             <img
-                              src={item.step.imageOrDifference.image.sourceUrl}
+                              src={item.step.imageOrDifference.image?.sourceUrl}
                               alt="StepByStep"
                             />
                           </div>
@@ -110,7 +110,7 @@ const StepByStep = () => {
                                   />
                                   {item.image !== null ? (
                                     <img
-                                      src={item.image.sourceUrl}
+                                      src={item.image?.sourceUrl}
                                       alt="StepByStep"
                                     />
                                   ) : (

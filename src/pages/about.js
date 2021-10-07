@@ -51,7 +51,7 @@ const About = () => {
     node => node.about.footerCtaButtonUrl
   )
   let footerCtaImage = data.allWpPage.nodes.map(
-    node => node.about.footerCtaImage.sourceUrl
+    node => node.about.footerCtaImage?.sourceUrl
   )
 
   const metaTitle = "Meet Craftly.AI | GPT3 Copywriter Assistant"

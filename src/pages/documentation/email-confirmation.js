@@ -51,7 +51,7 @@ const EmailConfirmation = () => {
     data.allWpPage.nodes[0].documentation.emailConfirmation
       .contentCreationsImage != null
       ? data.allWpPage.nodes[0].documentation.emailConfirmation
-          .contentCreationsImage.sourceUrl
+          .contentCreationsImage?.sourceUrl
       : null
 
   return (

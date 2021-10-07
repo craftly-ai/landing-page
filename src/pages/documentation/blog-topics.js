@@ -46,7 +46,7 @@ const BlogTopics = () => {
     data.allWpPage.nodes[0].documentation.blogTopics.contentCreationsImage !=
     null
       ? data.allWpPage.nodes[0].documentation.blogTopics.contentCreationsImage
-          .sourceUrl
+          ?.sourceUrl
       : null
 
   return (

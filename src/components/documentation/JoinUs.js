@@ -43,7 +43,7 @@ const JoinUs = () => {
                   <div className="communities-box">
                     <i>
                       <img
-                        src={item.logo.sourceUrl}
+                        src={item.logo?.sourceUrl}
                         alt="JoinUs"
                         className="img-fluid"
                       />

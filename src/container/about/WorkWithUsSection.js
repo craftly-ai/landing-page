@@ -70,7 +70,7 @@ const WorkWithUsSection = () => {
                   return (
                     <li key={i}>
                       <WorkBox
-                        icon={item.icon.sourceUrl}
+                        icon={item.icon?.sourceUrl}
                         title={item.title}
                         description={item.description}
                       />

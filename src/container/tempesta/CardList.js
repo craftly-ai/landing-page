@@ -104,7 +104,7 @@ const Card = ({ icon, title, list }) => {
 //         <div className="card-col">
 //           <Card
 //             key={i}
-//             icon={data[0].cardImage.sourceUrl}
+//             icon={data[0].cardImage?.sourceUrl}
 //             title={data[0].cardTitle}
 //             list={data[0].cardInfo}
 //           />
@@ -112,7 +112,7 @@ const Card = ({ icon, title, list }) => {
 //         <div className="card-col col2">
 //           <Card
 //             key={i}
-//             icon={data[1].cardImage.sourceUrl}
+//             icon={data[1].cardImage?.sourceUrl}
 //             title={data[1].cardTitle}
 //             list={data[1].cardInfo}
 //           />

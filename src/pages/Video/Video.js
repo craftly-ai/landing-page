@@ -63,7 +63,7 @@ const Video = () => {
                       <li key={i}>
                         <VideoBox
                           title={item.title}
-                          image={item.featuredImage.node.sourceUrl}
+                          image={item.featuredImage.node?.sourceUrl}
                           url={item.slug}
                         />
                       </li>

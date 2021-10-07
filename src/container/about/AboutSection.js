@@ -24,7 +24,7 @@ const AboutSection = () => {
     node => node.about.aboutRightDescription
   )
   let aboutImage = data.allWpPage.nodes.map(
-    node => node.about.aboutImage.sourceUrl
+    node => node.about.aboutImage?.sourceUrl
   )
   let aboutBottomDescription = data.allWpPage.nodes.map(
     node => node.about.aboutBottomDescription

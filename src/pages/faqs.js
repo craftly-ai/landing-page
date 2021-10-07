@@ -42,7 +42,7 @@ const TermsOfUse = () => {
   let readMoreButtonUrl = data.allWpPage.nodes.map(
     node => node.faqs.readMoreButtonUrl
   )
-  let ctaImage = data.allWpPage.nodes.map(node => node.faqs.ctaImage.sourceUrl)
+  let ctaImage = data.allWpPage.nodes.map(node => node.faqs.ctaImage?.sourceUrl)
 
   const metaTitle = "FAQs | Craftly.AI"
 

@@ -22,7 +22,7 @@ const BlogIndex = props => {
       : node.blogPost.postType.addVideo.file.mediaItemUrl
   )
   let poster = props.data.allWpPost.nodes.map(
-    node => node.featuredImage.node.sourceUrl
+    node => node.featuredImage.node?.sourceUrl
   )
 
   if (!props.pageContext.slug) {

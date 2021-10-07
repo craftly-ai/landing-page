@@ -50,7 +50,7 @@ const LatestBlogSection = () => {
     data.allWpPost.nodes[0].blogPost.nuberOfMinutesToRead
   let featuredImage =
     data.allWpPost.nodes[0].featuredImage != null
-      ? data.allWpPost.nodes[0].featuredImage.node.sourceUrl
+      ? data.allWpPost.nodes[0].featuredImage.node?.sourceUrl
       : ""
   let title = data.allWpPost.nodes[0].title
 

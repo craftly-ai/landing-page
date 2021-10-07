@@ -53,7 +53,7 @@ const SentenceRewriter = () => {
     data.allWpPage.nodes[0].documentation.sentenceRewriter
       .contentCreationsImage != null
       ? data.allWpPage.nodes[0].documentation.sentenceRewriter
-          .contentCreationsImage.sourceUrl
+          .contentCreationsImage?.sourceUrl
       : null
 
   return (

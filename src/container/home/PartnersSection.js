@@ -35,7 +35,7 @@ const PartnersSection = () => {
             e.map((e, i) => (
               <li key={i}>
                 <div className="logo-box">
-                  <img src={e.sourceUrl} alt={e.title} />
+                  <img src={e?.sourceUrl} alt={e.title} />
                 </div>
               </li>
             ))

@@ -45,7 +45,7 @@ const Headline = () => {
   let contentCreationsImage =
     data.allWpPage.nodes[0].documentation.headline.contentCreationsImage != null
       ? data.allWpPage.nodes[0].documentation.headline.contentCreationsImage
-          .sourceUrl
+          ?.sourceUrl
       : null
 
   return (

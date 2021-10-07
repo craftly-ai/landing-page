@@ -51,7 +51,7 @@ function ProductDescription() {
     data.allWpPage.nodes[0].documentation.productDescription
       .contentCreationsImage != null
       ? data.allWpPage.nodes[0].documentation.productDescription
-          .contentCreationsImage.sourceUrl
+          .contentCreationsImage?.sourceUrl
       : null
 
   return (

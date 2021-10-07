@@ -44,9 +44,7 @@ const VideosWrapSection = () => {
           <h2>{videosTitle}</h2>
         </div>
         <div className="col-sm-4">
-          <span className="more-btn replaceHref">
-            {watchAllTutorialsLabel}
-          </span>
+          <span className="more-btn replaceHref">{watchAllTutorialsLabel}</span>
           {/* <a href={watchAllTutorialsUrl} className="more-btn replaceHref">
             {watchAllTutorialsLabel}
           </a> */}
@@ -58,7 +56,7 @@ const VideosWrapSection = () => {
             <li key={i}>
               <VideoBox
                 title={item.title}
-                image={item.featuredImage.node.sourceUrl}
+                image={item.featuredImage.node?.sourceUrl}
                 url={item.slug}
               />
             </li>

@@ -10,33 +10,32 @@ import IntegrateSection from "../container/keap-marketing/IntegrateSection"
 import TryKeapSection from "../container/keap-marketing/TryKeapSection"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-
 const KeapMarketing = () => {
   const data = useStaticQuery(graphql`
     {
       allWpPage(filter: { slug: { eq: "keap-marketing" } }) {
-          nodes {
-            keapMarketing{
-              keapLogo {
-                sourceUrl
-              }
-              craftlyLogo {
-                sourceUrl
-              }
-              keapHeadTitle
-              keapSubTitle
-              keapShortDescription
+        nodes {
+          keapMarketing {
+            keapLogo {
+              sourceUrl
             }
+            craftlyLogo {
+              sourceUrl
+            }
+            keapHeadTitle
+            keapSubTitle
+            keapShortDescription
           }
         }
+      }
     }
   `)
 
   let keapLogo = data.allWpPage.nodes.map(
-    node => node.keapMarketing.keapLogo.sourceUrl
+    node => node.keapMarketing.keapLogo?.sourceUrl
   )
   let craftlyLogo = data.allWpPage.nodes.map(
-    node => node.keapMarketing.craftlyLogo.sourceUrl
+    node => node.keapMarketing.craftlyLogo?.sourceUrl
   )
   let keapHeadTitle = data.allWpPage.nodes.map(
     node => node.keapMarketing.keapHeadTitle
@@ -48,9 +47,6 @@ const KeapMarketing = () => {
     node => node.keapMarketing.keapShortDescription
   )
 
-
-  
-
   const metaTitle = "Craftly.AI Academy | Help Center"
   const metaDescription =
     "Get started with our education centre. We have training, tutorials, and tips for using your Craftly.AI Copywriting Assistant more effectively. Learn. Craft. Scale."
@@ -61,46 +57,56 @@ const KeapMarketing = () => {
       <Layout>
         <section>
           <div className="breadcrumbs mrt112 section">
-              <div className="container">
-                <ul>
-                  <li>
-                    <Link className="replaceHref" to="/">
-                      Home
-                    </Link>{" "}
-                    <span>/</span>
-                  </li>
-                  <li>Keap Marketing</li>
-                </ul>
-              </div>
+            <div className="container">
+              <ul>
+                <li>
+                  <Link className="replaceHref" to="/">
+                    Home
+                  </Link>{" "}
+                  <span>/</span>
+                </li>
+                <li>Keap Marketing</li>
+              </ul>
             </div>
+          </div>
           <div className="inner-banner ptb100  keap-banner section">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-10 col-md-12 m-auto">
-                    <div className="text-wrap text-center">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-10 col-md-12 m-auto">
+                  <div className="text-wrap text-center">
                     <div className="logo-btn top-action">
-                      <span className="logo"><img src={keapLogo} className="img-fluid" alt="Keap" /></span>
-                      <span className="logo"><img src={craftlyLogo} className="img-fluid" alt="Craftly" /></span>
+                      <span className="logo">
+                        <img src={keapLogo} className="img-fluid" alt="Keap" />
+                      </span>
+                      <span className="logo">
+                        <img
+                          src={craftlyLogo}
+                          className="img-fluid"
+                          alt="Craftly"
+                        />
+                      </span>
                     </div>
-                      <h1 dangerouslySetInnerHTML={{ __html: keapHeadTitle }} />
-                      <h5 dangerouslySetInnerHTML={{ __html: keapSubTitle }} />
-                      <p dangerouslySetInnerHTML={{ __html: keapShortDescription }} />
-                    </div>
+                    <h1 dangerouslySetInnerHTML={{ __html: keapHeadTitle }} />
+                    <h5 dangerouslySetInnerHTML={{ __html: keapSubTitle }} />
+                    <p
+                      dangerouslySetInnerHTML={{ __html: keapShortDescription }}
+                    />
                   </div>
                 </div>
               </div>
             </div>
-            <ApplicationSection />
+          </div>
+          <ApplicationSection />
 
-            <KeapHelpedSection />
+          <KeapHelpedSection />
 
-            <SalesFunnelSection />
+          <SalesFunnelSection />
 
-            <PlayBookSection />
+          <PlayBookSection />
 
-            <IntegrateSection />
+          <IntegrateSection />
 
-            <TryKeapSection />
+          <TryKeapSection />
         </section>
       </Layout>
       <Footer />

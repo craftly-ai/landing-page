@@ -25,7 +25,7 @@ const PowerSection = () => {
     node => node.about.powerOfAiDescription
   )
   let powerOfAiImage = data.allWpPage.nodes.map(
-    node => node.about.powerOfAiImage.sourceUrl
+    node => node.about.powerOfAiImage?.sourceUrl
   )
 
   return (

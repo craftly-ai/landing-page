@@ -30,7 +30,7 @@ const NotFoundPage = () => {
   let pageTopTitle = data.allWpPage.nodes.map(
     node => node.craftly404.pageTopTitle
   )
-  let image = data.allWpPage.nodes.map(node => node.craftly404.image.sourceUrl)
+  let image = data.allWpPage.nodes.map(node => node.craftly404.image?.sourceUrl)
   let title = data.allWpPage.nodes.map(node => node.craftly404.title)
   let description = data.allWpPage.nodes.map(
     node => node.craftly404.description

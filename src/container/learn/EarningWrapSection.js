@@ -22,7 +22,7 @@ const EarningWrapSection = () => {
   `)
 
   let startEarningImage = data.allWpPage.nodes.map(
-    node => node.learn.startEarningImage.sourceUrl
+    node => node.learn.startEarningImage?.sourceUrl
   )
   let earningTopTitle = data.allWpPage.nodes.map(
     node => node.learn.earningTopTitle

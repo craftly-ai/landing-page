@@ -7,7 +7,7 @@ const FeaturedBlogContainer = ({ data }) => {
     <div className="col-sm-4 col-xs-12 featured-blog-col">
       <Link to={slug} className="replaceHref blog-img">
         <img
-          src={data.featuredImage.node.sourceUrl}
+          src={data.featuredImage.node?.sourceUrl}
           alt="FeaturedBlogContainer"
         />
       </Link>

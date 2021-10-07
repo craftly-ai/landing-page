@@ -77,7 +77,7 @@ const ProductSection = () => {
                     e.map((item, i) => (
                       <Product
                         key={i}
-                        img={item.icon.sourceUrl}
+                        img={item.icon?.sourceUrl}
                         heading={item.title}
                         info={item.description}
                         buttonTitle={item.buttonLabel}

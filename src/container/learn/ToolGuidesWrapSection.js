@@ -66,7 +66,7 @@ const ToolGuidesWrapSection = () => {
             <GuideBox
               key={i}
               url={item.url}
-              sourceUrl={item.image.sourceUrl}
+              sourceUrl={item.image?.sourceUrl}
               category={item.category}
               title={item.title}
               description={item.description}
@@ -81,7 +81,7 @@ const ToolGuidesWrapSection = () => {
                   <GuideCard
                     key={i}
                     url={item.url}
-                    sourceUrl={item.image.sourceUrl}
+                    sourceUrl={item.image?.sourceUrl}
                     category={item.category}
                     title={item.title}
                     description={item.description}

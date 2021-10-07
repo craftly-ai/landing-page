@@ -34,7 +34,7 @@ const VersusSection = () => {
     node => node.home.voteAButtonLabel
   )
   let humanVersusImage = data.allWpPage.nodes.map(
-    node => node.home.humanVersusImage.sourceUrl
+    node => node.home.humanVersusImage?.sourceUrl
   )
   let voteBDescription = data.allWpPage.nodes.map(
     node => node.home.voteBDescription

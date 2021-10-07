@@ -29,7 +29,7 @@ const VideoListSection = () => {
                 return (
                   <li key={i}>
                     <VideoListCard
-                      image={item.featuredImage.node.sourceUrl}
+                      image={item.featuredImage.node?.sourceUrl}
                       url={item.slug}
                     />
                   </li>

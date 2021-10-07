@@ -6,7 +6,7 @@ const BlogListBox = ({ data }) => {
   return (
     <Link to={slug} className="replaceHref featured-list-col">
       <div className="blog-img">
-        <img src={data.featuredImage.node.sourceUrl} alt="BlogListBox" />
+        <img src={data.featuredImage.node?.sourceUrl} alt="BlogListBox" />
       </div>
       <div className="context-col">
         <p className="context">

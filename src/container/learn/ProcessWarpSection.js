@@ -47,7 +47,7 @@ const ProcessWarpSection = () => {
                 return (
                   <li kry={i}>
                     <ProcessCard
-                      icon={item.icon.sourceUrl}
+                      icon={item.icon?.sourceUrl}
                       title={item.title}
                       description={item.description}
                       buttonLabel={item.buttonLabel}

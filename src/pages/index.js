@@ -64,7 +64,7 @@ const IndexPage = () => {
     node => node.home.seeExampleButtonUrl
   )
   let blastThroughDashboardImage = data.allWpPage.nodes.map(
-    node => node.home.blastThroughDashboardImage.sourceUrl
+    node => node.home.blastThroughDashboardImage?.sourceUrl
   )
   let ctaTitle = data.allWpPage.nodes.map(node => node.home.ctaTitle)
   let ctaDescription = data.allWpPage.nodes.map(
@@ -76,7 +76,7 @@ const IndexPage = () => {
   let startEarningButtonUrl = data.allWpPage.nodes.map(
     node => node.home.startEarningButtonUrl
   )
-  let ctaImage = data.allWpPage.nodes.map(node => node.home.ctaImage.sourceUrl)
+  let ctaImage = data.allWpPage.nodes.map(node => node.home.ctaImage?.sourceUrl)
 
   const metaTitle =
     "Craftly.AI | AI Powered Copywriter for Marketing Copy and Content"

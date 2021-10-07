@@ -40,7 +40,7 @@ const Index = () => {
     data.allWpPage.nodes[0].documentation.home.documentationDescription
   let dashboardImage =
     data.allWpPage.nodes[0].documentation.home.dashboardImage !== null
-      ? data.allWpPage.nodes[0].documentation.home.dashboardImage.sourceUrl
+      ? data.allWpPage.nodes[0].documentation.home.dashboardImage?.sourceUrl
       : ""
   let getStartedTitle =
     data.allWpPage.nodes[0].documentation.home.getStarted.getStartedTitle
@@ -70,7 +70,7 @@ const Index = () => {
                 <li key={i}>
                   <Link to="">
                     <div className="icon">
-                      <img src={item.icon.sourceUrl} alt="icon" />
+                      <img src={item.icon?.sourceUrl} alt="icon" />
                     </div>
                     <h5 dangerouslySetInnerHTML={{ __html: item.title }} />
                     <p dangerouslySetInnerHTML={{ __html: item.description }} />

@@ -53,7 +53,7 @@ const BulletsToParagraph = () => {
     data.allWpPage.nodes[0].documentation.bulletPointsToParagraph
       .contentCreationsImage != null
       ? data.allWpPage.nodes[0].documentation.bulletPointsToParagraph
-          .contentCreationsImage.sourceUrl
+          .contentCreationsImage?.sourceUrl
       : null
 
   return (

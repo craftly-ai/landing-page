@@ -21,7 +21,7 @@ const TakeitWrapSection = () => {
   `)
 
   let takeItImage = data.allWpPage.nodes.map(
-    node => node.learn.takeItImage.sourceUrl
+    node => node.learn.takeItImage?.sourceUrl
   )
   let takeItTitle = data.allWpPage.nodes.map(node => node.learn.takeItTitle)
   let takeItDescription = data.allWpPage.nodes.map(

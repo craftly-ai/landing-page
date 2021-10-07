@@ -81,7 +81,7 @@ const ClientSection = () => {
                   <div className="review-by section">
                     <span className="avatar">
                       <img
-                        src={item.avatar.sourceUrl}
+                        src={item.avatar?.sourceUrl}
                         className="img-rounded"
                         alt="ClientSection"
                       />

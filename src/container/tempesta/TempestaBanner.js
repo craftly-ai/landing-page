@@ -23,10 +23,10 @@ const TempestaBanner = () => {
   `)
 
   let bannerLogoTempesta = data.allWpPage.nodes.map(
-    node => node.tempesta.bannerLogoTempesta.sourceUrl
+    node => node.tempesta.bannerLogoTempesta?.sourceUrl
   )
   let bannerLogoCraftly = data.allWpPage.nodes.map(
-    node => node.tempesta.bannerLogoCraftly.sourceUrl
+    node => node.tempesta.bannerLogoCraftly?.sourceUrl
   )
   let bannerTitle = data.allWpPage.nodes.map(node => node.tempesta.bannerTitle)
   let bannerSubtitle = data.allWpPage.nodes.map(

@@ -43,7 +43,7 @@ function Tempesta() {
     node => node.tempesta.readMoreButtonUrl
   )
   let ctaImage = data.allWpPage.nodes.map(
-    node => node.tempesta.ctaImage.sourceUrl
+    node => node.tempesta.ctaImage?.sourceUrl
   )
 
   const metaTitle = "Tempesta | Craftly.AI"

@@ -49,7 +49,7 @@ const BlogBuilder = () => {
     data.allWpPage.nodes[0].documentation.blogBuilder.contentCreationsImage !=
     null
       ? data.allWpPage.nodes[0].documentation.blogBuilder.contentCreationsImage
-          .sourceUrl
+          ?.sourceUrl
       : null
 
   return (

@@ -31,7 +31,7 @@ const ValueGrowListSection = () => {
             e.map((item, i) => (
               <GrowListItem
                 key={i}
-                img={item.icon.sourceUrl}
+                img={item.icon?.sourceUrl}
                 heading={item.title}
                 subheading={item.description}
               />

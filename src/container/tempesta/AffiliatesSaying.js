@@ -69,7 +69,7 @@ const AffiliatesSaying = () => {
                         <div className="item-thumbnail" key={i}>
                           <div className="img-box">
                             <img
-                              src={data.avatar.sourceUrl}
+                              src={data.avatar?.sourceUrl}
                               alt="AffiliatesSaying"
                             />
                           </div>
