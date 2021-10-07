@@ -1,4 +1,12 @@
 !(function (t) {
+  // var a = window.location.href
+  // var name = a.split("?")[1]
+  // var localRef = localStorage.getItem("ref")
+  // if (name == localRef) {
+  //   localStorage.removeItem("ref")
+  // }
+  // localStorage.setItem("ref", name)
+
   t(window).on("load resize scroll", function () {
     t(".bg-static").each(function () {
       var windowTop = t(window).scrollTop()
