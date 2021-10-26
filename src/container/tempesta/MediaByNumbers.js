@@ -67,7 +67,7 @@ const MediaByNumbers = () => {
                 <div className="number-list-row2">
                   Revisions Requested
                   <br />
-                  (Pre Article)
+                  (Per Article)
                 </div>
               </div>
             </div>

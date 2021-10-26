@@ -127,8 +127,7 @@ const PriceTable = props => {
             <a
               className="btn-pricing"
               href={buyUrl}
-              data-toggle="modal"
-              data-target="#join-waitlist"
+              target="_blank"
             >
               {buyLabel}
             </a>

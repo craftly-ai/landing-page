@@ -46,6 +46,15 @@ const CardList = () => {
                     <li>Account-based Marketing</li>
                   </ul>`}
                 />
+                <Card
+                  icon={icon2}
+                  title={"SEO"}
+                  list={`<ul>
+                    <li>On-site optimization</li>
+                    <li>Inbound link campaigns</li>
+                    <li>Content syndication</li>
+                  </ul>`}
+                />
               </div>
               <div className="card-col col2">
                 <Card
