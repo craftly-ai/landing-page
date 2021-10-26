@@ -78,7 +78,7 @@ const Header = () => {
                         </li>
                         <li>
                           <Link className="replaceHref" to="/affiliate/">
-                            Earn
+                            Partner
                           </Link>
                         </li>
                         <li>
