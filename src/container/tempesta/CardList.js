@@ -46,16 +46,16 @@ const CardList = () => {
                   list={`<ul>
                     <li>Email Nurturing</li>
                     <li>Newsletters</li>
-                    <li>Account-based Marketing</li>
+                    <li>Account-Based Marketing</li>
                   </ul>`}
                 />
                 <Card
                   icon={ic_seo}
                   title={"SEO"}
                   list={`<ul>
-                    <li>On-site optimization</li>
-                    <li>Inbound link campaigns</li>
-                    <li>Content syndication</li>
+                    <li>On-Site Optimization</li>
+                    <li>Inbound Link Campaigns</li>
+                    <li>Content Syndication</li>
                   </ul>`}
                 />
               </div>
