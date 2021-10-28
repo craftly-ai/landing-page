@@ -112,7 +112,7 @@ const PriceTable = props => {
     <div className="col-lg-4 col-md-4 col-xs-12 pricing-table-col">
       <div className={`box-warp ${activeStatus}`}>
         <h6>{activeTitle}</h6>
-        <div className="pricing-table text-center">
+        <div className="pricing-table text-center pb-0">
           <div className="top">
             <p className="f-medium">{title}</p>
             <p
@@ -151,14 +151,7 @@ const PriceTable = props => {
               </ul>
             )
           })}
-          <a
-            className="btn-pricing"
-            href={infoUrl}
-            data-toggle="modal"
-            data-target="#join-waitlist"
-          >
-            {infoLabel}
-          </a>
+          
         </div>
       </div>
     </div>

@@ -59,16 +59,9 @@ function Tempesta() {
           <HowdoWapper />
           <WorkCycle />
           <PricingSection />
-          <AffiliatesSaying />
+          {/* <AffiliatesSaying /> */}
         </section>
         <SubscribeSection />
-        <OfferSection
-          title={ctaTitle}
-          description={ctaDescription}
-          buttonLabel={readMoreButtonLabel}
-          buttonUrl={readMoreButtonUrl}
-          img={ctaImage}
-        />
         <Footer />
       </Layout>
     </>

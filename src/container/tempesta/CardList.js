@@ -1,6 +1,9 @@
 import React from "react"
-import icon1 from "../../images/iconTemp1.png"
-import icon2 from "../../images/iconTemp2.png"
+import ic_contentmarketing from "../../images/ic-content-marketing.png"
+import ic_socialmedia from "../../images/ic-social-media.png"
+import ic_email from "../../images/ic-email.png"
+import ic_influencer from "../../images/ic-influencer.png"
+import ic_seo from "../../images/ic-seo.png"
 import { useStaticQuery, graphql } from "gatsby"
 const CardList = () => {
   const data = useStaticQuery(graphql`
@@ -29,7 +32,7 @@ const CardList = () => {
             <div className="tempesta-card-list">
               <div className="card-col">
                 <Card
-                  icon={icon1}
+                  icon={ic_contentmarketing}
                   title={"Content <br/> Marketing"}
                   list={`<ul>
                     <li>Content Development</li>
@@ -38,7 +41,7 @@ const CardList = () => {
                   </ul>`}
                 />
                 <Card
-                  icon={icon2}
+                  icon={ic_email}
                   title={"Email"}
                   list={`<ul>
                     <li>Email Nurturing</li>
@@ -47,7 +50,7 @@ const CardList = () => {
                   </ul>`}
                 />
                 <Card
-                  icon={icon2}
+                  icon={ic_seo}
                   title={"SEO"}
                   list={`<ul>
                     <li>On-site optimization</li>
@@ -58,7 +61,7 @@ const CardList = () => {
               </div>
               <div className="card-col col2">
                 <Card
-                  icon={icon2}
+                  icon={ic_socialmedia}
                   title={"Social <br/> Media"}
                   list={`<ul>
                   <li>Social Posts Development</li>
@@ -67,12 +70,12 @@ const CardList = () => {
                 </ul>`}
                 />
                 <Card
-                  icon={icon2}
+                  icon={ic_influencer}
                   title={"Influencer"}
                   list={`<ul>
                     <li>Influencer Research</li>
                     <li>Micro-influencer Campaigns</li>
-                    <li>Employee Advocasy Program</li>
+                    <li>Employee Advocacy Program</li>
                   </ul>`}
                 />
               </div>
