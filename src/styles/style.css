@@ -16409,6 +16409,10 @@ input[type="text"] {
   margin-top: 15px;
   font-size: 22px;
 }
+.tempesta-banner .text-wrap p a{
+  color: #3eb2f4;
+
+}
 .tempesta-banner .text-wrap p:last-child {
   color: #fff;
   font-size: 18px;
@@ -16456,10 +16460,15 @@ input[type="text"] {
 .media-by-numbers-section .number-list .block-4 .number-list-row2 {
   width: 300px;
 }
+
 @media (max-width: 1120px) {
   .tempesta-numberList-parallax {
     overflow: hidden;
   }
+}
+.tempesta-pricing-section .pricing-table-raw .pricing-table-col .box-warp.active .pricing-table .middle:last-child li:nth-of-type(1){
+  background-image: none;
+  padding: 0;
 }
 .tempesta-pricing-section .top p {
   margin-top: 10px;
