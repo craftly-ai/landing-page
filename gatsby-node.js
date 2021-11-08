@@ -50,5 +50,14 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: slug,
       },
     })
+    createPage({
+      path: "partner/Tempesta-media",
+      component: path.resolve(`./src/pages/tempesta.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: slug,
+      },
+    })
   })
 }
