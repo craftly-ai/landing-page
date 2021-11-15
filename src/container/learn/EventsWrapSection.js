@@ -59,7 +59,7 @@ const EventsWrapSection = () => {
           </a>
         </div>
       </div>
-      <ul className="text-center col3">
+      <ul className="text-center col4">
         {eventsWebinarsList.map(e =>
           e.map((item, i) => {
             return (

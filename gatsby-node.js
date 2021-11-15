@@ -59,5 +59,14 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: slug,
       },
     })
+    createPage({
+      path: "events/citymoguls-seo-workshop",
+      component: path.resolve(`./src/pages/citymoguls-seo-workshop.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: slug,
+      },
+    })
   })
 }
