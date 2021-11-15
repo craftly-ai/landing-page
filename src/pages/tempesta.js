@@ -59,10 +59,6 @@ function Tempesta() {
           <HowdoWapper />
           <WorkCycle />
           <PricingSection />
-<<<<<<< HEAD
-=======
-          {/* <AffiliatesSaying /> */}
->>>>>>> main
         </section>
         <SubscribeSection />
         <Footer />
