@@ -92,7 +92,7 @@ const BlogTemplate = props => {
                     </div>
                   </div>
                 </div>
-                <RightSidebar />
+                {/* <RightSidebar /> */}
               </div>
             </div>
           </div>
